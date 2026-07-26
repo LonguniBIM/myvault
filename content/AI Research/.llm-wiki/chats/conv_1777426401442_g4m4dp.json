@@ -1,0 +1,80 @@
+[
+  {
+    "id": "1",
+    "role": "user",
+    "content": "hãy giải thích cách sử dụng skill cho obsidian",
+    "timestamp": 1777426420531,
+    "conversationId": "conv_1777426401442_g4m4dp"
+  },
+  {
+    "id": "2",
+    "role": "assistant",
+    "content": "Error: gemini CLI exited with code 55: \u001b[31mGemini CLI is not running in a trusted directory. To proceed, either use `--skip-trust`, set the `GEMINI_CLI_TRUST_WORKSPACE=true` environment variable, or trust this directory in interactive mode. For more details, see https://geminicli.com/docs/cli/trusted-folders/#headless-and-automated-environments\u001b[0m",
+    "timestamp": 1777426425158,
+    "conversationId": "conv_1777426401442_g4m4dp"
+  },
+  {
+    "id": "3",
+    "role": "user",
+    "content": "hãy giải thích cách sử dụng skill cho obsidian",
+    "timestamp": 1777426678484,
+    "conversationId": "conv_1777426401442_g4m4dp"
+  },
+  {
+    "id": "4",
+    "role": "assistant",
+    "content": "",
+    "timestamp": 1777426692481,
+    "conversationId": "conv_1777426401442_g4m4dp",
+    "references": [
+      {
+        "title": "Obsidian Skills (kepano/obsidian-skills)",
+        "path": "wiki/entities/obsidian-skills.md"
+      },
+      {
+        "title": "kepano/obsidian-skills — Agent skills for Obsidian (Markdown, Bases, Canvas, CLI, Defuddle)",
+        "path": "wiki/sources/github---kepano-obsidian-skills-agent-skills-for-o-20260429.md"
+      },
+      {
+        "title": "Agent Skills for LLM Coding Agents — Comparison",
+        "path": "wiki/comparisons/agent-skills-for-llm-coding.md"
+      },
+      {
+        "title": "LLM Agent Skills",
+        "path": "wiki/concepts/llm-agent-skills.md"
+      },
+      {
+        "title": "Andrej Karpathy Skills (forrestchang/andrej-karpathy-skills)",
+        "path": "wiki/entities/andrej-karpathy-skills.md"
+      },
+      {
+        "title": "forrestchang/andrej-karpathy-skills — CLAUDE.md guidelines from Karpathy's LLM coding observations",
+        "path": "wiki/sources/github---forrestchang-andrej-karpathy-skills-a-sin-20260428.md"
+      },
+      {
+        "title": "Karpathy LLM Wiki Pattern",
+        "path": "wiki/concepts/karpathy-llm-wiki-pattern.md"
+      },
+      {
+        "title": "LLM Coding Guidelines",
+        "path": "wiki/concepts/llm-coding-guidelines.md"
+      },
+      {
+        "title": "Wiki Index",
+        "path": "wiki/index.md"
+      },
+      {
+        "title": "Research Log",
+        "path": "wiki/log.md"
+      },
+      {
+        "title": "LLM Wiki (nashsu/llm_wiki)",
+        "path": "wiki/entities/llm-wiki.md"
+      },
+      {
+        "title": "LLM-Powered Knowledge Base",
+        "path": "wiki/concepts/llm-knowledge-base.md"
+      }
+    ]
+  }
+]

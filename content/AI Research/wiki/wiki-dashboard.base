@@ -1,0 +1,94 @@
+filters:
+  and:
+    - file.folder == "wiki/entities" || file.folder == "wiki/concepts" || file.folder == "wiki/comparisons" || file.folder == "wiki/synthesis" || file.folder == "wiki/sources"
+formulas:
+  age_days: (now() - file.ctime).days
+  link_count: file.links.length
+  backlink_count: file.backlinks.length
+  connectivity: file.links.length + file.backlinks.length
+properties:
+  type:
+    displayName: Type
+  title:
+    displayName: Title
+  tags:
+    displayName: Tags
+  related:
+    displayName: Related
+  created:
+    displayName: Created
+  updated:
+    displayName: Updated
+  formula.age_days:
+    displayName: Age (days)
+  formula.link_count:
+    displayName: Links Out
+  formula.backlink_count:
+    displayName: Backlinks
+  formula.connectivity:
+    displayName: Connectivity
+views:
+  - type: table
+    name: All Wiki Pages
+    order:
+      - file.name
+      - type
+      - title
+      - tags
+      - formula.connectivity
+      - formula.age_days
+      - updated
+    summaries:
+      formula.connectivity: Average
+      formula.age_days: Average
+    columnSize:
+      file.name: 421
+  - type: table
+    name: Entities
+    filters:
+      and:
+        - type == "entity"
+    order:
+      - file.name
+      - title
+      - tags
+      - formula.backlink_count
+      - formula.link_count
+      - updated
+    summaries:
+      formula.backlink_count: Sum
+      formula.link_count: Sum
+  - type: table
+    name: Concepts
+    filters:
+      and:
+        - type == "concept"
+    order:
+      - file.name
+      - title
+      - tags
+      - formula.connectivity
+      - updated
+  - type: cards
+    name: Entities Gallery
+    filters:
+      and:
+        - type == "entity"
+    order:
+      - file.name
+      - title
+      - tags
+      - formula.connectivity
+  - type: table
+    name: Most Connected
+    groupBy:
+      property: type
+      direction: ASC
+    order:
+      - file.name
+      - type
+      - formula.connectivity
+      - formula.backlink_count
+      - formula.link_count
+    summaries:
+      formula.connectivity: Max

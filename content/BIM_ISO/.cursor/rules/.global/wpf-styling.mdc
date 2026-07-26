@@ -1,0 +1,88 @@
+---
+description: "WPF styling standards — MahApps.Metro theme, contrast/readability, centralized resources. Apply when editing XAML or WPF styling code."
+globs: "**/*.xaml"
+alwaysApply: false
+---
+
+# WPF Styling Standards
+
+## Core Principle
+
+**Readability always wins over branding.** If a brand/accent color reduces legibility, adjust its shade or switch to a neutral foreground.
+
+## MahApps.Metro Integration
+
+- Use `MetroWindow` as base window class (not `Window`)
+- Reference MahApps resource dictionaries in `App.xaml`
+- Use centralized `Resources/AppColors.xaml` for all brushes
+
+## Contrast Rules
+
+- Dark background (luminance < 0.4) → use near-white foreground (`#FFFFFF` or `#F5F5F5`)
+- Light background (luminance >= 0.4) → use near-black foreground (`#1A1A2E` or `#212121`)
+- NEVER: red text on blue/dark background, blue text on blue background
+- Minimum contrast ratio: 4.5:1 (WCAG AA)
+- Accent color for borders/icons/badges only — never body text unless contrast ≥ 4.5:1
+
+## Centralized Color Resources
+
+Never inline hex colors. Define in `Resources/AppColors.xaml`:
+
+```xml
+<!-- Backgrounds -->
+<SolidColorBrush x:Key="AppBackgroundBrush" Color="#FAFBFC"/>
+<SolidColorBrush x:Key="PanelBackgroundBrush" Color="#F5F7FA"/>
+<SolidColorBrush x:Key="CardBackgroundBrush" Color="#FFFFFF"/>
+
+<!-- Foregrounds -->
+<SolidColorBrush x:Key="PrimaryTextBrush" Color="#1A1A2E"/>
+<SolidColorBrush x:Key="SecondaryTextBrush" Color="#5A6270"/>
+
+<!-- Selection: foreground MUST contrast with background -->
+<SolidColorBrush x:Key="SelectedRowBackgroundBrush" Color="#1565C0"/>
+<SolidColorBrush x:Key="SelectedRowForegroundBrush" Color="#FFFFFF"/>
+<SolidColorBrush x:Key="HoverRowBackgroundBrush" Color="#E8EAF6"/>
+<SolidColorBrush x:Key="HoverRowForegroundBrush" Color="#1A1A2E"/>
+```
+
+## DataGrid Selected/Focused States
+
+Always override these triggers — default system colors clash:
+
+```xml
+<Style TargetType="DataGridCell">
+  <Style.Triggers>
+    <Trigger Property="IsSelected" Value="True">
+      <Setter Property="Foreground" Value="{StaticResource SelectedRowForegroundBrush}"/>
+      <Setter Property="Background" Value="{StaticResource SelectedRowBackgroundBrush}"/>
+    </Trigger>
+  </Style.Triggers>
+</Style>
+
+<Style TargetType="DataGridRow">
+  <Style.Triggers>
+    <Trigger Property="IsSelected" Value="True">
+      <Setter Property="Foreground" Value="{StaticResource SelectedRowForegroundBrush}"/>
+      <Setter Property="Background" Value="{StaticResource SelectedRowBackgroundBrush}"/>
+    </Trigger>
+    <Trigger Property="IsMouseOver" Value="True">
+      <Setter Property="Background" Value="{StaticResource HoverRowBackgroundBrush}"/>
+      <Setter Property="Foreground" Value="{StaticResource HoverRowForegroundBrush}"/>
+    </Trigger>
+  </Style.Triggers>
+</Style>
+```
+
+## Rules
+
+- Reference brushes via `{StaticResource BrushKey}`, never hardcode `#hex`
+- Every `Background` setter must have paired `Foreground` with adequate contrast
+- When overriding styles, always handle `IsSelected`, `IsMouseOver`, `IsFocused` with explicit foreground
+
+## Checklist After Editing XAML
+
+- [ ] No inline `#hex` colors — use `{StaticResource}`
+- [ ] Every `IsSelected` trigger sets both Background AND Foreground
+- [ ] Every `IsMouseOver` trigger sets both Background AND Foreground
+- [ ] DataGrid cell text readable in all states: normal, hover, selected, editing
+- [ ] Buttons with colored backgrounds have white or near-white foreground

@@ -1,0 +1,18 @@
+# graphify-generated output (don't extract your own artifacts)
+graphify-out/
+
+# Agent instruction files
+CLAUDE.md
+AGENTS.md
+GEMINI.md
+
+# Tool config directories
+.claude/
+.cursor/
+.obsidian/
+.llm-wiki/
+.git/
+
+# Cache and temp
+.cache/
+*.generated.*

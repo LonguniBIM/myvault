@@ -1,0 +1,138 @@
+---
+description: "Unified content ingest dispatcher. Routes any input (md, video, audio, image, pdf, doc, youtube link) through the correct extraction → graphify → wiki pipeline. Apply when user provides content to ingest, pastes a URL, drops a file, or asks to process raw sources."
+alwaysApply: false
+---
+
+# Content Ingest Dispatcher
+
+When the user provides content to ingest into the wiki — regardless of source type — follow this unified pipeline.
+
+> [!info] Compatibility
+> Works in **both Cursor and Claude Code**. Requires the `graphify` skill to be installed
+> (run `graphify install --platform claude` for Claude Code, or `graphify cursor install` for Cursor).
+> Verify the skill is available: type `/graphify` in chat — if it autocompletes, you're set.
+
+## Step 1 — Detect Input Type
+
+| Input | Detection | Route to |
+|-------|-----------|----------|
+| `.md` file or pasted markdown | File extension or raw text | Direct wiki page creation |
+| YouTube / video URL | URL contains youtube.com, youtu.be, or video domain | `python scripts/extract_content.py --url <url>` |
+| Video/audio file (.mp4 .mkv .mp3 .wav .m4a etc.) | File extension | `python scripts/extract_content.py --type video` |
+| Image (.png .jpg .webp .gif) | File extension | `python scripts/extract_content.py --type image` |
+| PDF (.pdf) | File extension | `python scripts/extract_content.py --type pdf` |
+| Office doc (.docx .xlsx) | File extension | `python scripts/extract_content.py --type doc` |
+| Web URL (article, docs, blog) | HTTP(S) URL | `graphify add <url>` (preferred) or `defuddle parse <url> --md -o raw/sources/<slug>.md` |
+| Queued items in ingest queue | `.llm-wiki/ingest-queue/*.json` with status "pending" | Follow `auto-ingest.mdc` pipeline |
+
+## Step 2 — Extract Content
+
+Run the appropriate extraction command from Step 1. All extractors output to:
+- `raw/extracts/<slug>.md` — full extracted text
+- `wiki/sources/extract-<slug>.md` — wiki source page with **Six-Question Analysis template**
+- `scripts/.content_manifest.json` — tracking manifest
+
+> [!important] Post-Extraction Analysis
+> After the script creates the `wiki/sources/extract-<slug>.md` file, the AI agent MUST:
+> 1. Read the full text in `raw/extracts/<slug>.md`.
+> 2. Fill in the **Six-Question Analysis** (Q1-Q6) in the wiki page.
+> 3. Update the page metadata (authors, year, url) if found in the text.
+
+For web URLs, prefer `graphify add <url>` — it fetches the URL into `./raw` AND updates the graph in one step.
+
+## Step 3 — Enrich with Knowledge Graph
+
+After extraction, run:
+```
+/graphify ./raw --update
+```
+
+This uses Claude (via the graphify skill) to extract entities, concepts, and relationships from the new content. Output lands in `graphify-out/`:
+- `graph.json` — full graph data
+- `GRAPH_REPORT.md` — god nodes, communities, surprising connections
+- `graph.html` — interactive visualization
+
+> [!tip] Incremental updates
+> `--update` re-extracts only new/changed files. For a fresh build (full pipeline), drop the flag.
+
+## Step 4 — Sync to Wiki
+
+```
+/graphify-to-wiki
+```
+
+Creates/updates wiki pages (entities, concepts, synthesis) from graph insights using Obsidian-flavored markdown. Deduplicates against existing `wiki/index.md` so nothing gets overwritten.
+
+**Useful flags:**
+- `/graphify-to-wiki --dry-run` — preview without writing
+- `/graphify-to-wiki --entities-only` — only god nodes → entities
+- `/graphify-to-wiki --insights-only` — only surprising connections → synthesis
+- `/graphify-to-wiki --gaps` — knowledge gaps → query pages
+
+## Step 5 — Post-Ingest
+
+1. Review new pages in `wiki/sources/`, `wiki/entities/`, `wiki/concepts/`
+2. Verify `[[wikilinks]]` resolve (no dangling links)
+3. Update `wiki/index.md` if not auto-updated
+4. Check `wiki/log.md` for the activity entry
+5. Optionally re-run `/graphify . --update` to incorporate the new wiki pages into the graph (feedback loop)
+
+## Fallback — Manual Mode (if graphify unavailable)
+
+If the `/graphify` skill is NOT installed, fall back to manual entity/concept creation:
+
+1. Extract content (Step 1-2 still apply)
+2. Apply the **Six-Question Analysis** framework (as seen in `CLAUDE.md`):
+   - **Q1 — What problem does this solve?** (Maps to `wiki/concepts/` or entity description)
+   - **Q2 — What numbered steps does the author prescribe?** (Maps to `wiki/methodology/` - Skill candidate)
+   - **Q3 — What principles recur?** (Maps to `wiki/concepts/` or entity "principles" section)
+   - **Q4 — What mistakes does the author warn against?** (Maps to `wiki/findings/` - anti-patterns)
+   - **Q5 — What diagnostic questions does the author pose?** (Maps to `wiki/queries/` or methodology checklist)
+   - **Q6 — Can the method be expressed as numbered steps?** (If YES → `wiki/skills/` candidate)
+3. For each unresolved `[[wikilink]]` in the extract, manually create an entity or concept page in `wiki/entities/` or `wiki/concepts/`
+4. Update `wiki/index.md` and `wiki/log.md` by hand
+
+This avoids dangling wikilinks but loses the cross-document community detection that graphify provides.
+
+## Quick Reference
+
+| Command | What it does |
+|---------|-------------|
+| `/extract-content` | Extract all new files in raw/ |
+| `/extract-content --url <youtube>` | Download + transcribe YouTube |
+| `/extract-media` | Extract video/audio only |
+| `/ingest-pending` | Process queued raw sources |
+| `/graphify .` | Build/update knowledge graph (full pipeline) |
+| `/graphify ./raw --update` | Incremental graph update from raw/ |
+| `/graphify add <url>` | Fetch URL → ./raw → update graph |
+| `/graphify query "<question>"` | BFS traversal of graph for an answer |
+| `/graphify path "A" "B"` | Shortest path between two nodes |
+| `/graphify explain "X"` | Plain-language explanation of a node |
+| `/graphify-to-wiki` | Sync graph → wiki pages (Obsidian format) |
+
+## Formatting Rules
+
+All wiki pages must follow **obsidian-markdown** skill formatting:
+- `[[wikilinks]]` for internal cross-references
+- YAML frontmatter with `type`, `title`, `tags`, `related`, `created`, `updated`
+- Callouts (`> [!type]`) for metadata boxes
+- Tags in frontmatter `tags: []` array, kebab-case
+
+Reference: `.claude/skills/obsidian-skills/skills/obsidian-markdown/SKILL.md`
+
+## Setup — Installing graphify
+
+If `/graphify` is not yet available, install once per machine:
+
+```powershell
+# Install the CLI (Python 3.10+)
+pip install graphifyy        # or: pipx install graphifyy / uv tool install graphifyy
+
+# Register as Claude Code skill (global)
+graphify install --platform claude
+
+# Wire up project-specific integration (CLAUDE.md + PreToolUse hook)
+graphify claude install
+```
+
+After install, restart Claude Code or run `/graphify` to verify the skill loaded.

@@ -1,0 +1,342 @@
+---
+description: "End-of-session synchronization prompt. Invoke with: 'run end-of-session sync'. Follows harness-mcp-bridge Phase 3 SSOT ordering."
+globs:
+alwaysApply: false
+---
+
+# End-of-Session Sync
+
+> **When to invoke**: At the end of a productive session, or when the user
+> says "sync", "end-of-session sync", or "session cleanup".
+>
+> **Project context**: Read the current project's `.cursor/rules/project-namespace.mdc`
+> for project name, neural-memory tags, verify commands, and GitNexus repo name.
+>
+> **Ordering rule** (harness-mcp-bridge Phase 3 / ADR-0001 SSOT): docs first →
+> memory-bank index → nmem_remember → GitNexus refresh → cross-check →
+> interactive_feedback.
+
+---
+
+## Session-Type Skip Matrix
+
+Not every step applies to every session. Determine the session type first:
+
+| Step | Code + Docs | Code-Only | Docs-Only | Setup/Config |
+|------|:-----------:|:---------:|:---------:|:------------:|
+| 0 Gather Context | FULL | FULL | REQUIRED only | FULL |
+| 1 Reflection | ALL items | Skip product truth | Skip validation | Skip validation |
+| 1.5 Doc Completeness | ALL | ALL | SKIP | SKIP |
+| 2 Harness Docs | ALL | Skip product docs | ALL | ALL |
+| 3 Memory-Bank | ALL | ALL | ALL | ALL |
+| 4 Serena Memories | ALL | ALL | SKIP | ALL |
+| 5 Neural Memory | ALL | ALL | ALL | ALL |
+| 6 GitNexus Re-index | YES | YES | SKIP | SKIP |
+| 7 Cross-Check | ALL | ALL | ALL | ALL |
+| 8 Summary + Confirm | ALL | ALL | ALL | ALL |
+
+---
+
+## Step 0 — Gather Context (read-only, parallel)
+
+Before updating anything, read the current state. Skip files that do not
+exist in the current project. Parallel execution of reads is the goal but
+sequential is acceptable (e.g., on Windows/PowerShell where MCP calls
+serialize).
+
+**First**: Read `.cursor/rules/project-namespace.mdc` to extract `project_tag`,
+`gitnexus_repo_name`, and verify commands for later steps.
+
+### Required reads (always)
+```
+nmem_recap(level=2, compact=true, token_budget=800)
+Read .cursor/rules/project-namespace.mdc   # MUST — project identity
+Read memory-bank/activeContext.md           # if present
+Read memory-bank/progress.md               # if present
+Read docs/TEST_MATRIX.md                   # if present
+Read docs/HARNESS_BACKLOG.md               # if present
+Read docs/stories/backlog.md               # if present
+```
+
+### Optional reads (when reflection checklist demands them)
+```
+Read memory-bank/decisionLog.md            # if new ADRs were created
+Read memory-bank/systemPatterns.md         # if architecture changed
+Read memory-bank/techContext.md            # if stack/deps changed
+Read memory-bank/productContext.md         # if scope/goals changed
+Read memory-bank/projectbrief.md           # rarely — only if core reqs changed
+Read docs/product/*                        # if product truth may have changed
+Read .serena/memories/project_overview.md  # if present
+Read .serena/memories/style_and_conventions.md
+Read .serena/memories/suggested_commands.md
+Read .serena/memories/task_completion_checklist.md
+```
+
+---
+
+## Step 1 — Reflection Checklist (Phase 3.4 from harness-mcp-bridge)
+
+Answer each question. Any "yes" drives an update in Steps 2–5.
+
+- [ ] Did **product truth** change? → update `docs/product/*`
+- [ ] Did **validation expectations** change? → update `docs/TEST_MATRIX.md`
+- [ ] Did **architecture rules** change? → update `docs/ARCHITECTURE.md`
+      (if present) or `memory-bank/systemPatterns.md` + new ADR in
+      `docs/decisions/`
+- [ ] Did we discover a **repeated failure pattern**? → log in
+      `docs/HARNESS_BACKLOG.md` or `nmem_remember(type=error)`
+- [ ] Did the **next agent need a clearer instruction**? → update the
+      relevant `.cursor/rules/*.mdc` or `docs/HARNESS.md`
+- [ ] Were there **new design decisions**? → 3-step write (ADR + index +
+      nmem_remember)
+- [ ] Were **Known Issues resolved**? → remove from activeContext.md and
+      progress.md (if those files exist)
+- [ ] Were **new stories started or completed**? → update `docs/stories/*`
+      status and `docs/stories/backlog.md` (if present)
+
+---
+
+## Step 1.5 — Harness Document Completeness Check
+
+Before updating existing docs, verify that all required harness documents
+exist for work completed this session. Missing documents are a common gap
+when implementation moves faster than documentation.
+
+### Check for each completed/in-progress story (US-NNN):
+
+```
+# For each story identified in Step 1 reflection:
+Glob docs/stories/US-NNN*       # story file or directory exists?
+```
+
+**If the story has a high-risk lane**, verify the full story pack exists:
+
+| Required file | Purpose |
+|---------------|---------|
+| `docs/stories/US-NNN-<slug>/overview.md` | Current vs target behavior, affected users |
+| `docs/stories/US-NNN-<slug>/design.md` | Architecture, IPC contracts, key decisions |
+| `docs/stories/US-NNN-<slug>/execplan.md` | Step-by-step execution plan with status |
+| `docs/stories/US-NNN-<slug>/validation.md` | Unit/integration/E2E proof status |
+
+**If the story has a normal lane**, at minimum:
+
+| Required file | Purpose |
+|---------------|---------|
+| `docs/stories/US-NNN-<slug>.md` | Single-file story (overview + plan) |
+
+### Check for each design decision made this session:
+
+```
+Glob docs/decisions/NNNN-*.md   # ADR file exists?
+```
+
+If an ADR was made but no file exists, create it from `docs/templates/decision.md`.
+
+### Check for product truth changes:
+
+If product capabilities changed (new features, new contracts, new limits):
+
+```
+Glob docs/product/*             # relevant product doc exists?
+```
+
+If the feature has no product doc and it introduces user-visible behavior,
+create one in `docs/product/<feature>.md`.
+
+### Check for backlog entry:
+
+```
+Read docs/stories/backlog.md    # new story listed?
+```
+
+If a new story was completed but not listed in the backlog, add it.
+
+### Check for TEST_MATRIX row:
+
+```
+Read docs/TEST_MATRIX.md        # new story has a row?
+```
+
+If the story has no row in the test matrix, add one with current proof status.
+
+### Action
+
+Create any missing files BEFORE proceeding to Step 2. Use templates from
+`docs/templates/` when available. This ensures Step 2 updates existing files
+rather than discovering gaps mid-sync.
+
+---
+
+## Step 2 — Update Harness Docs (SSOT layer — update first)
+
+These are the source of truth. Update before memory-bank indexes.
+
+| File | Update when... |
+|---|---|
+| `docs/product/*` | Product contracts changed |
+| `docs/stories/*` + `backlog.md` | Story status changed (started, blocked, done) |
+| `docs/TEST_MATRIX.md` | Validation expectations or proof status changed |
+| `docs/ARCHITECTURE.md` or `memory-bank/systemPatterns.md` | Architecture rules changed |
+| `docs/decisions/NNNN-*.md` | New architectural decision made (from template) |
+| `docs/HARNESS_BACKLOG.md` | Structural gap or friction discovered |
+
+---
+
+## Step 3 — Update Memory-Bank (index layer — reflects docs)
+
+Read each file that exists in the current project, compare with actual
+codebase state, update stale content:
+
+| File | What to check |
+|---|---|
+| `activeContext.md` | Current Focus matches reality. Remove resolved Known Issues. Update "What Was Just Completed" and "Next Steps". Update Active Stories table. |
+| `progress.md` | Move completed items from "Not Yet" to "Completed". Remove fixed Known Issues. Update current status. |
+| `decisionLog.md` | Add row to the ADR index table for any new ADR created in Step 2. |
+| `systemPatterns.md` | Add new patterns/architecture. Update changed patterns. |
+| `techContext.md` | Update if stack, config, dependencies, or conventions changed. |
+| `productContext.md` | Only update if scope or goals changed. |
+| `projectbrief.md` | Only update if core requirements changed. |
+
+---
+
+## Step 4 — Update Serena Memories
+
+Read `.serena/memories/*` (if present), update to match current codebase:
+
+| File | What to check |
+|---|---|
+| `project_overview.md` | New files, classes, services added. Removed items. |
+| `style_and_conventions.md` | New patterns or convention changes. |
+| `suggested_commands.md` | New build/test commands or changed paths. |
+| `task_completion_checklist.md` | Updated completion criteria. |
+
+---
+
+## Step 5 — Persist to Neural Memory
+
+> **No MCP layer available** (e.g. a plain Claude Code CLI session with no
+> `nmem_*` tools bound): skip the calls below and instead append the
+> session summary as a bullet under `memory-bank/activeContext.md` →
+> "Recent Changes" (and, if the friction is structural, a
+> `docs/HARNESS_BACKLOG.md` item). Note explicitly in the Step 8 summary
+> that cross-session Neural Memory persistence was degraded this session.
+
+Store session knowledge for cross-session recall.
+**Use the project tag extracted from `project-namespace.mdc` in Step 0**
+(e.g. `tags: ["dcmvn_cs", "<area>"]`).
+
+```
+# For each design decision made this session:
+nmem_remember(
+  content="ADR-NNNN: <title>. File: docs/decisions/NNNN-...md",
+  type="decision",
+  tags=["<project_tag>", "<area>"],   # e.g. ["pydcmvn-extension", "harness"]
+  priority=7
+)
+
+# For each bug fix or error encountered:
+nmem_remember(
+  content="ERROR: <what happened>. ROOT CAUSE: <why>. FIX: <what fixed it>.",
+  type="error",
+  tags=["<project_tag>", "<module>"],  # e.g. ["pydcmvn-extension", "validate"]
+  priority=7
+)
+
+# For each new pattern or insight discovered:
+nmem_remember(
+  content="INSIGHT: <what was learned>. CONTEXT: <when this applies>.",
+  type="insight",
+  tags=["<project_tag>", "<area>"],    # e.g. ["pydcmvn-extension", "architecture"]
+  priority=6
+)
+
+# LAST — session summary (always call, even if nothing else was stored):
+nmem_auto(action="process", text="<brief session summary>")
+```
+
+---
+
+## Step 6 — GitNexus Re-index (MANDATORY for code-change sessions)
+
+Skip this step ONLY if the session was docs-only or setup/config-only (no
+`.cs`, `.js`, `.jsx`, `.ts`, `.tsx`, `.py` source files changed). Otherwise,
+**always run** the re-index to keep the code knowledge graph fresh.
+
+### 6.1 — Re-analyze the repo
+
+**Option A — CLI (when `npx gitnexus` is available):**
+
+```bash
+npx gitnexus analyze
+```
+
+**Option B — MCP (when GitNexus is available as MCP server only):**
+
+```
+CallMcpTool server="user-gitnexus" toolName="analyze"
+  args={ "repo": "<gitnexus_repo_name>" }
+```
+
+This regenerates the symbol graph (`.gitnexus/` directory). Check the
+output for the updated node/edge counts. Use `--force` (CLI) or
+`"force": true` (MCP) only when the index appears corrupted or out-of-sync.
+If the index previously had embeddings (`stats.embeddings > 0` in
+`.gitnexus/meta.json`), add `--embeddings` (CLI) or `"embeddings": true` (MCP).
+
+### 6.2 — Refresh bridge data (if bridge script exists)
+
+Use the GitNexus repo name from `project-namespace.mdc` (extracted in Step 0).
+**Skip this step entirely if the bridge script does not exist.** Check first:
+
+```bash
+# Only run if the bridge script is present
+if [ -f .cursor/skills/.global/gitnexus/gitnexus_bridge.py ]; then
+  python .cursor/skills/.global/gitnexus/gitnexus_bridge.py --repo <gitnexus_repo_name>
+fi
+```
+
+Verify `memory-bank/codebaseGraph.md` and
+`memory-bank/codebase_graph_summary.json` are updated (if those files exist).
+
+### 6.3 — Verify freshness
+
+After re-index, read `gitnexus://repo/<gitnexus_repo_name>/context` (MCP
+resource) or check `.gitnexus/meta.json` timestamp, and confirm the
+`lastAnalyzed` timestamp is from this session.
+
+---
+
+## Step 7 — Cross-Check Verification
+
+After all updates, verify consistency:
+
+- [ ] `progress.md` and `activeContext.md` describe the same state (if both exist)
+- [ ] `decisionLog.md` has entries for all ADRs in `docs/decisions/`
+- [ ] Serena memories and memory-bank describe the same codebase structure
+- [ ] No resolved Known Issues remain in activeContext or progress
+- [ ] Story statuses in `activeContext.md` match `docs/stories/backlog.md` (if present)
+- [ ] `docs/TEST_MATRIX.md` reflects current validation reality
+
+---
+
+## Step 8 — Summary + Confirm
+
+Ensure `nmem_auto(action="process")` was called in Step 5 (it must be the
+last persistence action before this summary).
+
+Write a summary of what was synced and call interactive_feedback
+(Cursor only — requires the `user-mcp-feedback-enhanced` MCP server):
+
+```
+CallMcpTool server="user-mcp-feedback-enhanced" toolName="interactive_feedback"
+  args={
+    "project_directory": "<project_root>",
+    "summary": "<what was updated, what was skipped, any blockers>",
+    "timeout": 36000
+  }
+```
+
+> **No MCP layer available**: do not fabricate this call. End the session
+> with a plain written summary to the user instead, explicitly stating
+> that `interactive_feedback` and Neural Memory persistence (Step 5) were
+> unavailable this session and what was done in their place.

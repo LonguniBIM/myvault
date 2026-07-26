@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rtk ls *)",
+      "Read(//d/01_DCMvn/Workspace/00_Reference/03_Setup/harness_template/.cursor/**)",
+      "Bash(find /d -iname \"end-of-session-sync.mdc\")",
+      "Read(//d/wiki/**)",
+      "Read(//d/01_DCMvn/**)",
+      "Bash(rtk read *)",
+      "Bash(bash \"d:\\\\01_DCMvn\\\\Workspace\\\\00_Reference\\\\03_Setup\\\\harness_template\\\\scripts\\\\install-harness.sh\" \\\\\n  --greenfield \\\\\n  --project-name \"Webpage Complete Content Extractor\" \\\\\n  --project-tag \"webpage-extractor\" \\\\\n  --directory \"D:\\\\wiki\\\\.shared\\\\tools\\\\webpage-content-extractor\" \\\\\n  --source-dir \"d:\\\\01_DCMvn\\\\Workspace\\\\00_Reference\\\\03_Setup\\\\harness_template\" \\\\\n  --yes)",
+      "Bash(cp \"D:\\\\wiki\\\\BIM_ISO\\\\PLAN_Webpage_Complete_Content_Extractor.md\" \"D:\\\\wiki\\\\.shared\\\\tools\\\\webpage-content-extractor\\\\docs\\\\PLAN.md\")",
+      "Bash(cp \"D:\\\\wiki\\\\BIM_ISO\\\\SPEC_Webpage_Complete_Content_Extractor.md\" \"D:\\\\wiki\\\\.shared\\\\tools\\\\webpage-content-extractor\\\\docs\\\\SPEC.md\")",
+      "Bash(echo \"exit=$?\")",
+      "Bash(python -c \"import bs4, lxml, pydantic, docx, PIL; print\\('all deps present'\\)\")",
+      "Bash(python -c \"import typer; print\\(typer.__version__\\)\")",
+      "Bash(python -)"
+    ]
+  }
+}

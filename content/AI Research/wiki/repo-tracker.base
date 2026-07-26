@@ -1,0 +1,60 @@
+filters:
+  and:
+    - type == "entity"
+    - file.folder == "wiki/entities"
+formulas:
+  is_active: if(status == "active", "✅", "⚠️")
+properties:
+  title:
+    displayName: Repo Name
+  repo_url:
+    displayName: URL
+  author:
+    displayName: Author
+  language:
+    displayName: Language
+  stars:
+    displayName: Stars
+  license:
+    displayName: License
+  use_case:
+    displayName: Use Case
+  status:
+    displayName: Status
+  last_commit:
+    displayName: Last Commit
+  formula.is_active:
+    displayName: Active?
+views:
+  - type: table
+    name: All Repos
+    order:
+      - title
+      - formula.is_active
+      - stars
+      - language
+      - use_case
+      - author
+      - last_commit
+    summaries:
+      stars: Sum
+  - type: cards
+    name: Repo Cards
+    order:
+      - title
+      - author
+      - stars
+      - use_case
+      - language
+  - type: table
+    name: By Use Case
+    groupBy:
+      property: use_case
+      direction: ASC
+    order:
+      - title
+      - use_case
+      - stars
+      - language
+    summaries:
+      stars: Max

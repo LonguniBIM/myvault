@@ -1,0 +1,357 @@
+---
+description: ".NET/C# coding standards and modern language features — naming, async patterns, error handling, DI, performance. Apply when writing or reviewing C# code."
+globs: ["**/*.cs", "**/*.csproj", "**/*.sln"]
+alwaysApply: false
+---
+
+# .NET/C# Standards
+
+## Pre-Check: C# Version Compatibility Gate
+
+> **MANDATORY before applying any code pattern from this rule.**
+>
+> 1. Find the nearest `*.csproj` file for the file being edited.
+> 2. Read `<TargetFramework>` and (if present) `<LangVersion>`.
+> 3. Use the table below to determine the applicable C# version.
+> 4. **Skip any section whose version tag exceeds the project's C# version.**
+
+| TargetFramework | Default C# | Available features |
+|-----------------|-----------|-------------------|
+| `net48` / `net472` / `net461` | 7.3 | No records, no primary constructors, no nullable annotations (unless `<LangVersion>` overridden), no collection expressions, no pattern matching `is not`, no `switch` expressions |
+| `net48` + `<LangVersion>8.0</LangVersion>` | 8.0 | + Nullable annotations, `switch` expressions, `using` declarations, default interface methods |
+| `net48` + `<LangVersion>9.0</LangVersion>` | 9.0 | + Records, pattern matching (`is not`, `and`, `or`), target-typed `new()` |
+| `net6.0` / `net7.0` | 10 / 11 | + Global usings, file-scoped namespaces, raw string literals |
+| `net8.0` | 12 | + Primary constructors, collection expressions (`[]`), `ArgumentException.ThrowIfNullOrWhiteSpace` |
+| `net9.0` | 13 | + All current features |
+
+**If `<LangVersion>` is not set**, use the default for the target framework.
+**If in doubt**, prefer the traditional (lower-version) pattern — it always works.
+
+---
+
+## Compatibility Note
+
+> These standards target **modern C#** (C# 10+, .NET 6+). For **.NET Framework 4.x**
+> projects (C# 7.3), skip sections marked with **(C# 10+)** or **(C# 12+)**.
+> Check the project's `*.csproj` `<TargetFramework>` and `<LangVersion>` to
+> determine which features are available.
+
+## Core Principles
+- **SOLID Principles**: Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion
+- **Modern C#**: Use modern C# features when the target framework supports them (see Compatibility Note)
+- **Performance**: Optimize for memory efficiency and execution speed
+- **Maintainability**: Write self-documenting, testable code
+
+## Naming Conventions
+```csharp
+// PascalCase for public members
+public class ElementProcessor
+{
+    public void ProcessElements() { }
+    public string ElementName { get; set; }
+}
+
+// camelCase for private fields and local variables
+private readonly IElementService _elementService;
+private bool _isProcessing;
+
+// Interfaces prefixed with 'I'
+public interface IElementProcessor
+{
+    Task<ProcessResult> ProcessAsync(IEnumerable<Element> elements);
+}
+
+// Constants and enums
+public const string DefaultElementName = "Unnamed Element";
+public enum ProcessingStatus { NotStarted, InProgress, Completed, Failed }
+```
+
+## Modern C# Features
+
+> **(C# 12+)** The features below require .NET 8+ / C# 12+.
+> For .NET Framework 4.x projects, use traditional constructors and classes instead.
+```csharp
+// Primary constructors (C# 12+) - Optional, not required
+// Use when it simplifies code, traditional constructors are also fine
+public class ElementService(ILogger<ElementService> logger, IConfiguration configuration) : IElementService
+{
+    public async Task<ProcessResult> ProcessAsync(Element element)
+    {
+        logger.LogInformation("Processing element {ElementId}", element.Id);
+        // Implementation
+    }
+}
+
+// Traditional constructor (still widely used in codebase)
+public class ElementService : IElementService
+{
+    private readonly ILogger<ElementService> _logger;
+    private readonly IConfiguration _configuration;
+    
+    public ElementService(ILogger<ElementService> logger, IConfiguration configuration)
+    {
+        _logger = logger;
+        _configuration = configuration;
+    }
+}
+
+// Record types for immutable data (C# 9+ / .NET 5+)
+public record ElementInfo(
+    ElementId Id,
+    string Name,
+    string Category,
+    BoundingBoxXYZ BoundingBox
+);
+
+// .NET Framework 4.x alternative: use a sealed class with readonly properties
+// public sealed class ElementInfo
+// {
+//     public ElementId Id { get; }
+//     public string Name { get; }
+//     public ElementInfo(ElementId id, string name) { Id = id; Name = name; }
+// }
+
+// Record with validation
+public record CreateElementRequest(string Name, string Category)
+{
+    public CreateElementRequest(string Name, string Category) : this(Name, Category)
+    {
+        ArgumentException.ThrowIfNullOrWhiteSpace(Name);
+        ArgumentException.ThrowIfNullOrWhiteSpace(Category);
+    }
+}
+```
+
+## Nullable Reference Types
+
+> **(C# 8+)** Nullable annotations require C# 8+ (.NET Core 3.1+ or
+> .NET Framework 4.8 with `<LangVersion>8.0</LangVersion>` and `<Nullable>enable</Nullable>`).
+```csharp
+// Enable in project file
+<PropertyGroup>
+    <Nullable>enable</Nullable>
+</PropertyGroup>
+
+// Use nullable annotations
+public class ElementValidator
+{
+    public ValidationResult? ValidateElement(Element? element)
+    {
+        if (element is null)
+            return null;
+            
+        return new ValidationResult(element.IsValidObject, GetValidationMessage(element));
+    }
+    
+    private string GetValidationMessage(Element element) => 
+        element.IsValidObject ? "Valid" : "Invalid element";
+}
+
+// Note: Not all projects have nullable enabled yet
+// Apply nullable annotations when working on new code or refactoring
+```
+
+## Async/Await Patterns
+```csharp
+// Always use ConfigureAwait(false) in library code
+public async Task<ProcessResult> ProcessElementsAsync(IEnumerable<Element> elements)
+{
+    var results = new List<ElementResult>();
+    
+    foreach (var element in elements)
+    {
+        var result = await ProcessSingleElementAsync(element).ConfigureAwait(false);
+        results.Add(result);
+    }
+    
+    return new ProcessResult(results);
+}
+
+// Use ValueTask for frequently called methods
+public ValueTask<bool> IsElementValidAsync(Element element)
+{
+    if (element.IsValidObject)
+        return ValueTask.FromResult(true);
+        
+    return ValidateElementSlowAsync(element);
+}
+
+// Cancellation support
+public async Task<ProcessResult> ProcessElementsAsync(
+    IEnumerable<Element> elements, 
+    CancellationToken cancellationToken = default)
+{
+    foreach (var element in elements)
+    {
+        cancellationToken.ThrowIfCancellationRequested();
+        // Process element
+    }
+}
+```
+
+## Error Handling
+```csharp
+// Use specific exception types
+public class ElementProcessingException : Exception
+{
+    public ElementId ElementId { get; }
+    
+    public ElementProcessingException(ElementId elementId, string message) 
+        : base(message)
+    {
+        ElementId = elementId;
+    }
+}
+
+// Guard clauses for validation (C# 10+ for ThrowIfNull; .NET Framework: use manual null check)
+public void ProcessElement(Element element)
+{
+    ArgumentNullException.ThrowIfNull(element);
+    
+    if (!element.IsValidObject)
+        throw new ArgumentException("Element is not valid", nameof(element));
+        
+    // Processing logic
+}
+
+// Result pattern for operations that can fail (C# 9+ for records; .NET Framework: use class)
+public record Result<T>
+{
+    public bool IsSuccess { get; init; }
+    public T? Value { get; init; }
+    public string? Error { get; init; }
+    
+    public static Result<T> Success(T value) => new() { IsSuccess = true, Value = value };
+    public static Result<T> Failure(string error) => new() { IsSuccess = false, Error = error };
+}
+```
+
+## Dependency Injection
+```csharp
+// Extension method for service registration
+public static class ServiceCollectionExtensions
+{
+    public static IServiceCollection AddElementServices(this IServiceCollection services)
+    {
+        services.AddScoped<IElementProcessor, ElementProcessor>();
+        services.AddScoped<IElementValidator, ElementValidator>();
+        services.AddSingleton<IElementCache, ElementCache>();
+        
+        return services;
+    }
+}
+
+// Service interfaces for testability
+public interface IElementProcessor
+{
+    Task<ProcessResult> ProcessAsync(IEnumerable<Element> elements, CancellationToken cancellationToken = default);
+    Task<ValidationResult> ValidateAsync(Element element);
+}
+
+// Implementation with dependency injection (C# 12+ primary constructor)
+// .NET Framework alternative: use traditional constructor pattern above
+public class ElementProcessor(
+    IElementValidator validator,
+    ILogger<ElementProcessor> logger) : IElementProcessor
+{
+    public async Task<ProcessResult> ProcessAsync(
+        IEnumerable<Element> elements, 
+        CancellationToken cancellationToken = default)
+    {
+        logger.LogInformation("Starting element processing");
+        // Implementation
+    }
+}
+```
+
+## Performance Optimization
+```csharp
+// Use appropriate collection types
+public class ElementCache
+{
+    private readonly ConcurrentDictionary<ElementId, ElementInfo> _cache = new();
+    private readonly Dictionary<string, List<ElementId>> _categoryIndex = new();
+    
+    // Use spans for performance-critical operations
+    public void ProcessElementIds(ReadOnlySpan<ElementId> elementIds)
+    {
+        foreach (var id in elementIds)
+        {
+            // Process each ID
+        }
+    }
+    
+    // Use collection expressions (C# 12+)
+    // .NET Framework alternative: return elementIds.Select(id => _cache[id]).ToList();
+    public List<ElementInfo> GetElementsByCategory(string category)
+    {
+        if (!_categoryIndex.TryGetValue(category, out var elementIds))
+            return [];
+            
+        return [.. elementIds.Select(id => _cache[id])];
+    }
+}
+
+// Implement IDisposable for resource cleanup
+public class ElementProcessor : IElementProcessor, IDisposable
+{
+    private readonly Timer _cleanupTimer;
+    private bool _disposed;
+    
+    public ElementProcessor()
+    {
+        _cleanupTimer = new Timer(Cleanup, null, TimeSpan.FromMinutes(5), TimeSpan.FromMinutes(5));
+    }
+    
+    public void Dispose()
+    {
+        if (_disposed) return;
+        
+        _cleanupTimer?.Dispose();
+        _disposed = true;
+    }
+}
+```
+
+## XML Documentation
+```csharp
+/// <summary>
+/// Processes a collection of Revit elements according to specified criteria.
+/// </summary>
+/// <param name="elements">The elements to process.</param>
+/// <param name="criteria">The processing criteria to apply.</param>
+/// <param name="cancellationToken">Token to cancel the operation.</param>
+/// <returns>A task representing the processing result.</returns>
+/// <exception cref="ArgumentNullException">Thrown when elements or criteria is null.</exception>
+/// <exception cref="ElementProcessingException">Thrown when processing fails.</exception>
+public async Task<ProcessResult> ProcessElementsAsync(
+    IEnumerable<Element> elements,
+    ProcessingCriteria criteria,
+    CancellationToken cancellationToken = default)
+{
+    // Implementation
+}
+```
+
+## Code Analysis
+```xml
+<!-- Enable code analysis in project file -->
+<PropertyGroup>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsNotAsErrors>CS1591</WarningsNotAsErrors> <!-- Missing XML documentation -->
+</PropertyGroup>
+```
+
+## Best Practices
+- Use var for implicit typing when type is evident
+- Prefer pattern matching over traditional if-else chains
+- Use switch expressions for concise conditional logic
+- Implement proper disposal patterns with IDisposable
+- Use ConfigureAwait(false) in library code
+- Apply guard clauses for parameter validation
+- Use specific exception types for different error conditions
+- Write XML documentation for all public APIs
+- Enable nullable reference types for better null safety
+- Use modern collection initializers and expressions

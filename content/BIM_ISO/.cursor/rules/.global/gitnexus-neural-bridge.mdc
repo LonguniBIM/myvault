@@ -1,0 +1,112 @@
+---
+description: "Cross-reference GitNexus + Neural-Memory for high-risk code changes (hub nodes). Apply when modifying code with many dependents or when assessing blast radius."
+alwaysApply: false
+---
+
+# GitNexus x Neural-Memory Bridge
+
+## Purpose
+
+Combine **structural awareness** (GitNexus knowledge graph) with **experiential memory**
+(Neural-Memory past decisions, errors, insights) to make safer, more informed code changes.
+
+## Hub Node Threshold
+
+A **hub node** is any symbol with **15+ outgoing connections** in the GitNexus graph.
+Consult `memory-bank/codebaseGraph.md` for the current hub list, or run:
+```
+gitnexus impact --target <symbol> --direction upstream --repo <repo>
+```
+
+## Before Modifying Code
+
+### Step 1 — Recall experience
+```
+nmem_recall("<symbol or module name>")
+```
+Check for past bugs, decisions, or warnings related to the target.
+
+### Step 2 — Check structural impact
+```
+gitnexus impact(target="<symbol>", direction="upstream")
+```
+Identify what depends on this symbol (d=1 will break, d=2 likely affected).
+
+### Step 3 — Cross-reference and present
+Combine both signals into a risk summary for the user:
+- Neural-Memory says: "<past experience or none>"
+- GitNexus says: "<N dependents, risk level, affected processes>"
+- Recommendation: proceed / proceed with caution / discuss first
+
+### Step 4 — Get confirmation before high-risk changes
+If the target is a hub node (>= 15 connections) or Neural-Memory flagged a past issue,
+present the combined risk assessment and wait for user confirmation.
+
+## After Completing a Code Change
+
+### Step 5 — Store outcome with graph context
+```
+nmem_remember(
+  content="Changed <symbol> in <file>. Reason: <why>. Impact: <N> dependents. Process affected: <flow>.",
+  type="decision" or "error",
+  tags=["<project>", "<module>", "hub-node", "blast-radius:<N>"]
+)
+```
+
+### Step 6 — Verify structural impact
+```
+gitnexus detect_changes(scope="unstaged" or "staged")
+```
+Confirm the change doesn't unexpectedly affect processes outside the intended scope.
+
+## When to Store Graph Insights
+
+| Trigger | Memory Type | Example Content |
+|---------|-------------|-----------------|
+| New hub node discovered | `insight` | "ReportMerger.cs has 22 connections — acts as data aggregator across all validators" |
+| Architectural pattern found | `insight` | "IfcExportValidation cluster has perfect 1.0 cohesion — self-contained module" |
+| Bug fix on hub node | `error` | "ERROR: Changed App.xaml.cs DI registration order broke MasterViewModel. SOLUTION: register services before viewmodels" |
+| Refactoring decision | `decision` | "DECISION: Extracted ValidateModel to separate interface. REASON: reduce ValidationModuleBase blast radius (22 connections)" |
+
+## Bridge Refresh
+
+After major refactors or new module additions, refresh the bridge data.
+The bridge script **automatically manages the GitNexus server lifecycle**:
+it checks if `gitnexus serve` is running, starts it if needed, and stops it after completion.
+
+```bash
+# Auto-start/stop server (default behavior):
+python .cursor/skills/.global/gitnexus/gitnexus_bridge.py --repo <name>
+
+# Custom port:
+python .cursor/skills/.global/gitnexus/gitnexus_bridge.py --repo <name> --port 5000
+
+# Skip auto-serve (if server is already running externally):
+python .cursor/skills/.global/gitnexus/gitnexus_bridge.py --repo <name> --no-auto-serve
+```
+
+This regenerates `memory-bank/codebase_graph_summary.json` and `memory-bank/codebaseGraph.md`.
+
+**Note:** The bridge uses a hybrid strategy — HTTP API for metadata (repos, clusters, processes)
+and CLI subprocess (`npx gitnexus cypher`) for graph queries. This avoids LadybugDB lock
+conflicts when the MCP server is also active.
+
+## Workflow Diagram
+
+```
+User requests code change
+  │
+  ├─► nmem_recall(keywords)          — past experience
+  ├─► gitnexus impact(target)        — structural blast radius
+  │
+  ▼
+Cross-reference both signals
+  │
+  ├─ Hub node OR past issue? ──► Present risk, ask confirmation
+  │
+  ▼
+Execute change
+  │
+  ├─► nmem_remember(outcome + graph context)
+  └─► gitnexus detect_changes()      — verify scope
+```

@@ -1,0 +1,120 @@
+[
+  {
+    "type": "suggestion",
+    "title": "Add cross-references to sources/safishamsi_graphify_ AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, GitHub Copilot CLI, OpenClaw, Factory Droid, Trae, Google Antigravity). Turn any folder of code, docs, papers, image.md",
+    "description": "This page has no outbound [[wikilinks]]. Consider adding cross-references to related entities and concepts.",
+    "affectedPages": [
+      "sources/safishamsi_graphify_ AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, GitHub Copilot CLI, OpenClaw, Factory Droid, Trae, Google Antigravity). Turn any folder of code, docs, papers, image.md"
+    ],
+    "options": [
+      {
+        "label": "Open & Edit",
+        "action": "open:sources/safishamsi_graphify_ AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, GitHub Copilot CLI, OpenClaw, Factory Droid, Trae, Google Antigravity). Turn any folder of code, docs, papers, image.md"
+      },
+      {
+        "label": "Skip",
+        "action": "Skip"
+      }
+    ],
+    "id": "review-2",
+    "resolved": true,
+    "createdAt": 1777442902887,
+    "resolvedAction": "Skip"
+  },
+  {
+    "type": "suggestion",
+    "title": "Add cross-references to sources/github---safishamsi-graphify-ai-coding-assistant-s-20260429.md",
+    "description": "This page has no outbound [[wikilinks]]. Consider adding cross-references to related entities and concepts.",
+    "affectedPages": [
+      "sources/github---safishamsi-graphify-ai-coding-assistant-s-20260429.md"
+    ],
+    "options": [
+      {
+        "label": "Open & Edit",
+        "action": "open:sources/github---safishamsi-graphify-ai-coding-assistant-s-20260429.md"
+      },
+      {
+        "label": "Skip",
+        "action": "Skip"
+      }
+    ],
+    "id": "review-3",
+    "resolved": true,
+    "createdAt": 1777442909727,
+    "resolvedAction": "Skip"
+  },
+  {
+    "type": "suggestion",
+    "title": "Add cross-references to queries/saved-query-2026-04-29-030750.md",
+    "description": "This page has no outbound [[wikilinks]]. Consider adding cross-references to related entities and concepts.",
+    "affectedPages": [
+      "queries/saved-query-2026-04-29-030750.md"
+    ],
+    "options": [
+      {
+        "label": "Open & Edit",
+        "action": "open:queries/saved-query-2026-04-29-030750.md"
+      },
+      {
+        "label": "Skip",
+        "action": "Skip"
+      }
+    ],
+    "id": "review-4",
+    "resolved": true,
+    "createdAt": 1777442910559,
+    "resolvedAction": "Skip"
+  },
+  {
+    "type": "confirm",
+    "title": "Fix broken link in concepts/karpathy-llm-wiki-pattern.md",
+    "description": "Broken link: [[wikilink]] — target page not found.",
+    "affectedPages": [
+      "concepts/karpathy-llm-wiki-pattern.md"
+    ],
+    "options": [
+      {
+        "label": "Open & Edit",
+        "action": "open:concepts/karpathy-llm-wiki-pattern.md"
+      },
+      {
+        "label": "Delete Page",
+        "action": "delete:D:/wiki/AI Research/wiki/concepts/karpathy-llm-wiki-pattern.md"
+      },
+      {
+        "label": "Skip",
+        "action": "Skip"
+      }
+    ],
+    "id": "review-5",
+    "resolved": true,
+    "createdAt": 1777442911917,
+    "resolvedAction": "open:concepts/karpathy-llm-wiki-pattern.md"
+  },
+  {
+    "type": "confirm",
+    "title": "Fix broken link in concepts/karpathy-llm-wiki-pattern.md",
+    "description": "Broken link: [[wikilink]] — target page not found.",
+    "affectedPages": [
+      "concepts/karpathy-llm-wiki-pattern.md"
+    ],
+    "options": [
+      {
+        "label": "Open & Edit",
+        "action": "open:concepts/karpathy-llm-wiki-pattern.md"
+      },
+      {
+        "label": "Delete Page",
+        "action": "delete:D:/wiki/AI Research/wiki/concepts/karpathy-llm-wiki-pattern.md"
+      },
+      {
+        "label": "Skip",
+        "action": "Skip"
+      }
+    ],
+    "id": "review-6",
+    "resolved": true,
+    "createdAt": 1777442919776,
+    "resolvedAction": "Skip"
+  }
+]

@@ -1,0 +1,299 @@
+{
+  "audio": [
+    {
+      "duration_label": "01:14",
+      "duration_seconds": 73.793016,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 5 - Making Change Happen - BIM ISO 19650 12 Project Deliv.mp3",
+      "placeholder_index": 1,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:32",
+      "duration_seconds": 32.275737,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 5 - Making Change Happen - BIM ISO 19650 12 Project Deliv (1).mp3",
+      "placeholder_index": 2,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:17",
+      "duration_seconds": 16.997007,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 3,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:39",
+      "duration_seconds": 39.334603,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 5 - Making Change Happen - BIM ISO 19650 12 Project Deliv (2).mp3",
+      "placeholder_index": 4,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:14",
+      "duration_seconds": 14.303492,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 5,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:16",
+      "duration_seconds": 15.812789,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 6,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:42",
+      "duration_seconds": 41.540499,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 5 - Making Change Happen - BIM ISO 19650 12 Project Deliv (3).mp3",
+      "placeholder_index": 7,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:23",
+      "duration_seconds": 23.405714,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 8,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:20",
+      "duration_seconds": 19.504762,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 9,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:17",
+      "duration_seconds": 16.764807,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 10,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "01:46",
+      "duration_seconds": 106.393832,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 5 - Making Change Happen - BIM ISO 19650 12 Project Deliv (4).mp3",
+      "placeholder_index": 11,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    }
+  ],
+  "counts": {
+    "audio_matched": 5,
+    "audio_referenced": 11,
+    "audio_transcribed": 5,
+    "block_types": {
+      "audio": 11,
+      "button": 1,
+      "heading": 13,
+      "image": 15,
+      "quote": 6,
+      "rich_text": 12,
+      "unknown": 2
+    },
+    "blocks": 60,
+    "images_found": 15,
+    "images_missing": 0,
+    "warnings": 6
+  },
+  "images": [
+    {
+      "exists": true,
+      "height": 820,
+      "mime": "image/png",
+      "output_name": "bhRV6rm9jISniLeW_rCJMLl7vh8FoZZ8E.png",
+      "sha256": "c9d603d2917781b3fbcd67be9da5551cbeb22160d9bcf7e570c78ed1fabca5a1",
+      "src_ref": "./Lesson 5 - Making Change Happen - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/bhRV6rm9jISniLeW_rCJMLl7vh8FoZZ8E.png",
+      "width": 713
+    },
+    {
+      "exists": true,
+      "height": 885,
+      "mime": "image/png",
+      "output_name": "mfkCjrgxzj8aK29e_y-eRgsUt71nFqi1l.png",
+      "sha256": "2891d34cfc8247e149f78641b9b592068f9ccf5990510cbed7c211c1b229a458",
+      "src_ref": "./Lesson 5 - Making Change Happen - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/mfkCjrgxzj8aK29e_y-eRgsUt71nFqi1l.png",
+      "width": 900
+    },
+    {
+      "exists": true,
+      "height": 601,
+      "mime": "image/png",
+      "output_name": "3x9TJNwPK8p_rgi1_CrSiTYju7gI4PI0i.png",
+      "sha256": "50318c5e7547201a2b4ffb64678659cd2eaac76fcf35a52d7674570f22fd74c7",
+      "src_ref": "./Lesson 5 - Making Change Happen - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/3x9TJNwPK8p_rgi1_CrSiTYju7gI4PI0i.png",
+      "width": 1680
+    },
+    {
+      "exists": true,
+      "height": 613,
+      "mime": "image/png",
+      "output_name": "uIzpTrhQaCnk7V_b_TVQuL24wK6AUEMYC.png",
+      "sha256": "73e5ec7bb15bbdafe3a3c5660328273c73080bfa9c37f121bca1cbd512139c85",
+      "src_ref": "./Lesson 5 - Making Change Happen - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/uIzpTrhQaCnk7V_b_TVQuL24wK6AUEMYC.png",
+      "width": 1680
+    },
+    {
+      "exists": true,
+      "height": 733,
+      "mime": "image/jpeg",
+      "output_name": "Qt0OpruH1B6k1BDY_LxT0tvZ9r86Nx9nr.jpg",
+      "sha256": "7e4960dc117416930cd1068cb93f63cbebfed846564effb687d2b44dd60a91cb",
+      "src_ref": "./Lesson 5 - Making Change Happen - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/Qt0OpruH1B6k1BDY_LxT0tvZ9r86Nx9nr.jpg",
+      "width": 677
+    },
+    {
+      "exists": true,
+      "height": 892,
+      "mime": "image/jpeg",
+      "output_name": "Is6Mg3SRn3yG9WEJ_-xCLS6NLxowHa-Q_.jpg",
+      "sha256": "d5223c76ad8a31d0fa306a439303b42459a4aec025adccbd95d8a6f8f3216a78",
+      "src_ref": "./Lesson 5 - Making Change Happen - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/Is6Mg3SRn3yG9WEJ_-xCLS6NLxowHa-Q_.jpg",
+      "width": 656
+    },
+    {
+      "exists": true,
+      "height": 738,
+      "mime": "image/jpeg",
+      "output_name": "sDdQYJQfW9P7u7q8_yhmFz2Nqzg6yejOS.jpg",
+      "sha256": "84ce7d03b2c0274589c74a9114ee4539ede2c03d9de89a149ead06182c6a0c64",
+      "src_ref": "./Lesson 5 - Making Change Happen - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/sDdQYJQfW9P7u7q8_yhmFz2Nqzg6yejOS.jpg",
+      "width": 868
+    },
+    {
+      "exists": true,
+      "height": 891,
+      "mime": "image/jpeg",
+      "output_name": "U2qltd3f80w2m2YG_ZD8SVHivRWo-Q8qq.jpg",
+      "sha256": "36cf0e73d3b545cbaefdea70ee34d1ba1e1972665fa10c25a8ee6686c73d9fa4",
+      "src_ref": "./Lesson 5 - Making Change Happen - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/U2qltd3f80w2m2YG_ZD8SVHivRWo-Q8qq.jpg",
+      "width": 632
+    },
+    {
+      "exists": true,
+      "height": 1067,
+      "mime": "image/jpeg",
+      "output_name": "XHbVRrUPTP7qb3TZ_3O7v6-m63tRo27hk.jpg",
+      "sha256": "1c90c8abd1c6c4b50649db54322f4a2e6f815a7a91a6e1e9b193ac12e2f52ab2",
+      "src_ref": "./Lesson 5 - Making Change Happen - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/XHbVRrUPTP7qb3TZ_3O7v6-m63tRo27hk.jpg",
+      "width": 752
+    },
+    {
+      "exists": true,
+      "height": 861,
+      "mime": "image/jpeg",
+      "output_name": "D9Jam8utTypDTU34_Or4ddynjiMDy_mfb.jpg",
+      "sha256": "d174ed37e555d22052bee49e185c5962275f8c5e6e24caf148181c996544aa40",
+      "src_ref": "./Lesson 5 - Making Change Happen - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/D9Jam8utTypDTU34_Or4ddynjiMDy_mfb.jpg",
+      "width": 606
+    },
+    {
+      "exists": true,
+      "height": 968,
+      "mime": "image/jpeg",
+      "output_name": "2GMxe6GS8f1iReZV_1RwbdAsceoOztv5H.jpg",
+      "sha256": "2c71f53b69dee6c7e288c6cba7f7143eda3b1fb724bb66422e3114d84ee7d109",
+      "src_ref": "./Lesson 5 - Making Change Happen - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/2GMxe6GS8f1iReZV_1RwbdAsceoOztv5H.jpg",
+      "width": 1318
+    },
+    {
+      "exists": true,
+      "height": 508,
+      "mime": "image/jpeg",
+      "output_name": "Xg3hi55JAwpn1mSx_sG8lUKsL4_JO5Yrz.jpg",
+      "sha256": "bc1c605ef3b9800d30dccf361e23159a55b3daf82199c90e0b4e8e5590fe3057",
+      "src_ref": "./Lesson 5 - Making Change Happen - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/Xg3hi55JAwpn1mSx_sG8lUKsL4_JO5Yrz.jpg",
+      "width": 869
+    },
+    {
+      "exists": true,
+      "height": 1074,
+      "mime": "image/jpeg",
+      "output_name": "Xf2YyvwhdlxNji4k_IUe7v2mCZ0PN28C9.jpg",
+      "sha256": "82f8bc7fb5496ded781802bdcd48cdf57d088f0ca758997b328936b01671af6b",
+      "src_ref": "./Lesson 5 - Making Change Happen - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/Xf2YyvwhdlxNji4k_IUe7v2mCZ0PN28C9.jpg",
+      "width": 777
+    },
+    {
+      "exists": true,
+      "height": 808,
+      "mime": "image/jpeg",
+      "output_name": "u0DZjPYyWQnbk9jD_laCJYaPmKP3DCNRA.jpg",
+      "sha256": "e46638d01c7f8045c26671951ab6984fb35b46c9e326670df6400432cf8b35df",
+      "src_ref": "./Lesson 5 - Making Change Happen - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/u0DZjPYyWQnbk9jD_laCJYaPmKP3DCNRA.jpg",
+      "width": 1228
+    },
+    {
+      "exists": true,
+      "height": 703,
+      "mime": "image/png",
+      "output_name": "hDPepadhcdPjR2fU_8_ToZMwRdW-zSger.png",
+      "sha256": "3857d986dae77858cb93d62a00d85af37386506353ccaf5d694e0b15b47cf669",
+      "src_ref": "./Lesson 5 - Making Change Happen - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/hDPepadhcdPjR2fU_8_ToZMwRdW-zSger.png",
+      "width": 627
+    }
+  ],
+  "schema_version": 1,
+  "source": {
+    "adapter": "rise",
+    "course": null,
+    "lesson_count": "Lesson 5 of 6",
+    "source_html": "Lesson 5 - Making Change Happen - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change.html",
+    "source_url": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/index.html#/lessons/zRiszo1gtjNgU7te0TlXKmmM3_yBFPeu",
+    "title": "Lesson 5 - Making Change Happen"
+  },
+  "warnings": [
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #3 (00:17s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #5 (00:14s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #6 (00:16s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #8 (00:23s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #9 (00:20s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #10 (00:17s)"
+    }
+  ]
+}

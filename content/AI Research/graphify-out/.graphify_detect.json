@@ -1,0 +1,42 @@
+{
+  "files": {
+    "code": [],
+    "document": [
+      "purpose.md",
+      "Sample.md",
+      "schema.md",
+      "wikilinks.md",
+      "raw\\sources\\github---forrestchang-andrej-karpathy-skills-a-sin-20260428.md",
+      "raw\\sources\\github---kepano-obsidian-skills-agent-skills-for-o-20260429.md",
+      "raw\\sources\\github---nashsu-llm-wiki-llm-wiki-is-a-cross-platf-20260429.md",
+      "raw\\sources\\github---safishamsi-graphify-ai-coding-assistant-s-20260429.md",
+      "wiki\\index.md",
+      "wiki\\log.md",
+      "wiki\\overview.md",
+      "wiki\\comparisons\\agent-skills-for-llm-coding.md",
+      "wiki\\comparisons\\llm-knowledge-base-tools.md",
+      "wiki\\concepts\\karpathy-llm-wiki-pattern.md",
+      "wiki\\concepts\\llm-agent-skills.md",
+      "wiki\\concepts\\llm-coding-guidelines.md",
+      "wiki\\concepts\\llm-knowledge-base.md",
+      "wiki\\entities\\andrej-karpathy-skills.md",
+      "wiki\\entities\\graphify.md",
+      "wiki\\entities\\llm-wiki.md",
+      "wiki\\entities\\obsidian-skills.md",
+      "wiki\\queries\\saved-query-2026-04-29-030750.md",
+      "wiki\\sources\\github---forrestchang-andrej-karpathy-skills-a-sin-20260428.md",
+      "wiki\\sources\\github---kepano-obsidian-skills-agent-skills-for-o-20260429.md",
+      "wiki\\sources\\github---nashsu-llm-wiki-llm-wiki-is-a-cross-platf-20260429.md",
+      "wiki\\sources\\github---safishamsi-graphify-ai-coding-assistant-s-20260429.md"
+    ],
+    "paper": [],
+    "image": [],
+    "video": []
+  },
+  "total_files": 26,
+  "total_words": 17030,
+  "needs_graph": false,
+  "warning": "Corpus is ~17,030 words - fits in a single context window. You may not need a graph.",
+  "skipped_sensitive": [],
+  "graphifyignore_patterns": 11
+}

@@ -1,0 +1,122 @@
+---
+description: "SWE Agent Skills & Agents dispatcher — /skill commands load methodologies, /review /security-review /test invoke specialist agents. Apply when user types /skill, /review, /security-review, /test, or mentions agent skills."
+globs:
+alwaysApply: false
+---
+# SWE Agent Skills & Agents — Quick Command Dispatcher
+
+When the user types a `/skill` command, **read and follow** the corresponding `SKILL.md` from `.cursor/skills/.global/agent-skills/<skill-name>/SKILL.md`.
+When the user types an agent command (`/review`, `/security-review`, `/test`), **adopt the persona** from `.cursor/skills/.global/agent-skills/agents/<agent>.md`.
+
+## Available Skill Commands
+
+| Command | Skill File Path | When to Use |
+|---------|----------------|-------------|
+| `/skill tdd` | `.cursor/skills/.global/agent-skills/test-driven-development/SKILL.md` | Writing tests first, bug reproduction, Prove-It Pattern |
+| `/skill review` | `.cursor/skills/.global/agent-skills/code-review-and-quality/SKILL.md` | Code review before merge, 5-axis quality check |
+| `/skill incremental` | `.cursor/skills/.global/agent-skills/incremental-implementation/SKILL.md` | Multi-file changes, vertical slicing, build in small steps |
+| `/skill debug` | `.cursor/skills/.global/agent-skills/debugging-and-error-recovery/SKILL.md` | Test failures, build breaks, runtime errors, systematic triage |
+| `/skill perf` | `.cursor/skills/.global/agent-skills/performance-optimization/SKILL.md` | Performance profiling, optimization, Core Web Vitals |
+| `/skill security` | `.cursor/skills/.global/agent-skills/security-and-hardening/SKILL.md` | Input validation, auth, secrets, OWASP prevention |
+| `/skill plan` | `.cursor/skills/.global/agent-skills/planning-and-task-breakdown/SKILL.md` | Task decomposition, dependency graphs, implementation ordering |
+| `/skill simplify` | `.cursor/skills/.global/agent-skills/code-simplification/SKILL.md` | Refactoring for clarity, reducing complexity, dead code removal |
+| `/skill ui` | `.cursor/skills/.global/agent-skills/frontend-ui-engineering/SKILL.md` | Building production UIs, accessibility, responsive design |
+| `/skill spec` | `.cursor/skills/.global/agent-skills/spec-driven-development/SKILL.md` | Writing specs before code, gated workflow, requirements clarity |
+| `/skill api` | `.cursor/skills/.global/agent-skills/api-and-interface-design/SKILL.md` | REST/GraphQL design, contracts, stable interfaces |
+| `/skill context` | `.cursor/skills/.global/agent-skills/context-engineering/SKILL.md` | Optimizing agent context, rules files, session management |
+| `/skill git` | `.cursor/skills/.global/agent-skills/git-workflow-and-versioning/SKILL.md` | Commits, branching, atomic changes, version control discipline |
+| `/skill browser` | `.cursor/skills/.global/agent-skills/browser-testing-with-devtools/SKILL.md` | Chrome DevTools, DOM inspection, runtime verification |
+| `/skill cicd` | `.cursor/skills/.global/agent-skills/ci-cd-and-automation/SKILL.md` | Build pipelines, deployment automation |
+| `/skill deprecation` | `.cursor/skills/.global/agent-skills/deprecation-and-migration/SKILL.md` | Safe removal, migration paths |
+| `/skill docs` | `.cursor/skills/.global/agent-skills/documentation-and-adrs/SKILL.md` | Architecture Decision Records, documentation |
+| `/skill idea` | `.cursor/skills/.global/agent-skills/idea-refine/SKILL.md` | Brainstorming, concept refinement |
+| `/skill ship` | `.cursor/skills/.global/agent-skills/shipping-and-launch/SKILL.md` | Launch checklists, release readiness |
+| `/skill source` | `.cursor/skills/.global/agent-skills/source-driven-development/SKILL.md` | Reading source code for understanding |
+| `/skill meta` | `.cursor/skills/.global/agent-skills/using-agent-skills/SKILL.md` | Meta-guide for combining skills |
+| `/skill list` | *(this file)* | Show all available skills |
+
+---
+
+## Specialist Agent Commands
+
+Agents are **personas** with specific expertise. When invoked, the agent reads its persona file and operates in that role.
+
+| Command | Agent File | Role | What It Does |
+|---------|-----------|------|-------------|
+| `/review` | `.cursor/skills/.global/agent-skills/agents/code-reviewer.md` | Staff Engineer | Five-axis code review (correctness, readability, architecture, security, performance). Outputs verdict + categorized findings. |
+| `/security-review` | `.cursor/skills/.global/agent-skills/agents/security-auditor.md` | Security Engineer | OWASP Top 10 audit, vulnerability detection, threat modeling. Outputs severity-classified findings with PoC. |
+| `/test` | `.cursor/skills/.global/agent-skills/agents/test-engineer.md` | QA Engineer | Test strategy design, coverage gap analysis, writes tests with Prove-It Pattern. |
+
+### How Agent Commands Work
+
+When `/review`, `/security-review`, or `/test` is invoked:
+1. Agent reads the persona `.md` file from `.cursor/skills/.global/agent-skills/agents/`
+2. Agent **adopts that persona** (Staff Engineer / Security Engineer / QA Engineer)
+3. Agent follows the review framework, output format, and rules defined in the persona
+4. Agent produces a structured report in the specified template
+
+### Pre-Merge Workflow (recommended)
+
+```
+/security-review       ← Step 1: check for vulnerabilities
+/review                ← Step 2: full five-axis code review
+/test                  ← Step 3: write missing tests / analyze coverage
+```
+
+---
+
+## How Skill Commands Work
+
+When `/skill <name>` is invoked:
+1. Agent reads the full `SKILL.md` file from the path listed above
+2. Agent follows the instructions, workflow, and checklists in that skill
+3. The skill content is loaded fresh each time (full detail, examples, anti-patterns)
+
+## Auto-Detection
+
+Even without explicit commands, if the task clearly matches a skill/agent domain, suggest loading it.
+**IMPORTANT**: Auto-detection only SUGGESTS in the Phase 1 feedback summary (per `mcp-mandatory-startup.mdc`). Do NOT load files before user confirmation. Loading happens in Phase 2 (Execution).
+
+- Bug report arrives → suggest `/skill debug` + `/skill tdd`
+- "Review this code" → suggest `/review` (agent) or `/skill review` (methodology)
+- "Check security" → suggest `/security-review` (agent)
+- "Write tests" → suggest `/test` (agent) or `/skill tdd` (methodology)
+- "Make this faster" → suggest `/skill perf`
+- "Build this feature" → suggest `/skill plan` + `/skill incremental`
+- "Add new endpoint" → suggest `/skill api`
+- "Simplify / refactor this" → suggest `/skill simplify`
+- "Prepare for launch" → suggest `/skill ship`
+- "Before merge" → suggest `/security-review` → `/review` → `/test`
+
+## Combination Patterns
+
+Skills and agents compose well. Common combos:
+- **New Feature**: `/skill spec` → `/skill plan` → `/skill incremental` → `/skill tdd` → `/review`
+- **Bug Fix**: `/skill debug` → `/skill tdd` (Prove-It Pattern) → `/review`
+- **Refactor**: `/skill simplify` → `/skill tdd` → `/review`
+- **Performance**: `/skill perf` → `/skill tdd` → `/review`
+- **Security Audit**: `/skill security` → `/security-review`
+- **Pre-Merge**: `/security-review` → `/review` → `/test`
+- **Release**: `/skill ship` → `/review` → `/skill cicd`
+
+## Usage
+
+User can invoke by:
+1. **Skill command**: `/skill tdd`, `/skill plan`, `/skill review` — loads methodology/workflow
+2. **Agent command**: `/review`, `/security-review`, `/test` — invokes specialist persona
+3. **Natural language**: "Review this code", "Check security", "Write tests for this"
+4. **Multiple**: `/skill tdd review` or `/security-review` then `/review`
+5. **List all**: `/skill list` shows this table
+
+### Skills vs Agents — When to Use Which
+
+| Need | Use Skill | Use Agent |
+|------|-----------|-----------|
+| Learn a methodology / workflow | `/skill review` (full guide) | — |
+| Get an actionable review report | — | `/review` (structured output) |
+| Understand security best practices | `/skill security` (guide) | — |
+| Audit code for vulnerabilities | — | `/security-review` (PoC findings) |
+| Learn TDD workflow | `/skill tdd` (methodology) | — |
+| Analyze test coverage gaps | — | `/test` (coverage report) |
+
+Source: [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) (cloned at `00_Reference/agent-skills/`)

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "7",
+    "role": "user",
+    "content": "hãy nói về llm_wiki",
+    "timestamp": 1777397826820,
+    "conversationId": "conv_1777397815332_v1z3ow"
+  },
+  {
+    "id": "8",
+    "role": "assistant",
+    "content": "# Về LLM Wiki\n\n## Định Nghĩa\n\nLLM Wiki là một **kho kiến thức được quản lý** dành cho các kho lưu trữ GitHub, được thiết kế để giúp nhanh chóng xác định công cụ phù hợp nhất cho bất kỳ trường hợp sử dụng nào [3].\n\n## Cách Hoạt Động\n\nLLM Wiki hoạt động thông qua quy trình 6 bước [3]:\n\n1. **Capture (Thu thập)** — Người dùng sử dụng tiện ích mở rộng **LLM Wiki Clipper** để clip các kho GitHub thú vị\n2. **Auto-Ingest (Nhập tự động)** — Nội dung được clip kích hoạt một đường ống hai bước: lưu trữ thô → trích xuất và phân loại do AI hỗ trợ\n3. **Mapping (Ánh xạ)** — Mỗi kho mới được so khớp với các mục nhập hiện có phục vụ mục đích tương tự\n4. **Comparison (So sánh)** — Các kho có trường hợp sử dụng chồng lấp được so sánh (ưu điểm, nhược điểm, thương vụ) trong các trang so sánh chuyên dụng\n5. **Decision (Quyết định)** — Các so sánh tạo ra một khuyến nghị phù hợp nhất với lý do\n6. **Query (Truy vấn)** — Người dùng đặt câu hỏi → hệ thống trả về câu trả lời dựa trên kho kiến thức\n\n## Trạng Thái Hiện Tại\n\nTheo [3], dự án vừa được khởi tạo với các thông số:\n- **1 kho** đã được nhập\n- **0 so sánh** được tạo\n- **0 quyết định** được đưa ra\n\n## Nguồn Gốc\n\nDự án được lấy cảm hứng từ **mô hình LLM Wiki của Andrej Karpathy** [3], được điều chỉnh đặc biệt để phân tích kho GitHub và lựa chọn công cụ.\n\n## Phạm Vi\n\nChỉ bao gồm các **kho lưu trữ GitHub công khai** được có thể truy cập. Nội dung từ các nguồn không phải GitHub nằm ngoài phạm vi [3].\n\n---\n\n<!-- cited: 1, 3 -->",
+    "timestamp": 1777397840092,
+    "conversationId": "conv_1777397815332_v1z3ow",
+    "references": [
+      {
+        "title": "Source: github---nashsu-llm-wiki-llm-wiki-is-a-cross-platf-20260429.md",
+        "path": "wiki/sources/github---nashsu-llm-wiki-llm-wiki-is-a-cross-platf-20260429.md"
+      },
+      {
+        "title": "Wiki Index",
+        "path": "wiki/index.md"
+      },
+      {
+        "title": "GitHub Repo Knowledge Base — Project Overview",
+        "path": "wiki/overview.md"
+      },
+      {
+        "title": "Research Log",
+        "path": "wiki/log.md"
+      },
+      {
+        "title": "Source: github---forrestchang-andrej-karpathy-skills-a-sin-20260428.md",
+        "path": "wiki/sources/github---forrestchang-andrej-karpathy-skills-a-sin-20260428.md"
+      }
+    ]
+  }
+]

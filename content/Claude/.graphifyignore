@@ -1,0 +1,5 @@
+node_modules/
+.obsidian/
+.llm-wiki/chats/
+graphify-out/cache/
+*.json

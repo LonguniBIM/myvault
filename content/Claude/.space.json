@@ -1,0 +1,66 @@
+﻿{
+    "name":  "Claude",
+    "type":  "knowledge-space",
+    "purpose":  "Claude Code Mastery Knowledge Base â€” research wiki on understanding, using, and optimizing Claude Code with extractable Skills",
+    "created":  "2025-11-01",
+    "shared_library":  "../.shared",
+    "bridge":  {
+                   "junctions":  [
+                                     {
+                                         "local":  "scripts",
+                                         "target":  "..\\.shared\\scripts",
+                                         "type":  "directory"
+                                     },
+                                     {
+                                         "local":  ".claude\\skills",
+                                         "target":  "..\\.shared\\claude-skills",
+                                         "type":  "directory"
+                                     },
+                                     {
+                                         "local":  ".claude\\commands",
+                                         "target":  "..\\.shared\\claude-commands",
+                                         "type":  "directory"
+                                     },
+                                     {
+                                         "local":  ".cursor\\rules\\tests",
+                                         "target":  "..\\.shared\\cursor-rules\\tests",
+                                         "type":  "directory"
+                                     }
+                                 ],
+                   "hardlinks":  [
+                                     {
+                                         "target":  "..\\.shared\\cursor-rules\\auto-ingest.mdc",
+                                         "local":  ".cursor\\rules\\auto-ingest.mdc"
+                                     },
+                                     {
+                                         "target":  "..\\.shared\\cursor-rules\\content-ingest-dispatcher.mdc",
+                                         "local":  ".cursor\\rules\\content-ingest-dispatcher.mdc"
+                                     },
+                                     {
+                                         "target":  "..\\.shared\\cursor-rules\\extract-content.mdc",
+                                         "local":  ".cursor\\rules\\extract-content.mdc"
+                                     },
+                                     {
+                                         "target":  "..\\.shared\\cursor-rules\\graphify-to-wiki.mdc",
+                                         "local":  ".cursor\\rules\\graphify-to-wiki.mdc"
+                                     },
+                                     {
+                                         "target":  "..\\.shared\\cursor-rules\\graphify.mdc",
+                                         "local":  ".cursor\\rules\\graphify.mdc"
+                                     },
+                                     {
+                                         "target":  "..\\.shared\\cursor-rules\\shared-library-guide.mdc",
+                                         "local":  ".cursor\\rules\\shared-library-guide.mdc"
+                                     },
+                                     {
+                                         "target":  "..\\.shared\\cursor-rules\\wiki-workspace-setup.mdc",
+                                         "local":  ".cursor\\rules\\wiki-workspace-setup.mdc"
+                                     }
+                                 ]
+               },
+    "space_specific":  {
+                           "features":  [
+
+                                        ]
+                       }
+}

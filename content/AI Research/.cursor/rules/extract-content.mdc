@@ -1,0 +1,59 @@
+---
+description: "Extract content from all file types (video, audio, images, PDFs, docs, YouTube) and ingest into wiki. Handles /extract-content and /extract-media commands. Apply when user mentions extraction, transcription, PDF, video, audio, YouTube, or content ingestion."
+alwaysApply: false
+---
+
+## /extract-content Command (also handles /extract-media)
+
+When the user types `/extract-content` or `/extract-media`, run the unified content extraction pipeline.
+
+### What it does
+
+Scans `raw/` for new files, extracts readable content, creates wiki source pages, and updates index/log.
+
+| File Type | Extensions | Extraction Method |
+|-----------|-----------|-------------------|
+| Video/Audio | .mp4 .mkv .webm .avi .mov .m4v .mp3 .wav .m4a .ogg .flac | faster-whisper transcription (local) |
+| Images | .png .jpg .jpeg .webp .gif | Metadata + description (full analysis via /graphify) |
+| PDFs | .pdf | Text extraction (PyMuPDF/pypdf) |
+| Office | .docx .xlsx | python-docx / openpyxl → markdown |
+
+### Usage patterns
+
+| User says | Action |
+|-----------|--------|
+| `/extract-content` | `python scripts/extract_content.py` — all new files |
+| `/extract-content --type video` | Only video/audio files |
+| `/extract-content --type image` | Only images |
+| `/extract-content --type pdf` | Only PDFs |
+| `/extract-content --type doc` | Only .docx/.xlsx |
+| `/extract-content --model medium` | Better whisper accuracy for technical content |
+| `/extract-content --url <youtube-url>` | Download YouTube audio + transcribe + ingest |
+| `/extract-content --language en` | Force English (default: auto-detect) |
+| `/extract-content --dry-run` | Preview without processing |
+| `/extract-media` | Alias: `python scripts/extract_media.py` (video/audio only) |
+| `/extract-media --url <youtube-url>` | Alias: download + transcribe YouTube |
+
+### Execution
+
+```powershell
+python scripts/extract_content.py [args]
+```
+
+### Output locations
+
+- Extracts: `raw/extracts/<slug>.md`
+- Wiki pages: `wiki/sources/extract-<slug>.md`
+- Manifest: `scripts/.content_manifest.json`
+
+### After extraction
+
+1. Review wiki pages in `wiki/sources/extract-*`
+2. Fill in "Key Points" sections
+3. Add `[[wikilinks]]` to connect concepts
+4. Run `/graphify ./raw --update` to refresh the knowledge graph with new content
+5. Run `/graphify-to-wiki` to sync graph insights back into wiki (entities, concepts, synthesis pages)
+
+### Note on images and PDFs
+
+The local extraction captures text and metadata. For **full concept extraction** from images (diagrams, screenshots) and PDFs (citations, relationships), run `/graphify ./raw --update` in Cursor chat — this uses Claude Vision and LLM extraction.

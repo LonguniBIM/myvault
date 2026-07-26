@@ -1,0 +1,28 @@
+{
+  "processed": {
+    "raw\\images\\test-diagram.png": {
+      "sha256": "a46c1d334b0f0425cda36f31a243ddad33705d4f940758b99ab05e071b540402",
+      "extracted_at": "2026-04-30T07:27:26.254294",
+      "title": "Test Diagram",
+      "type": "image"
+    },
+    "raw\\docs\\test-architecture-notes.docx": {
+      "sha256": "3e0fdb75c88b73b13e46ecd6bc6b5d65a2bfe4ce1c64e68c68afbc96f100be61",
+      "extracted_at": "2026-04-30T07:27:35.353330",
+      "title": "Test Architecture Notes",
+      "type": "docx"
+    },
+    "raw\\docs\\test-tool-comparison.xlsx": {
+      "sha256": "610fff45a5f963168272f5f50112b9d5aeeec9867de0edb7011c7a7b8338a871",
+      "extracted_at": "2026-04-30T07:27:35.686258",
+      "title": "Test Tool Comparison",
+      "type": "xlsx"
+    },
+    "raw\\papers\\test-paper.pdf": {
+      "sha256": "657cb09c4eeb0aef36100a2526f323ffabe81e7c81663c39de3a081f936420c2",
+      "extracted_at": "2026-04-30T07:28:25.771486",
+      "title": "Test Paper",
+      "type": "pdf"
+    }
+  }
+}

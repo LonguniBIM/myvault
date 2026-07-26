@@ -1,0 +1,239 @@
+{
+  "audio": [
+    {
+      "duration_label": "00:17",
+      "duration_seconds": 17.136327,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 1,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:25",
+      "duration_seconds": 25.332971,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Construction 4.0 - BIM ISO 19650 12 Project Delivery Unit 1 - Ca (3).mp3",
+      "placeholder_index": 2,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:46",
+      "duration_seconds": 45.627211,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Construction 4.0 - BIM ISO 19650 12 Project Delivery Unit 1 - Ca (1).mp3",
+      "placeholder_index": 3,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:00",
+      "duration_seconds": 0.0,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 4,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:40",
+      "duration_seconds": 39.845442,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Construction 4.0 - BIM ISO 19650 12 Project Delivery Unit 1 - Ca (4).mp3",
+      "placeholder_index": 5,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:22",
+      "duration_seconds": 22.105397,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 6,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:54",
+      "duration_seconds": 54.009615,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Construction 4.0 - BIM ISO 19650 12 Project Delivery Unit 1 - Ca (5).mp3",
+      "placeholder_index": 7,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:20",
+      "duration_seconds": 20.038821,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 8,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:30",
+      "duration_seconds": 29.930522,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Construction 4.0 - BIM ISO 19650 12 Project Delivery Unit 1 - Ca.mp3",
+      "placeholder_index": 9,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "01:27",
+      "duration_seconds": 87.307029,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Construction 4.0 - BIM ISO 19650 12 Project Delivery Unit 1 - Ca (2).mp3",
+      "placeholder_index": 10,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:15",
+      "duration_seconds": 15.023311,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 11,
+      "transcribed": false,
+      "transcript_source": null
+    }
+  ],
+  "counts": {
+    "audio_matched": 6,
+    "audio_referenced": 11,
+    "audio_transcribed": 6,
+    "block_types": {
+      "audio": 11,
+      "heading": 11,
+      "image": 9,
+      "quote": 1,
+      "rich_text": 17,
+      "unknown": 3
+    },
+    "blocks": 52,
+    "images_found": 9,
+    "images_missing": 0,
+    "warnings": 5
+  },
+  "images": [
+    {
+      "exists": true,
+      "height": 885,
+      "mime": "image/jpeg",
+      "output_name": "sQsIy9NepB_YVZ2Q_LaNItK29ia7UQWsz.jpg",
+      "sha256": "c19e3bb2a8ae99a8ec5dbb1c7c9b76150bc61c18326320932dbab91c5f63dc69",
+      "src_ref": "./Construction 4.0 - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/sQsIy9NepB_YVZ2Q_LaNItK29ia7UQWsz.jpg",
+      "width": 1393
+    },
+    {
+      "exists": true,
+      "height": 943,
+      "mime": "image/jpeg",
+      "output_name": "pjldtMn69EawStr9_ksyAuBphI5lUFLCE.jpg",
+      "sha256": "7a23d55d3d0e38b8ca3442954b4a86af54ad9790f1ce78d2556a068ae7232a5d",
+      "src_ref": "./Construction 4.0 - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/pjldtMn69EawStr9_ksyAuBphI5lUFLCE.jpg",
+      "width": 1680
+    },
+    {
+      "exists": true,
+      "height": 973,
+      "mime": "image/jpeg",
+      "output_name": "HXzoCuKbNgVyPOl7_d0bty6H9JxniKEuq.jpg",
+      "sha256": "22f4e3545b8554ef8c5128a11a5e15cfcd319037679331ade8bd57601a30ff50",
+      "src_ref": "./Construction 4.0 - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/HXzoCuKbNgVyPOl7_d0bty6H9JxniKEuq.jpg",
+      "width": 1680
+    },
+    {
+      "exists": true,
+      "height": 770,
+      "mime": "image/jpeg",
+      "output_name": "X6iUGjbnfvrcpVbA_MmAC6vaJCZxRq8jA.jpg",
+      "sha256": "c9daa2922a78d48251a45a07933829998cdec857cd9bdddadbe640860d60e6bf",
+      "src_ref": "./Construction 4.0 - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/X6iUGjbnfvrcpVbA_MmAC6vaJCZxRq8jA.jpg",
+      "width": 729
+    },
+    {
+      "exists": true,
+      "height": 562,
+      "mime": "image/jpeg",
+      "output_name": "g_ytudv2khRpjXNz_yvpgtJSPI1fxHOum.jpg",
+      "sha256": "d08c9daf1ed3bc29a32cbdff22db2fe0897af7999034bc95dc76518ec4ceaa9b",
+      "src_ref": "./Construction 4.0 - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/g_ytudv2khRpjXNz_yvpgtJSPI1fxHOum.jpg",
+      "width": 984
+    },
+    {
+      "exists": true,
+      "height": 492,
+      "mime": "image/jpeg",
+      "output_name": "vDGLvaGaGYOT1Wuk_fD84_jw15iQob_Ax.jpg",
+      "sha256": "b5dd177a343413b81cf1f556f2f7defbe2688543e192a0d70328d09698d40833",
+      "src_ref": "./Construction 4.0 - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/vDGLvaGaGYOT1Wuk_fD84_jw15iQob_Ax.jpg",
+      "width": 1680
+    },
+    {
+      "exists": true,
+      "height": 877,
+      "mime": "image/jpeg",
+      "output_name": "Qhm_tO5rvkmtN93J_G7PFmumnRYIskV_a.jpg",
+      "sha256": "04fa67f86f04ca015ef70e3175dc5b7762a65a45cd841ae1256c76f01c6d022b",
+      "src_ref": "./Construction 4.0 - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/Qhm_tO5rvkmtN93J_G7PFmumnRYIskV_a.jpg",
+      "width": 836
+    },
+    {
+      "exists": true,
+      "height": 497,
+      "mime": "image/jpeg",
+      "output_name": "VRAmK_Zfp-qR5HNX_iGbyYZpv-llURthk.jpg",
+      "sha256": "c872d43442763674fe228ad7a5341bff689a781ba611fa886b819a2d5b6c32a7",
+      "src_ref": "./Construction 4.0 - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/VRAmK_Zfp-qR5HNX_iGbyYZpv-llURthk.jpg",
+      "width": 1455
+    },
+    {
+      "exists": true,
+      "height": 942,
+      "mime": "image/png",
+      "output_name": "ei3Fq5MBUaBkbE7Y_UToAnqjjgga33Loc.png",
+      "sha256": "ff350bf58e3dcdc65cdb2a5c436a9159ab0141595e88f25f7024ba2cb7bf2879",
+      "src_ref": "./Construction 4.0 - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/ei3Fq5MBUaBkbE7Y_UToAnqjjgga33Loc.png",
+      "width": 1680
+    }
+  ],
+  "schema_version": 1,
+  "source": {
+    "adapter": "rise",
+    "course": null,
+    "lesson_count": "Lesson 6 of 6",
+    "source_html": "Construction 4.0 - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change.html",
+    "source_url": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/index.html#/lessons/d2ec2JJ16Ynk-%2DOoQhRMjj162SG81LXH",
+    "title": "Construction 4.0"
+  },
+  "warnings": [
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #1 (00:17s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #4 (00:00s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #6 (00:22s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #8 (00:20s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #11 (00:15s)"
+    }
+  ]
+}

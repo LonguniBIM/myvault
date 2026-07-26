@@ -1,0 +1,214 @@
+{
+  "processed": {
+    "raw/sources/TheMarketLens_TheExpansionFlow.png": {
+      "sha256": "00c9f80a88755062b257d2989375a90731b1ff9a4a1a8cc9aae4b55c2e9f2f18",
+      "extracted_at": "2026-05-07T22:45:37.247201",
+      "title": "The Market Lens - Expansion Flow Diagram",
+      "type": "image"
+    },
+    "raw/sources/TheMarketLens_TheExpansionModel.docx": {
+      "sha256": "b2b8500beff1626f92cfdaf29b66b451b13134c2be3830f892aacea0bb3f3b61",
+      "extracted_at": "2026-05-07T22:45:37.266636",
+      "title": "The Market Lens - Expansion Model Course",
+      "type": "docx"
+    },
+    "raw\\video\\Be a 10x Vibe Coder (Claude Code + Cursor + MCP)-li788UL1qyI.m4a": {
+      "sha256": "754c020e6684f3eeb3526ff167b1a00252d7fd982bb3fa04b705fb26046bd0ff",
+      "extracted_at": "2026-05-08T19:53:20.548956",
+      "title": "Be A 10X Vibe Coder (Claude Code + Cursor + Mcp)",
+      "type": "video"
+    },
+    "Claude\\raw\\sources\\Certified.md": {
+      "sha256": "4f6105dfe07471051b0fb6d8230f50ffcfaf5e9b6db23e529d66ba647b3f9bd6",
+      "extracted_at": "2026-05-10T07:33:35.453246",
+      "title": "Certified",
+      "type": "text"
+    },
+    "Claude\\raw\\sources\\Claude Code.md": {
+      "sha256": "00386c96419d0410f3fa0b6a35e6b21b9646cfc8c5bd7a80b78b5c7791f48da1",
+      "extracted_at": "2026-05-10T07:33:35.454919",
+      "title": "Claude Code",
+      "type": "text"
+    },
+    "Claude\\raw\\sources\\Claude Cowork + Project.md": {
+      "sha256": "925af218787e7e9ca7674926e854d29f16dd2fed33bd1773e10df838d1b6797d",
+      "extracted_at": "2026-05-10T07:33:35.455968",
+      "title": "Claude Cowork + Project",
+      "type": "text"
+    },
+    "Claude\\raw\\sources\\Claude Design.md": {
+      "sha256": "b50f1676d53a4e2f2bc137bcb2ec3df2b6433762adae9e15ad0ff553469f3726",
+      "extracted_at": "2026-05-10T07:33:35.457251",
+      "title": "Claude Design",
+      "type": "text"
+    },
+    "Claude\\raw\\sources\\Claude For Dummies.md": {
+      "sha256": "ece6bbe410e86057cc1283fa6c8fcff3c1defb52bf37b4c7e2f84ddf8a8c8279",
+      "extracted_at": "2026-05-10T07:33:35.458849",
+      "title": "Claude For Dummies",
+      "type": "text"
+    },
+    "Claude\\raw\\sources\\Claude Skills.md": {
+      "sha256": "96a32c851f8aaaffd806bcfdacd62c03e80510d4ed951eedb3a51554a9c1413d",
+      "extracted_at": "2026-05-10T07:33:35.460086",
+      "title": "Claude Skills",
+      "type": "text"
+    },
+    "Claude\\raw\\sources\\Claude for teams.md": {
+      "sha256": "213e881ee120e5a5e37ca0004e9939e835f9d427640d1f8f2c74d3b1d9c1b29b",
+      "extracted_at": "2026-05-10T07:33:35.461180",
+      "title": "Claude For Teams",
+      "type": "text"
+    },
+    "Claude\\raw\\sources\\Claude is now YOUR computer.md": {
+      "sha256": "84368d8a11af799a15660138badb52a6a41551841f2e6ea160a971904efd2dbb",
+      "extracted_at": "2026-05-10T07:33:35.462167",
+      "title": "Claude Is Now Your Computer",
+      "type": "text"
+    },
+    "Claude\\raw\\sources\\Claude.md": {
+      "sha256": "d6213311aa54f0a7bdde4e842327e3f53351aa5f14c1254e9d82d826943ca192",
+      "extracted_at": "2026-05-10T07:33:35.463165",
+      "title": "Claude",
+      "type": "text"
+    },
+    "Claude\\raw\\sources\\Cowork.md": {
+      "sha256": "74676d55065f2c138d3c994c442dd05d98da38037d14ac42afaf70fbe57f5f28",
+      "extracted_at": "2026-05-10T07:33:35.464251",
+      "title": "Cowork",
+      "type": "text"
+    },
+    "Claude\\raw\\sources\\How to stop hitting Claude usage limits.md": {
+      "sha256": "9a12244c69223844cf6643a8679283a2d1964c2e0e405ab7875fe5fd2bdfc96b",
+      "extracted_at": "2026-05-10T07:33:35.465316",
+      "title": "How To Stop Hitting Claude Usage Limits",
+      "type": "text"
+    },
+    "Claude\\raw\\sources\\I am the last of 4 kids.md": {
+      "sha256": "ffc8967a2384df20cf0407defbf722078d93fee87e784b542a9900bfbe788d68",
+      "extracted_at": "2026-05-10T07:33:35.466287",
+      "title": "I Am The Last Of 4 Kids",
+      "type": "text"
+    },
+    "Claude\\raw\\sources\\I can be you.md": {
+      "sha256": "1878a78d9cf3aa8fa9bb0fbfaf47de5ddcced6294681eb498bda732638948392",
+      "extracted_at": "2026-05-10T07:33:35.467450",
+      "title": "I Can Be You",
+      "type": "text"
+    },
+    "Claude\\raw\\sources\\It's not X, it's Y.md": {
+      "sha256": "6e24f6eb6ff685c0c7a16f177481b510a2cdfb30d4a685a477a2f4b456823583",
+      "extracted_at": "2026-05-10T07:33:35.468621",
+      "title": "It'S Not X, It'S Y",
+      "type": "text"
+    },
+    "Claude\\raw\\sources\\Prompting is the worst way to use Claude.md": {
+      "sha256": "61531681c0728a75cd33994d1bc3978dce94e6d200dfbfa4ecc13043cab61888",
+      "extracted_at": "2026-05-10T07:33:35.469810",
+      "title": "Prompting Is The Worst Way To Use Claude",
+      "type": "text"
+    },
+    "Claude\\raw\\sources\\Slides.md": {
+      "sha256": "63f5cd4114aae8ba8a837d0ac4018c6477e3cd21de3d07761611e6a5db0d0409",
+      "extracted_at": "2026-05-10T07:33:35.470888",
+      "title": "Slides",
+      "type": "text"
+    },
+    "d:\\wiki\\Claude\\raw\\sources\\Certified.md": {
+      "sha256": "4f6105dfe07471051b0fb6d8230f50ffcfaf5e9b6db23e529d66ba647b3f9bd6",
+      "extracted_at": "2026-05-10T08:13:50.779552",
+      "title": "Certified",
+      "type": "text"
+    },
+    "d:\\wiki\\Claude\\raw\\sources\\Claude Code.md": {
+      "sha256": "00386c96419d0410f3fa0b6a35e6b21b9646cfc8c5bd7a80b78b5c7791f48da1",
+      "extracted_at": "2026-05-10T08:13:50.780729",
+      "title": "Claude Code",
+      "type": "text"
+    },
+    "d:\\wiki\\Claude\\raw\\sources\\Claude Cowork + Project.md": {
+      "sha256": "925af218787e7e9ca7674926e854d29f16dd2fed33bd1773e10df838d1b6797d",
+      "extracted_at": "2026-05-10T08:13:50.781843",
+      "title": "Claude Cowork + Project",
+      "type": "text"
+    },
+    "d:\\wiki\\Claude\\raw\\sources\\Claude Design.md": {
+      "sha256": "b50f1676d53a4e2f2bc137bcb2ec3df2b6433762adae9e15ad0ff553469f3726",
+      "extracted_at": "2026-05-10T08:13:50.782915",
+      "title": "Claude Design",
+      "type": "text"
+    },
+    "d:\\wiki\\Claude\\raw\\sources\\Claude For Dummies.md": {
+      "sha256": "ece6bbe410e86057cc1283fa6c8fcff3c1defb52bf37b4c7e2f84ddf8a8c8279",
+      "extracted_at": "2026-05-10T08:13:50.784280",
+      "title": "Claude For Dummies",
+      "type": "text"
+    },
+    "d:\\wiki\\Claude\\raw\\sources\\Claude Skills.md": {
+      "sha256": "96a32c851f8aaaffd806bcfdacd62c03e80510d4ed951eedb3a51554a9c1413d",
+      "extracted_at": "2026-05-10T08:13:50.785418",
+      "title": "Claude Skills",
+      "type": "text"
+    },
+    "d:\\wiki\\Claude\\raw\\sources\\Claude for teams.md": {
+      "sha256": "213e881ee120e5a5e37ca0004e9939e835f9d427640d1f8f2c74d3b1d9c1b29b",
+      "extracted_at": "2026-05-10T08:13:50.786850",
+      "title": "Claude For Teams",
+      "type": "text"
+    },
+    "d:\\wiki\\Claude\\raw\\sources\\Claude is now YOUR computer.md": {
+      "sha256": "84368d8a11af799a15660138badb52a6a41551841f2e6ea160a971904efd2dbb",
+      "extracted_at": "2026-05-10T08:13:50.787867",
+      "title": "Claude Is Now Your Computer",
+      "type": "text"
+    },
+    "d:\\wiki\\Claude\\raw\\sources\\Claude.md": {
+      "sha256": "d6213311aa54f0a7bdde4e842327e3f53351aa5f14c1254e9d82d826943ca192",
+      "extracted_at": "2026-05-10T08:13:50.788958",
+      "title": "Claude",
+      "type": "text"
+    },
+    "d:\\wiki\\Claude\\raw\\sources\\Cowork.md": {
+      "sha256": "74676d55065f2c138d3c994c442dd05d98da38037d14ac42afaf70fbe57f5f28",
+      "extracted_at": "2026-05-10T08:13:50.790346",
+      "title": "Cowork",
+      "type": "text"
+    },
+    "d:\\wiki\\Claude\\raw\\sources\\How to stop hitting Claude usage limits.md": {
+      "sha256": "9a12244c69223844cf6643a8679283a2d1964c2e0e405ab7875fe5fd2bdfc96b",
+      "extracted_at": "2026-05-10T08:13:50.791589",
+      "title": "How To Stop Hitting Claude Usage Limits",
+      "type": "text"
+    },
+    "d:\\wiki\\Claude\\raw\\sources\\I am the last of 4 kids.md": {
+      "sha256": "ffc8967a2384df20cf0407defbf722078d93fee87e784b542a9900bfbe788d68",
+      "extracted_at": "2026-05-10T08:13:50.792802",
+      "title": "I Am The Last Of 4 Kids",
+      "type": "text"
+    },
+    "d:\\wiki\\Claude\\raw\\sources\\I can be you.md": {
+      "sha256": "1878a78d9cf3aa8fa9bb0fbfaf47de5ddcced6294681eb498bda732638948392",
+      "extracted_at": "2026-05-10T08:13:50.793939",
+      "title": "I Can Be You",
+      "type": "text"
+    },
+    "d:\\wiki\\Claude\\raw\\sources\\It's not X, it's Y.md": {
+      "sha256": "6e24f6eb6ff685c0c7a16f177481b510a2cdfb30d4a685a477a2f4b456823583",
+      "extracted_at": "2026-05-10T08:13:50.795186",
+      "title": "It'S Not X, It'S Y",
+      "type": "text"
+    },
+    "d:\\wiki\\Claude\\raw\\sources\\Prompting is the worst way to use Claude.md": {
+      "sha256": "61531681c0728a75cd33994d1bc3978dce94e6d200dfbfa4ecc13043cab61888",
+      "extracted_at": "2026-05-10T08:13:50.796347",
+      "title": "Prompting Is The Worst Way To Use Claude",
+      "type": "text"
+    },
+    "d:\\wiki\\Claude\\raw\\sources\\Slides.md": {
+      "sha256": "63f5cd4114aae8ba8a837d0ac4018c6477e3cd21de3d07761611e6a5db0d0409",
+      "extracted_at": "2026-05-10T08:13:50.797489",
+      "title": "Slides",
+      "type": "text"
+    }
+  }
+}

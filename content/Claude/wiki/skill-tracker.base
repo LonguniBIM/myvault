@@ -1,0 +1,44 @@
+filters:
+  or:
+    - type == "methodology"
+    - type == "skill"
+formulas:
+  is_deployed: if(skill_status == "deployed", "✅", if(skill_status == "tested", "🧪", if(skill_status == "drafted", "📝", "💡")))
+properties:
+  title:
+    displayName: Name
+  type:
+    displayName: Type
+  skill_status:
+    displayName: Status
+  steps:
+    displayName: Steps
+  effectiveness:
+    displayName: Effectiveness
+  tested_in:
+    displayName: Tested In
+  source:
+    displayName: Source
+  formula.is_deployed:
+    displayName: Stage
+views:
+  - type: table
+    name: Skill Pipeline
+    groupBy:
+      property: skill_status
+      direction: ASC
+    order:
+      - formula.is_deployed
+      - title
+      - skill_status
+      - steps
+      - effectiveness
+      - source
+  - type: cards
+    name: Skill Cards
+    order:
+      - title
+      - formula.is_deployed
+      - skill_status
+      - effectiveness
+      - steps

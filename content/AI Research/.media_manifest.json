@@ -1,0 +1,14 @@
+{
+  "processed": {
+    "raw\\video\\Karpathy's_LLM_Wiki_-_Full_Beginner_Setup_Guide-20260429231327.mp4.mkv": {
+      "sha256": "a76978c9b808108163be128590c980a8635c78c449a64606d3c3b936393afc5a",
+      "transcribed_at": "2026-04-30T06:44:33.862721",
+      "title": "Karpathy'S Llm Wiki Full Beginner Setup Guide"
+    },
+    "raw\\video\\Karpathy's LLM Wiki - Full Beginner Setup Guide-iXd0t60YmMw.m4a": {
+      "sha256": "c9454b8ee7df728ed7317d255a6d3093b4472b984e9045b5a9e4430a2faf1227",
+      "transcribed_at": "2026-04-30T06:59:39.683856",
+      "title": "Karpathy'S Llm Wiki Full Beginner Setup Guide"
+    }
+  }
+}

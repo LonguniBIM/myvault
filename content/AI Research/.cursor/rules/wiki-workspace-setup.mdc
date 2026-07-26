@@ -1,0 +1,278 @@
+---
+description: "Setup a new LLM Wiki Knowledge Space with Obsidian Skills + Graphify + auto-ingest pipeline. Agent asks questions to generate purpose.md and schema.md tailored to the user's goals."
+globs:
+alwaysApply: false
+---
+
+# /setup-wiki — Initialize New Knowledge Space
+
+When the user types `/setup-wiki`, begin the interactive workspace setup wizard.
+
+---
+
+## Shared Library
+
+All shared components live in the workspace root's `.shared/` directory.
+Use `bridge.ps1` to link shared components into the new Knowledge Space.
+
+---
+
+## Phase 1 — Gather Information (Interactive)
+
+Ask the user these questions sequentially (use interactive_feedback or direct questions):
+
+### Q1: Project Purpose
+> "What is the main purpose of this wiki? Examples: research notes, tool comparison, learning journal, project documentation, personal knowledge base"
+
+### Q2: Research Question (if applicable)
+> "What central question are you investigating? (Leave blank if this is a general-purpose wiki)"
+
+### Q3: Content Sources
+> "Where will your content come from? Options:
+> - Web clipping (browser extension)
+> - Local documents (PDFs, DOCX, media files)
+> - Manual notes
+> - Code repositories
+> - Academic papers
+> - All of the above"
+
+### Q4: Page Types Needed
+> "Which page types do you need? (All will be available, but I'll configure the schema to prioritize yours):
+> - entity (named things: people, tools, orgs)
+> - concept (ideas, techniques, frameworks)
+> - source (papers, articles, talks)
+> - query (open questions)
+> - comparison (side-by-side analysis)
+> - synthesis (cross-cutting conclusions)
+> - thesis (working hypotheses)
+> - methodology (research methods)
+> - finding (empirical results)"
+
+### Q5: Naming Convention
+> "How should files be named?
+> - kebab-case (default: `my-page-name.md`)
+> - Custom pattern?"
+
+### Q6: Tags Strategy
+> "What tag categories matter to you? Examples: topic, status, priority, source-type, year, confidence"
+
+---
+
+## Phase 2 — Generate Files
+
+Based on answers, generate these files in order:
+
+### 2.1 — Create Directory Structure
+
+```
+<space-name>/
+├── purpose.md              ← Generated from Q1-Q2
+├── schema.md               ← Generated from Q3-Q6
+├── CLAUDE.md               ← Generated (space-specific guidance)
+├── .space.json             ← Bridge metadata
+├── raw/
+│   ├── sources/            ← Immutable captured content
+│   ├── extracts/           ← Extracted text (transcripts, OCR)
+│   ├── transcripts/        ← Video/audio transcripts
+│   └── assets/             ← Local images
+├── wiki/
+│   ├── index.md            ← Central catalog
+│   ├── log.md              ← Activity log
+│   ├── overview.md         ← Project summary
+│   ├── entities/
+│   ├── concepts/
+│   ├── sources/
+│   ├── queries/
+│   ├── comparisons/
+│   ├── synthesis/
+│   ├── wiki-dashboard.base ← Obsidian metrics view
+│   └── repo-tracker.base   ← Entity tracking view (if entity-heavy)
+├── scripts/                ← JUNCTION → .shared/scripts
+├── .obsidian/              ← Auto-generated vault config
+├── .llm-wiki/
+│   └── ingest-queue/       ← Pending ingest items
+├── .cursor/
+│   └── rules/              ← Hard links to .shared/cursor-rules + space-specific rules
+├── .claude/
+│   ├── commands/           ← JUNCTION → .shared/claude-commands
+│   ├── skills/             ← JUNCTION → .shared/claude-skills
+│   └── settings.json
+└── graphify-out/           ← Created after first /graphify run
+```
+
+### 2.2 — Link Shared Components
+
+Run the bridge script from the workspace root to set up all links:
+
+```powershell
+.\bridge.ps1 add-space "<space-name>"
+```
+
+This creates:
+- Directory junctions for scripts/, .claude/skills/, .claude/commands/
+- Hard links for shared cursor rules (.mdc files)
+- A `.space.json` metadata file
+
+### 2.3 — Generate `purpose.md`
+
+Template (fill from Q1-Q2 answers):
+
+```markdown
+# Project Purpose — <Title from Q1>
+
+## Research Question
+
+> <From Q2, or generic statement based on Q1>
+
+## Hypothesis / Working Thesis
+
+> <Generated from Q1+Q2: what the user hopes to achieve>
+
+## Background
+
+<2-3 paragraphs explaining the context, generated from Q1+Q3>
+
+## Sub-questions
+
+<3-5 sub-questions derived from Q2>
+
+## Scope
+
+**In scope:**
+<Generated from Q3 — what types of content will be captured>
+
+**Out of scope:**
+<Inferred boundaries>
+
+## Methodology
+
+<Generated from Q3+Q4 — how content flows through the system>
+
+## Success Criteria
+
+<Generated from Q1+Q2 — measurable outcomes>
+
+## Current Status
+
+> Initialized — workspace structure created, ready for first content capture.
+```
+
+### 2.4 — Generate `schema.md`
+
+Template (fill from Q4-Q6 answers):
+
+```markdown
+# Wiki Schema — <Title>
+
+## Page Types
+
+| Type | Directory | Purpose |
+|------|-----------|---------|
+<Generated from Q4 — only include selected types>
+
+## Naming Conventions
+
+<From Q5>
+
+## Frontmatter
+
+<Standard YAML frontmatter spec, adapted for selected types>
+
+## Index Format
+
+`wiki/index.md` lists all pages grouped by type. Each entry:
+- [[page-slug]] — one-line description
+
+## Log Format
+
+`wiki/log.md` records activity in reverse chronological order.
+
+## Cross-referencing Rules
+
+<Standard wikilink rules>
+
+## Contradiction Handling
+
+<Standard contradiction workflow>
+```
+
+### 2.5 — Generate `CLAUDE.md`
+
+Generate a space-specific CLAUDE.md that:
+- Describes the space's purpose and research question
+- Includes the Auto-Ingest Pipeline section (shared workflow)
+- Includes Skills Configuration section (obsidian-skills + graphify)
+- Includes Integration with External Tools section
+- Adapts Comparison & Recommendation Workflow if applicable
+
+### 2.6 — Generate `wiki/index.md`, `wiki/log.md`, `wiki/overview.md`
+
+Empty but properly structured starter files.
+
+---
+
+## Phase 3 — Install Dependencies (First-Time Only)
+
+If these are not already installed globally:
+
+### 3.1 — Graphify
+```bash
+pip install graphifyy
+graphify cursor install
+```
+
+### 3.2 — Python Dependencies (for scripts)
+```bash
+pip install faster-whisper yt-dlp PyMuPDF python-docx openpyxl
+```
+
+### 3.3 — Defuddle (for web clipping)
+```bash
+npm install -g defuddle
+```
+
+### 3.4 — Obsidian Config
+Create `.obsidian/` with recommended settings for wiki vault.
+
+---
+
+## Phase 4 — First Run Verification
+
+Guide user through first content cycle:
+
+1. **Test web clip**: Paste a URL, defuddle extracts, save to `raw/sources/`
+2. **Test ingest**: Run `/ingest-pending` or manually trigger CLAUDE.md pipeline
+3. **Test graphify**: Run `/graphify .` to verify `graphify-out/` is created
+4. **Test sync**: Run `/graphify-to-wiki --dry-run` to verify detected pages
+5. **Test dashboard**: Open `wiki/wiki-dashboard.base` in Obsidian
+
+---
+
+## Quick Reference Card
+
+After setup, user can:
+
+| Command | What it does |
+|---------|-------------|
+| `/extract-content` | Extract text from PDFs/docs/media in raw/ |
+| `/extract-media` | Transcribe video/audio files |
+| `/graphify .` | Build/rebuild knowledge graph |
+| `/graphify-to-wiki` | Sync graph insights to wiki pages |
+| `/ingest-pending` | Process queued raw sources into wiki |
+| `/setup-wiki` | This wizard (re-run to reconfigure) |
+
+| Script | What it does |
+|--------|-------------|
+| `python scripts/watch_ingest.py` | Watch for new files in raw/sources/ |
+| `python scripts/extract_content.py` | Extract all file types |
+| `python scripts/extract_media.py` | Extract video/audio only |
+
+---
+
+## Maintenance
+
+- Run `/graphify . --update` after significant wiki changes
+- Run `/graphify-to-wiki` periodically to sync new graph insights
+- Check `wiki/wiki-dashboard.base` for connectivity metrics
+- Review `wiki/log.md` for recent activity
+- Run `.\bridge.ps1 verify` to check shared links are healthy

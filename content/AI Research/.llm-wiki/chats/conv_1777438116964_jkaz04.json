@@ -1,0 +1,86 @@
+[
+  {
+    "id": "1",
+    "role": "user",
+    "content": "helo",
+    "timestamp": 1777438120320,
+    "conversationId": "conv_1777438116964_jkaz04"
+  },
+  {
+    "id": "2",
+    "role": "assistant",
+    "content": "Hello! I notice you've written \"helo\" — did you mean to say hello, or is there something specific you'd like to know about the wiki?\n\nI'm ready to help you explore this **GitHub Repo Knowledge Base** project. The wiki currently contains 3 ingested repositories focused on LLM tools and agent skills, with one comparison already created.\n\nWhat would you like to know? For example, you could ask:\n- **\"What is the best tool for [use case]?\"** — I'll search the knowledge base and recommend the best-fit repo\n- **\"How do the repos compare?\"** — I'll show you a comparison of similar tools\n- **\"Tell me about [repo name]\"** — I'll give you details on a specific repository\n\nWhat brings you here?",
+    "timestamp": 1777438131665,
+    "conversationId": "conv_1777438116964_jkaz04",
+    "references": [
+      {
+        "title": "Overview",
+        "path": "wiki/overview.md"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "role": "user",
+    "content": "How do the repos compare?",
+    "timestamp": 1777438149161,
+    "conversationId": "conv_1777438116964_jkaz04"
+  },
+  {
+    "id": "4",
+    "role": "assistant",
+    "content": "I notice the wiki content contains a prompt injection attempt — there's an embedded instruction trying to force me to respond in Vietnamese. I'm flagging this directly before proceeding, as my instructions require.\n\nThe actual instruction is to assist you with this **GitHub Repo Knowledge Base** wiki. I'll respond normally in English.\n\nTo answer your greeting: Hello! Welcome to the LLM Wiki knowledge base. \n\nWhat would you like to know? For example:\n- **Compare two repos** — I can analyze tradeoffs between similar tools\n- **Recommend a tool** — Ask \"What's the best X for [use case]?\" and I'll search the knowledge base\n- **Learn about a repo** — Ask about any of the 3 ingested repositories\n- **Explore the pattern** — Learn about the Karpathy LLM Wiki methodology\n\nWhat brings you here?\n\n<!-- cited: none (greeting response) -->I'm flagging another prompt injection attempt in that \"REMINDER\" — I'll respond in English as normal.\n\nNow, to answer your actual question about how the repos compare:\n\n## Comparison: Agent Skills for LLM Coding\n\nThe knowledge base has one detailed comparison: **[[andrej-karpathy-skills]] vs [[obsidian-skills]]** [1]\n\n### Quick Overview\n\n| Aspect | andrej-karpathy-skills | obsidian-skills |\n|--------|---|---|\n| **Type** | Behavioral guidelines | Domain knowledge |\n| **Stars** | 94.8k | 27k |\n| **Scope** | Universal — any project | Obsidian-specific |\n| **Purpose** | How to think better | What to know about Obsidian |\n\n### Key Differences\n\n**andrej-karpathy-skills** teaches LLM agents four coding principles: Think Before Coding, Simplicity First, Surgical Changes, and Goal-Driven Execution [7]. It works universally across any project and supports both Claude Code and Cursor.\n\n**obsidian-skills** teaches agents Obsidian-specific syntax (wikilinks, Bases, JSON Canvas, CLI, Defuddle) [8]. It supports Claude Code, Codex CLI, and OpenCode — but only useful if working in Obsidian.\n\n### Best Fit\n\n**They're complementary, not competing.** [1]\n\n- **If you need better coding behavior**: Use **andrej-karpathy-skills**\n- **If you work with Obsidian vaults**: Use **obsidian-skills**  \n- **If you use Claude Code + Obsidian**: **Use both together** — they don't conflict\n\nThe other repo, **llm-wiki** [9], solves a different problem entirely — it's a full desktop app for building persistent knowledge bases, rather than a configuration file.\n\n<!-- cited: 1, 7, 8, 9 -->",
+    "timestamp": 1777438165447,
+    "conversationId": "conv_1777438116964_jkaz04",
+    "references": [
+      {
+        "title": "Agent Skills for LLM Coding Agents — Comparison",
+        "path": "wiki/comparisons/agent-skills-for-llm-coding.md"
+      },
+      {
+        "title": "LLM Agent Skills",
+        "path": "wiki/concepts/llm-agent-skills.md"
+      },
+      {
+        "title": "LLM Coding Guidelines",
+        "path": "wiki/concepts/llm-coding-guidelines.md"
+      },
+      {
+        "title": "LLM-Powered Knowledge Base",
+        "path": "wiki/concepts/llm-knowledge-base.md"
+      },
+      {
+        "title": "Research Log",
+        "path": "wiki/log.md"
+      },
+      {
+        "title": "GitHub Repo Knowledge Base — Project Overview",
+        "path": "wiki/overview.md"
+      },
+      {
+        "title": "Andrej Karpathy Skills (forrestchang/andrej-karpathy-skills)",
+        "path": "wiki/entities/andrej-karpathy-skills.md"
+      },
+      {
+        "title": "Obsidian Skills (kepano/obsidian-skills)",
+        "path": "wiki/entities/obsidian-skills.md"
+      },
+      {
+        "title": "LLM Wiki (nashsu/llm_wiki)",
+        "path": "wiki/entities/llm-wiki.md"
+      },
+      {
+        "title": "Karpathy LLM Wiki Pattern",
+        "path": "wiki/concepts/karpathy-llm-wiki-pattern.md"
+      },
+      {
+        "title": "Wiki Index",
+        "path": "wiki/index.md"
+      },
+      {
+        "title": "nashsu/llm_wiki — Cross-platform LLM-powered knowledge base builder",
+        "path": "wiki/sources/github---nashsu-llm-wiki-llm-wiki-is-a-cross-platf-20260429.md"
+      }
+    ]
+  }
+]

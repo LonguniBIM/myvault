@@ -1,0 +1,88 @@
+---
+description: "SINGLE SOURCE OF TRUTH: mandatory Phase 0→1→2→3 workflow for every prompt. Recall memory, confirm plan, execute, store outcome."
+globs:
+alwaysApply: false
+---
+# MCP Workflow — Mandatory for Every Prompt
+
+## Phase 0 — Context Gathering (PARALLEL, read-only, < 10s)
+
+```
+CallMcpTool server="user-neural-memory" toolName="nmem_recall"
+            args={ "query": "<keywords>", "compact": true, "token_budget": 500 }
+Read        path="memory-bank/decisionLog.md"
+```
+Optional (code tasks): `CallMcpTool server="user-gitnexus" toolName="query" args={ "query": "...", "repo": "<repo>" }`
+
+### Pre-flight: GitNexus index check
+
+Before any GitNexus tool call, verify the repo is indexed:
+```
+CallMcpTool server="user-gitnexus" toolName="list_repos" args={}
+```
+If the current project is **not** in the returned list, index it first:
+```bash
+npx gitnexus analyze          # first-time index (required)
+npx gitnexus analyze --force --embeddings   # optional: enable semantic search
+```
+Then re-verify with `list_repos`. Without indexing, all GitNexus calls
+(`query`, `impact`, `context`, `detect_changes`) will fail with
+"Repository not found".
+
+**Repo name**: GitNexus uses the **folder name** (not the project name).
+Check `project-namespace.mdc` Override 5 for the correct `repo` value.
+
+## Phase 1 — Confirm Plan (BLOCKING)
+
+```
+CallMcpTool server="user-mcp-feedback-enhanced" toolName="interactive_feedback"
+            args={ "project_directory": "<root>", "summary": "Recalled: <findings>. Plan: <steps>.", "timeout": 36000 }
+```
+- Include Phase 0 findings. STOP and WAIT.
+- User adjusts → revise → Phase 1 again. User confirms → Phase 2.
+
+## Phase 2 — Execute
+
+1. Activate Serena: `CallMcpTool server="user-serena" toolName="activate_project" args={ "project": "<project>" }`
+2. Use tools as needed: serena find_symbol/replace_symbol_body, gitnexus impact/context, context7
+
+## Phase 3 — Store + Confirm
+
+1. `CallMcpTool server="user-neural-memory" toolName="nmem_remember" args={ "content": "<outcome>", "type": "decision|error|insight", "tags": ["<project>","<module>"] }`
+   - Replace `<project>` with the active project's tag (see `project-namespace.mdc` if present)
+2. Update `memory-bank/decisionLog.md` if architectural decision made
+3. `CallMcpTool server="user-mcp-feedback-enhanced" toolName="interactive_feedback" args={ "project_directory": "<root>", "summary": "<done>", "timeout": 36000 }`
+
+## Development Workflow (Phase 2 guidance)
+
+> **Project-specific verify commands belong in `project-namespace.mdc`,
+> NOT here.** This table provides the generic workflow shape.
+
+| Step | Action |
+|------|--------|
+| Explore | Read source, use gitnexus query/context for unfamiliar code |
+| Plan | Break into phases, identify multi-target implications |
+| Implement | Follow existing project patterns and conventions |
+| **Verify** | Run the verify commands listed in `project-namespace.mdc` (or the project's `AGENTS.md`) |
+| Commit | Conventional: `feat(scope):`, `fix(scope):`, `refactor(scope):` |
+
+## Tool Name Quick Reference
+
+| Intent | Cursor MCP call |
+|--------|----------------|
+| Recall | `server="user-neural-memory" toolName="nmem_recall"` |
+| Remember | `server="user-neural-memory" toolName="nmem_remember"` |
+| Confirm | `server="user-mcp-feedback-enhanced" toolName="interactive_feedback"` (timeout: 36000) |
+| Serena activate | `server="user-serena" toolName="activate_project"` (param: `project` NOT `project_name`) |
+| Serena find | `server="user-serena" toolName="find_symbol"` (param: `name_path_pattern`) |
+| GitNexus | `server="user-gitnexus" toolName="query"` (include `"repo": "<repo>"` in multi-repo) |
+
+## Critical Rules
+
+- Phase 0: NO edits, NO shell commands — read-only
+- Phase 1: timeout ALWAYS `36000`. NEVER `600`
+- Phase 2: activate_project BEFORE any serena call
+- Parallel-safe: all MCPs except interactive_feedback (blocking)
+- gitnexus impact BEFORE serena edit
+- **Project-local override**: if `harness-mcp-bridge.mdc` or `project-namespace.mdc`
+  exists, those take precedence for project-specific workflow, tags, and verify commands

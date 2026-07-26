@@ -1,0 +1,436 @@
+{
+  "audio": [
+    {
+      "duration_label": "00:00",
+      "duration_seconds": 0.0,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 1,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:00",
+      "duration_seconds": 0.0,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 2,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:00",
+      "duration_seconds": 0.0,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 3,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:00",
+      "duration_seconds": 0.0,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 4,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:00",
+      "duration_seconds": 0.0,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 5,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:00",
+      "duration_seconds": 0.0,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 6,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:00",
+      "duration_seconds": 0.0,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 7,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:00",
+      "duration_seconds": 0.0,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 8,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:00",
+      "duration_seconds": 0.0,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 9,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:00",
+      "duration_seconds": 0.0,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 10,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:00",
+      "duration_seconds": 0.0,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 11,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:00",
+      "duration_seconds": 0.0,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 12,
+      "transcribed": false,
+      "transcript_source": null
+    }
+  ],
+  "counts": {
+    "audio_matched": 0,
+    "audio_referenced": 12,
+    "audio_transcribed": 0,
+    "block_types": {
+      "audio": 12,
+      "button": 1,
+      "heading": 16,
+      "image": 26,
+      "quote": 6,
+      "rich_text": 24
+    },
+    "blocks": 85,
+    "images_found": 0,
+    "images_missing": 26,
+    "warnings": 12
+  },
+  "images": [
+    {
+      "exists": false,
+      "height": null,
+      "mime": null,
+      "output_name": null,
+      "sha256": null,
+      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/4glAH-iEXaZFykav_OKXPqWG1gRlhifcK.gif",
+      "width": null
+    },
+    {
+      "exists": false,
+      "height": null,
+      "mime": null,
+      "output_name": null,
+      "sha256": null,
+      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/X-PhGQG7Vnv9ilV5_v4vSD2LZiQtHjx8v.jpg",
+      "width": null
+    },
+    {
+      "exists": false,
+      "height": null,
+      "mime": null,
+      "output_name": null,
+      "sha256": null,
+      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/JCp7i1Uypuf4luwI_nUE0OMFwaaoBNr35.jpg",
+      "width": null
+    },
+    {
+      "exists": false,
+      "height": null,
+      "mime": null,
+      "output_name": null,
+      "sha256": null,
+      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/B3FlVCyHKTC7Xfym_9M4YBhUn8Jm4swjN.jpg",
+      "width": null
+    },
+    {
+      "exists": false,
+      "height": null,
+      "mime": null,
+      "output_name": null,
+      "sha256": null,
+      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/RaG-VIN2yHgIeToU_wJQ4ELNbGHsabkeO.png",
+      "width": null
+    },
+    {
+      "exists": false,
+      "height": null,
+      "mime": null,
+      "output_name": null,
+      "sha256": null,
+      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/QBLuSq3--8Fm-QXU_HSxmQjUjgureQ828.jpg",
+      "width": null
+    },
+    {
+      "exists": false,
+      "height": null,
+      "mime": null,
+      "output_name": null,
+      "sha256": null,
+      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/Uy9-mVjiaZAdV6vM_NCTEo2cBeMUs1_Hi.jpg",
+      "width": null
+    },
+    {
+      "exists": false,
+      "height": null,
+      "mime": null,
+      "output_name": null,
+      "sha256": null,
+      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/gSQ1Naccnk3_qYWf_i0WjS89hwzcebKZI.jpg",
+      "width": null
+    },
+    {
+      "exists": false,
+      "height": null,
+      "mime": null,
+      "output_name": null,
+      "sha256": null,
+      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/BLoieorFi9W8UKBC_YfWeIKMsLJf63YYc.png",
+      "width": null
+    },
+    {
+      "exists": false,
+      "height": null,
+      "mime": null,
+      "output_name": null,
+      "sha256": null,
+      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/P3Kp_sbAqPdJMZih_jN-amUsFXveKrI1Z.jpg",
+      "width": null
+    },
+    {
+      "exists": false,
+      "height": null,
+      "mime": null,
+      "output_name": null,
+      "sha256": null,
+      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/jeqc0spzUpKTbMB0_AFcDOMvZ55ulS817.jpg",
+      "width": null
+    },
+    {
+      "exists": false,
+      "height": null,
+      "mime": null,
+      "output_name": null,
+      "sha256": null,
+      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/cvK8faluXb7CvcNt_warKSBGDtxCay1S8.jpg",
+      "width": null
+    },
+    {
+      "exists": false,
+      "height": null,
+      "mime": null,
+      "output_name": null,
+      "sha256": null,
+      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/r8EnK-u5Z5UDDnBV_onwSYjeD_K2ABlEE.jpg",
+      "width": null
+    },
+    {
+      "exists": false,
+      "height": null,
+      "mime": null,
+      "output_name": null,
+      "sha256": null,
+      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/w64oNA0RZt24N9AO_HD3_uHtx3csEMaic.jpg",
+      "width": null
+    },
+    {
+      "exists": false,
+      "height": null,
+      "mime": null,
+      "output_name": null,
+      "sha256": null,
+      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/jH0Q51jV94hqwipx_k6zk-qM_6to9h5V1.png",
+      "width": null
+    },
+    {
+      "exists": false,
+      "height": null,
+      "mime": null,
+      "output_name": null,
+      "sha256": null,
+      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/F1v4I1lhLLbX9Kun_RNDAAF46r2Aeu-Qv.png",
+      "width": null
+    },
+    {
+      "exists": false,
+      "height": null,
+      "mime": null,
+      "output_name": null,
+      "sha256": null,
+      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/3jCX7_0SqKZa3MM__4IL09spMHXJ8XuGN.png",
+      "width": null
+    },
+    {
+      "exists": false,
+      "height": null,
+      "mime": null,
+      "output_name": null,
+      "sha256": null,
+      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/T6TJevYIToPqv9C0_HTEaXlAM8JKGJs25.jpg",
+      "width": null
+    },
+    {
+      "exists": false,
+      "height": null,
+      "mime": null,
+      "output_name": null,
+      "sha256": null,
+      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/Qd0ogBMnhw3ZtkqC_7iTgVkZleOkF4Y7B.jpg",
+      "width": null
+    },
+    {
+      "exists": false,
+      "height": null,
+      "mime": null,
+      "output_name": null,
+      "sha256": null,
+      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/WZX87CyRbKzjsgno_HjmKJFBJUCwe91XC.jpg",
+      "width": null
+    },
+    {
+      "exists": false,
+      "height": null,
+      "mime": null,
+      "output_name": null,
+      "sha256": null,
+      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/XSb_dhehr5v8E3ww_nkBJOSSZt54NjsAY.png",
+      "width": null
+    },
+    {
+      "exists": false,
+      "height": null,
+      "mime": null,
+      "output_name": null,
+      "sha256": null,
+      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/WZX87CyRbKzjsgno_HjmKJFBJUCwe91XC.jpg",
+      "width": null
+    },
+    {
+      "exists": false,
+      "height": null,
+      "mime": null,
+      "output_name": null,
+      "sha256": null,
+      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/lpG4f3is2RBJ2PY3_q_UC7bAtOh3aYgxu.jpg",
+      "width": null
+    },
+    {
+      "exists": false,
+      "height": null,
+      "mime": null,
+      "output_name": null,
+      "sha256": null,
+      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/ot6RaKkcDqRDC679_Dg14roEYm_iLZBMk.jpg",
+      "width": null
+    },
+    {
+      "exists": false,
+      "height": null,
+      "mime": null,
+      "output_name": null,
+      "sha256": null,
+      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/teFL8yEVLCXTdGn5_oTkkdizCL3A_qjZt.jpg",
+      "width": null
+    },
+    {
+      "exists": false,
+      "height": null,
+      "mime": null,
+      "output_name": null,
+      "sha256": null,
+      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/bFNe4Uv5fEMXDDoQ_HRSJ2ugLCUlDZ4eI.jpg",
+      "width": null
+    }
+  ],
+  "schema_version": 1,
+  "source": {
+    "adapter": "rise",
+    "course": null,
+    "lesson_count": "Lesson 3 of 6",
+    "source_html": "Lesson 2 - Global Drivers - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change.html",
+    "source_url": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/index.html#/lessons/WeZOlpTMWSmKWsvMRtuI1H0G9fsFfysc",
+    "title": "Lesson 3 - A History of BIM"
+  },
+  "warnings": [
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #1 (00:00s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #2 (00:00s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #3 (00:00s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #4 (00:00s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #5 (00:00s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #6 (00:00s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #7 (00:00s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #8 (00:00s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #9 (00:00s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #10 (00:00s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #11 (00:00s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #12 (00:00s)"
+    }
+  ]
+}

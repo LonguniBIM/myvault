@@ -1,0 +1,95 @@
+filters:
+  and:
+    - file.folder == "wiki/entities" || file.folder == "wiki/concepts" || file.folder == "wiki/sources" || file.folder == "wiki/methodology" || file.folder == "wiki/skills" || file.folder == "wiki/findings" || file.folder == "wiki/comparisons" || file.folder == "wiki/synthesis" || file.folder == "wiki/thesis" || file.folder == "wiki/queries"
+formulas:
+  age_days: (now() - file.ctime).days
+  link_count: file.links.length
+  backlink_count: file.backlinks.length
+  connectivity: file.links.length + file.backlinks.length
+properties:
+  type:
+    displayName: Type
+  title:
+    displayName: Title
+  tags:
+    displayName: Tags
+  priority:
+    displayName: Priority
+  confidence:
+    displayName: Confidence
+  formula.connectivity:
+    displayName: Connectivity
+  formula.age_days:
+    displayName: Age (days)
+views:
+  - type: table
+    name: All Pages
+    order:
+      - file.name
+      - type
+      - title
+      - tags
+      - formula.connectivity
+      - updated
+    summaries:
+      formula.connectivity: Average
+  - type: table
+    name: By Priority
+    groupBy:
+      property: priority
+      direction: DESC
+    order:
+      - file.name
+      - type
+      - title
+      - priority
+      - confidence
+      - formula.connectivity
+  - type: table
+    name: Sources (Six-Question)
+    filters:
+      and:
+        - type == "source"
+    order:
+      - file.name
+      - title
+      - skill_potential
+      - venue
+      - year
+      - formula.backlink_count
+  - type: table
+    name: Skill Pipeline
+    filters:
+      or:
+        - type == "methodology"
+        - type == "skill"
+    order:
+      - file.name
+      - type
+      - title
+      - skill_status
+      - steps
+      - effectiveness
+  - type: cards
+    name: Concepts Gallery
+    filters:
+      and:
+        - type == "concept"
+    order:
+      - file.name
+      - title
+      - tags
+      - formula.connectivity
+  - type: table
+    name: Most Connected
+    groupBy:
+      property: type
+      direction: ASC
+    order:
+      - file.name
+      - type
+      - formula.connectivity
+      - formula.backlink_count
+      - formula.link_count
+    summaries:
+      formula.connectivity: Max

@@ -93,6 +93,8 @@ export default (() => {
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
 
+        <link rel="stylesheet" href={joinSegments(baseDir, "static/ai-chat-widget.css")} />
+        <script src={joinSegments(baseDir, "static/ai-chat-widget.js")} defer />
         {css.map((resource) => CSSResourceToStyleElement(resource, true))}
         {js
           .filter((resource) => resource.loadTime === "beforeDOMReady")

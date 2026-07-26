@@ -1,0 +1,63 @@
+---
+description: Guide for managing shared library components across Knowledge Spaces
+globs:
+alwaysApply: false
+---
+
+# Shared Library Management Guide
+
+## Architecture
+
+This workspace uses a **Shared Library** pattern:
+- `.shared/` contains all reusable components (scripts, skills, rules, commands)
+- Each Knowledge Space gets transparent access via NTFS junctions (directories) and hard links (files)
+- `bridge.ps1` manages all connections
+
+## When You Add a New Shared Component
+
+### Adding a new `.mdc` rule file
+
+1. Create the file in `.shared/cursor-rules/your-rule.mdc`
+2. Run `.\bridge.ps1 sync-shared` — auto-discovers new `.mdc` files and creates hard links in all spaces
+3. Done. No manual edits to `bridge.ps1` needed (hardlinks are auto-discovered from `.shared/cursor-rules/*.mdc`)
+
+### Adding a new shared directory (junction)
+
+1. Create the directory in `.shared/your-directory/`
+2. Edit `bridge.ps1` — add entry to `$JunctionDefs`:
+   ```powershell
+   @{ Local = "your-local-path"; Target = "$SharedDir\your-directory" }
+   ```
+3. Run `.\bridge.ps1 sync-shared` to propagate to all spaces
+
+### Adding a new shared file (non-.mdc)
+
+1. Place the file in the appropriate `.shared/` subdirectory
+2. If it's inside a junction-linked directory (scripts/, claude-skills/, claude-commands/), it's automatically available
+3. If it needs its own hard link, add to `Get-SharedHardlinkDefs` function in `bridge.ps1`
+
+## Key Commands
+
+| Command | Purpose |
+|---------|---------|
+| `.\bridge.ps1 sync-shared` | Auto-discover new shared components, propagate to all spaces, update .space.json |
+| `.\bridge.ps1 verify` | Check all links are healthy across all spaces |
+| `.\bridge.ps1 repair` | Fix broken links (re-runs setup on all spaces) |
+| `.\bridge.ps1 add-space "Name"` | Create a new Knowledge Space with all shared links |
+| `.\bridge.ps1 status` | Overview of all spaces and shared component counts |
+
+## Important: Auto-Discovery
+
+`bridge.ps1` uses `Get-SharedHardlinkDefs` to dynamically scan `.shared/cursor-rules/*.mdc`.
+This means:
+- **New `.mdc` files** in `.shared/cursor-rules/` are auto-detected — just run `sync-shared`
+- **Removed `.mdc` files** will show as orphan hard links — manually delete from spaces or ignore
+- **Junction definitions** are static in `$JunctionDefs` — must be manually added/removed
+
+## Space Independence
+
+Each Knowledge Space can be opened independently as a separate workspace. Junctions use absolute paths
+and resolve correctly regardless of the current working directory. When opening a single space:
+- Shared scripts, skills, commands are accessible via junctions
+- Shared cursor rules are accessible via hard links
+- Space-specific content (purpose.md, schema.md, CLAUDE.md, wiki/) stays local

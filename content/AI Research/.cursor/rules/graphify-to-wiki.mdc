@@ -1,0 +1,302 @@
+---
+description: "Sync graphify knowledge graph output into LLM Wiki structure using Obsidian-flavored markdown. Bridges graphify-out/ → wiki/ with proper wikilinks, callouts, and frontmatter."
+globs:
+alwaysApply: false
+---
+
+# /graphify-to-wiki — Sync Knowledge Graph → Wiki
+
+When the user types `/graphify-to-wiki`, run the integration pipeline that reads graphify output and creates/updates wiki pages using Obsidian-flavored markdown.
+
+---
+
+## Prerequisites
+
+Before running, verify:
+1. `graphify-out/graph.json` exists (run `/graphify .` first if missing)
+2. `graphify-out/GRAPH_REPORT.md` exists
+3. `wiki/index.md` exists (LLM Wiki project initialized)
+4. `schema.md` exists (page type definitions)
+
+---
+
+## Pipeline Steps
+
+### Step 1 — Parse Graph Data
+
+Read `graphify-out/graph.json` and extract:
+
+| Data | Source in graph.json | Maps to Wiki |
+|------|---------------------|--------------|
+| God nodes (highest degree) | `nodes[].edges` count from `links[]` | `wiki/entities/` or `wiki/concepts/` |
+| Communities (clusters) | `graph.hyperedges[]` + GRAPH_REPORT communities | `wiki/synthesis/` |
+| Surprising connections | GRAPH_REPORT "Surprising Connections" | `wiki/synthesis/` or update `related:` fields |
+| Hyperedges (group relations) | `graph.hyperedges[]` | `wiki/comparisons/` |
+| Knowledge gaps | GRAPH_REPORT "Knowledge Gaps" | `wiki/queries/` (open questions) |
+
+### Step 2 — Deduplicate Against Existing Wiki
+
+Before creating any page:
+1. Read `wiki/index.md` to get all existing page slugs
+2. For each candidate node/entity from graphify:
+   - Normalize name to kebab-case
+   - Check if `wiki/entities/<slug>.md` or `wiki/concepts/<slug>.md` already exists
+   - If exists → **UPDATE** (add new connections to `related:` frontmatter, append new info)
+   - If not exists → **CREATE** new page
+
+### Step 3 — Generate Wiki Pages (Obsidian Format)
+
+Use `.claude/skills/obsidian-skills/skills/obsidian-markdown/SKILL.md` formatting rules:
+
+#### Entity Page Template
+```markdown
+---
+type: entity
+title: "<Node Label>"
+tags: [<extracted from graph community>, <node type>]
+related: ["[[related-entity-1]]", "[[related-entity-2]]"]
+created: <today YYYY-MM-DD>
+updated: <today YYYY-MM-DD>
+graphify_node_id: "<node id from graph.json>"
+confidence: "<EXTRACTED | INFERRED | AMBIGUOUS>"
+source_file: "<source_file from graph.json>"
+---
+
+# <Node Label>
+
+> [!info] Auto-generated from graphify knowledge graph
+> Confidence: <EXTRACTED/INFERRED> | Community: <community number> | Edges: <edge count>
+
+<Description derived from node label and connected edges>
+
+## Connections
+
+<List of [[wikilinks]] to connected nodes, grouped by relationship type>
+
+## Source Context
+
+<Quote or reference from the source_file where this entity was extracted>
+
+## Related Pages
+<List of [[wikilinks]] from related: frontmatter>
+```
+
+#### Concept Page Template
+```markdown
+---
+type: concept
+title: "<Concept Label>"
+tags: [<community tags>]
+related: ["[[entity-1]]", "[[entity-2]]"]
+created: <today YYYY-MM-DD>
+updated: <today YYYY-MM-DD>
+graphify_node_id: "<node id>"
+---
+
+# <Concept Label>
+
+> [!abstract] Knowledge Graph Concept
+> Part of Community <N> (Cohesion: <score>) | <edge count> connections
+
+<Description synthesized from node context and edges>
+
+## Key Relationships
+
+<Wikilinked list of edges with relationship types>
+
+## Related Pages
+<[[wikilinks]]>
+```
+
+#### Synthesis Page Template (from Surprising Connections)
+```markdown
+---
+type: synthesis
+title: "Synthesis: <Connection Description>"
+tags: [graphify-insight, cross-community]
+related: ["[[node-a]]", "[[node-b]]"]
+created: <today YYYY-MM-DD>
+updated: <today YYYY-MM-DD>
+---
+
+# <Connection Description>
+
+> [!tip] Surprising Connection
+> This relationship was flagged by graphify's community detection as crossing cluster boundaries.
+
+## The Connection
+
+**[[Node A]]** ←→ **[[Node B]]**
+
+- Relationship: <edge label>
+- Confidence: <EXTRACTED/INFERRED>
+- Source: `<source_file>`
+
+## Why This Matters
+
+<Brief analysis of why this cross-community link is noteworthy>
+
+## Explore Further
+- [[node-a]]
+- [[node-b]]
+```
+
+### Step 4 — Update Index and Log
+
+After creating/updating pages:
+
+1. **Update `wiki/index.md`** — Add new entries under appropriate type sections
+2. **Update `wiki/log.md`** — Append entry:
+   ```markdown
+   ## <YYYY-MM-DD>
+
+   - [graphify-to-wiki] Synced <N> new pages, updated <M> existing pages from graphify knowledge graph
+   - New entities: [[entity-1]], [[entity-2]]
+   - New concepts: [[concept-1]]
+   - New synthesis: [[synthesis-1]]
+   ```
+
+### Step 5 — Post-Sync Validation
+
+After all pages are created:
+1. Verify all `[[wikilinks]]` in new pages point to existing files
+2. Report any dangling links (targets that don't exist yet)
+3. Suggest follow-up actions for knowledge gaps
+
+---
+
+## Usage Patterns
+
+| User says | Action |
+|-----------|--------|
+| `/graphify-to-wiki` | Full sync: parse graph → create/update all pages |
+| `/graphify-to-wiki --entities-only` | Only sync god nodes as entity pages |
+| `/graphify-to-wiki --insights-only` | Only sync surprising connections as synthesis pages |
+| `/graphify-to-wiki --gaps` | Only create query pages from knowledge gaps |
+| `/graphify-to-wiki --dry-run` | Preview what would be created/updated without writing |
+| `/graphify-to-wiki --update` | Only update existing pages with new graph connections |
+
+---
+
+## Decision Logic — Entity vs Concept
+
+| Signal | Maps to |
+|--------|---------|
+| Node is a named tool/repo/person/org | `wiki/entities/` |
+| Node is an abstract idea/method/pattern | `wiki/concepts/` |
+| Node describes a comparison/tradeoff | `wiki/comparisons/` |
+| Node is an open question or gap | `wiki/queries/` |
+| Node connects multiple communities | `wiki/synthesis/` |
+
+---
+
+## Obsidian Skills Integration
+
+This rule uses the following obsidian-skills formatting:
+
+1. **Wikilinks** (`[[page-slug]]`) — All cross-references use Obsidian wikilink syntax
+2. **Callouts** (`> [!type]`) — Used for metadata boxes (info, tip, warning, abstract)
+3. **Frontmatter** (YAML `---` blocks) — Full property support per schema.md
+4. **Tags** — In frontmatter `tags: []` array, kebab-case
+5. **Embeds** (`![[page]]`) — For embedding related content inline where useful
+
+Reference: `.claude/skills/obsidian-skills/skills/obsidian-markdown/SKILL.md`
+
+---
+
+## Graphify Output Reference
+
+| File | Contains | Used For |
+|------|----------|----------|
+| `graphify-out/graph.json` | Full graph (nodes, links, hyperedges, metadata) | Entity/concept extraction |
+| `graphify-out/GRAPH_REPORT.md` | God nodes, surprising connections, communities, gaps | Prioritization and synthesis |
+| `graphify-out/graph.html` | Interactive visualization | Not used in sync (reference only) |
+
+### graph.json Structure
+
+```json
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [{
+      "id": "string",
+      "label": "human-readable description",
+      "nodes": ["node_id_1", "node_id_2"],
+      "relation": "participate_in | form",
+      "confidence": "EXTRACTED | INFERRED",
+      "confidence_score": 0.0-1.0,
+      "source_file": "wiki/path/to/source.md"
+    }]
+  },
+  "nodes": [{
+    "id": "unique_node_id",
+    "label": "Human-Readable Node Name",
+    "file_type": "code | rationale | document",
+    "source_file": "path/to/source",
+    "source_location": "L123 | null",
+    "source_url": "url | null",
+    "author": "string | null",
+    "community": 0,
+    "norm_label": "lowercase label"
+  }],
+  "links": [{
+    "source": "node_id",
+    "target": "node_id",
+    "relation": "relationship_type",
+    "confidence": "EXTRACTED | INFERRED",
+    "confidence_score": 0.0-1.0,
+    "source_file": "path"
+  }]
+}
+```
+
+---
+
+## Filtering Rules
+
+**Node file_type in graph.json:**
+- `"code"` — Skip (pure code functions like main(), slugify())
+- `"rationale"` — Skip (docstring descriptions of code)
+- `"document"` — **INCLUDE** (meaningful entities, concepts, tools extracted from wiki/docs)
+
+Skip nodes that are:
+- `file_type: "code"` or `file_type: "rationale"` — code docs, not wiki content
+- Duplicate of existing wiki page content (check `source_file` against existing wiki pages)
+- Low-confidence AMBIGUOUS nodes (unless `--include-ambiguous` flag)
+- Nodes with only 1 edge (isolated) — unless explicitly requested via `--gaps`
+
+Focus on nodes that:
+- Have `file_type: "document"`
+- Have ≥3 edges (well-connected)
+- Are in communities with cohesion ≥0.15
+- Have EXTRACTED or high-confidence INFERRED status
+- Represent concepts, tools, methodologies, or named entities
+
+---
+
+## Complete Workflow
+
+```
+/graphify .                    ← Build/update the knowledge graph
+    ↓
+/graphify-to-wiki              ← Sync graph insights → wiki pages
+    ↓
+Review new pages in wiki/      ← Human verifies auto-generated content
+    ↓
+/graphify . --update           ← Re-index wiki with new pages (feedback loop)
+```
+
+This creates a virtuous cycle: graphify maps → wiki enriches → graphify re-maps with richer context.
+
+---
+
+## Error Handling
+
+| Problem | Resolution |
+|---------|-----------|
+| `graphify-out/` missing | Prompt: "Run `/graphify .` first to build the knowledge graph" |
+| `graph.json` malformed | Report parse error with line number |
+| Duplicate slug conflict | Append `-2`, `-3` suffix or merge into existing page |
+| Dangling wikilink | Add to "Knowledge Gaps" section in wiki/log.md |
+| Too many nodes (>50 new pages) | Batch: create top-10 by edge count first, prompt user to continue |

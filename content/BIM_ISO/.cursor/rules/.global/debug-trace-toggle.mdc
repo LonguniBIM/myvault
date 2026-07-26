@@ -1,0 +1,80 @@
+---
+description: "Debug Trace.WriteLine pattern with static DebugMode toggle. Apply when adding debug logging to C# code."
+globs: "**/*.cs"
+alwaysApply: false
+---
+# Debug Trace Toggle Pattern
+
+## Purpose
+Use `Trace.WriteLine` with a static `DebugMode` toggle for runtime debug logging
+that can be captured by any `TraceListener`. The toggle ensures
+zero overhead when disabled (no string allocation, no method calls).
+
+## Implementation Pattern
+
+### 1. Class-Level Toggle (one per module)
+
+```csharp
+public class [Feature]Logger
+{
+    public static bool DebugMode { get; set; }
+
+    internal static void TraceLog(string message)
+    {
+        if (!DebugMode) return;
+        Trace.WriteLine($"[{FeatureName}][{DateTime.Now:HH:mm:ss.fff}] {message}");
+    }
+}
+```
+
+### 2. Service-Level Delegation
+
+Services delegate to the logger's `TraceLog` with a component prefix:
+
+```csharp
+private static void TraceLog(string message) =>
+    [Feature]Logger.TraceLog($"[ComponentName] {message}");
+```
+
+### 3. WebView Toggle Messages
+
+Add `toggleDebug` and `getDebugStatus` message handlers in the Window class:
+
+```csharp
+case "toggleDebug":
+    [Feature]Logger.DebugMode = ![Feature]Logger.DebugMode;
+    Trace.WriteLine($"[{FeatureName}] DebugMode = {[Feature]Logger.DebugMode}");
+    await SendResponse("debugStatus",
+        JsonSerializer.Serialize(new { enabled = [Feature]Logger.DebugMode }, JsonOpts));
+    break;
+
+case "getDebugStatus":
+    await SendResponse("debugStatus",
+        JsonSerializer.Serialize(new { enabled = [Feature]Logger.DebugMode }, JsonOpts));
+    break;
+```
+
+## What to Trace
+
+| Operation | Example |
+|-----------|---------|
+| Method entry/exit | `TraceLog("CreateSnapshot: starting...")` |
+| Timing | `TraceLog($"Extracted {count} records in {sw.ElapsedMilliseconds}ms")` |
+| Data counts | `TraceLog($"InsertSnapshot: {rows.Count} rows")` |
+| Errors | `TraceLog($"FAILED — {ex.GetType().Name}: {ex.Message}")` |
+| DB operations | `TraceLog("EnsureSchema: executing DDL...")` |
+| Progress | `TraceLog($"COPY progress {i}/{total}")` |
+
+## Rules
+
+- **NEVER** log sensitive data (passwords, connection strings, user data)
+- **ALWAYS** guard with `if (!DebugMode) return` to avoid string allocation
+- **ALWAYS** include timestamps in trace output (`HH:mm:ss.fff`)
+- **ALWAYS** include component prefix (`[ComponentName]`) for filtering
+- Use `Stopwatch` for timing measurements, not `DateTime` diffs
+- Log at method boundaries, not inside tight loops (except at intervals)
+
+## Existing Implementation
+
+> Add project-specific implementation references in `project-namespace.mdc`,
+> not in this global rule.

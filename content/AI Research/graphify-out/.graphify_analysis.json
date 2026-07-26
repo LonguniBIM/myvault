@@ -1,0 +1,250 @@
+{
+  "communities": {
+    "0": [
+      "agent_skills_for_llm_coding_comparison_doc",
+      "agent_skills_for_llm_coding_feature_matrix",
+      "index_comparison_agent_skills_for_llm_coding",
+      "index_entity_andrej_karpathy_skills",
+      "index_entity_obsidian_skills",
+      "llm_agent_skills_compatible_agents",
+      "llm_agent_skills_concept",
+      "llm_agent_skills_three_types",
+      "llm_coding_guidelines_concept",
+      "llm_coding_guidelines_four_principles",
+      "llm_coding_guidelines_why_they_exist",
+      "log_comparison_agent_skills_created",
+      "rationale_complementary_agent_skills_triad",
+      "rationale_llm_coding_guidelines_why_exist"
+    ],
+    "1": [
+      "graphify_graph_report_md",
+      "graphify_graphify_tool",
+      "graphify_graphrag",
+      "graphify_raw_leiden_community_detection",
+      "llm_wiki_four_signal_knowledge_graph",
+      "llm_wiki_karpathy_llm_wiki_pattern",
+      "llm_wiki_llm_wiki_app",
+      "llm_wiki_louvain_community_detection",
+      "llm_wiki_rationale_purpose_md",
+      "llm_wiki_rationale_two_step_vs_single",
+      "llm_wiki_two_step_cot_ingest",
+      "obsidian_skills_skill_defuddle",
+      "wiki_sources_nashsu_llm_wiki_source_page",
+      "wiki_sources_safishamsi_graphify_source_page"
+    ],
+    "2": [
+      "index_comparison_llm_knowledge_base_tools",
+      "index_entity_graphify",
+      "index_entity_llm_wiki",
+      "llm_knowledge_base_concept",
+      "llm_knowledge_base_key_characteristics",
+      "llm_knowledge_base_persistent_wiki_vs_rag",
+      "llm_knowledge_base_tools_best_fit_bottom_line",
+      "llm_knowledge_base_tools_comparison_doc",
+      "log_mapping_overlap_storage",
+      "rationale_llm_wiki_vs_graphify_user_segment",
+      "rationale_persistent_wiki_vs_traditional_rag",
+      "schema_contradiction_handling"
+    ],
+    "3": [
+      "overview_metrics_table",
+      "overview_six_step_workflow",
+      "purpose_github_repo_knowledge_base",
+      "purpose_hypothesis_queryable_kb",
+      "purpose_karpathy_pattern_adaptation",
+      "purpose_llm_wiki_clipper",
+      "purpose_methodology_kb_traversal_query",
+      "purpose_paradox_of_choice",
+      "purpose_research_question_repo_fit",
+      "purpose_two_step_ingest_pipeline",
+      "sample_seven_step_ingest"
+    ],
+    "4": [
+      "karpathy_llm_wiki_pattern_concept",
+      "karpathy_llm_wiki_pattern_human_curates",
+      "karpathy_llm_wiki_pattern_implementations_table",
+      "karpathy_llm_wiki_pattern_three_layers",
+      "sample_based_karpathy_pattern",
+      "sample_lint_audit_wiki",
+      "sample_llm_wiki_template",
+      "sample_qa_protocol",
+      "sample_raw_immutable_wiki_generated",
+      "sample_wiki_page_format"
+    ],
+    "5": [
+      "andrej_karpathy_skills_karpathy_skills_repo",
+      "andrej_karpathy_skills_principle_goal_driven_execution",
+      "andrej_karpathy_skills_principle_simplicity_first",
+      "andrej_karpathy_skills_principle_surgical_changes",
+      "andrej_karpathy_skills_principle_think_before_coding",
+      "andrej_karpathy_skills_rationale_caution_over_speed",
+      "andrej_karpathy_skills_rationale_goal_loop_leverage",
+      "wiki_sources_github_forrestchang_source_page"
+    ],
+    "6": [
+      "obsidian_skills_agent_skills_specification",
+      "obsidian_skills_obsidian_skills_collection",
+      "obsidian_skills_skill_json_canvas",
+      "obsidian_skills_skill_obsidian_bases",
+      "obsidian_skills_skill_obsidian_cli",
+      "obsidian_skills_skill_obsidian_markdown",
+      "wiki_sources_kepano_obsidian_source_page"
+    ],
+    "7": [
+      "schema_comparison_frontmatter_best_fit",
+      "schema_entity_github_frontmatter",
+      "schema_page_types_table",
+      "schema_yaml_frontmatter_required"
+    ],
+    "8": [
+      "rationale_schema_methodology_why",
+      "schema_methodology_rationale_pages"
+    ],
+    "9": [
+      "saved_query_2026_04_29_030750_saved_query_stub"
+    ]
+  },
+  "cohesion": {
+    "0": 0.21,
+    "1": 0.16,
+    "2": 0.21,
+    "3": 0.24,
+    "4": 0.2,
+    "5": 0.25,
+    "6": 0.29,
+    "7": 0.5,
+    "8": 1.0,
+    "9": 1.0
+  },
+  "gods": [
+    {
+      "id": "agent_skills_for_llm_coding_comparison_doc",
+      "label": "Comparison document: Agent Skills for LLM Coding Agents",
+      "degree": 9
+    },
+    {
+      "id": "andrej_karpathy_skills_karpathy_skills_repo",
+      "label": "Andrej Karpathy Skills (CLAUDE.md guidelines)",
+      "degree": 9
+    },
+    {
+      "id": "llm_wiki_llm_wiki_app",
+      "label": "LLM Wiki (nashsu/llm_wiki desktop app)",
+      "degree": 9
+    },
+    {
+      "id": "obsidian_skills_obsidian_skills_collection",
+      "label": "Obsidian Skills (kepano/obsidian-skills)",
+      "degree": 9
+    },
+    {
+      "id": "karpathy_llm_wiki_pattern_concept",
+      "label": "Karpathy LLM Wiki Pattern methodology",
+      "degree": 8
+    },
+    {
+      "id": "purpose_github_repo_knowledge_base",
+      "label": "GitHub Repo Knowledge Base (project purpose)",
+      "degree": 7
+    },
+    {
+      "id": "index_entity_graphify",
+      "label": "graphify \u00e2\u20ac\u201d GraphRAG knowledge graph skill (safishamsi/graphify)",
+      "degree": 7
+    },
+    {
+      "id": "llm_agent_skills_concept",
+      "label": "LLM Agent Skills concept (portable skill files)",
+      "degree": 7
+    },
+    {
+      "id": "llm_coding_guidelines_concept",
+      "label": "LLM Coding Guidelines concept",
+      "degree": 7
+    },
+    {
+      "id": "llm_knowledge_base_concept",
+      "label": "LLM-Powered Knowledge Base concept",
+      "degree": 7
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Seven-step ingest workflow (read, discuss, pages, links, index, log)",
+      "target": "Two-step ingest: raw capture to wiki processing",
+      "source_files": [
+        "Sample.md",
+        "purpose.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "Two-step ingest: raw capture to wiki processing",
+      "target": "Six-step workflow: capture through query",
+      "source_files": [
+        "purpose.md",
+        "wiki/overview.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "Six-step workflow: capture through query",
+      "target": "Queries answered by traversing KB index to entity/comparison pages",
+      "source_files": [
+        "wiki/overview.md",
+        "purpose.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `Queries answered by traversing KB index to entity/comparison pages` unexpectedly reaches hub `Six-step workflow: capture through query`"
+    },
+    {
+      "source": "Contradiction handling workflow (note, query, link, synthesis)",
+      "target": "LLM-Powered Knowledge Base concept",
+      "source_files": [
+        "schema.md",
+        "wiki/concepts/llm-knowledge-base.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `Contradiction handling workflow (note, query, link, synthesis)` unexpectedly reaches hub `LLM-Powered Knowledge Base concept`"
+    },
+    {
+      "source": "Approach inspired by Karpathy LLM Wiki pattern for repo analysis",
+      "target": "Karpathy LLM Wiki Pattern methodology",
+      "source_files": [
+        "purpose.md",
+        "wiki/concepts/karpathy-llm-wiki-pattern.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `Karpathy LLM Wiki Pattern methodology` connect `Community 4` to `Community 0`, `Community 2`, `Community 3`?",
+      "why": "High betweenness centrality (0.120) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `Comparison document: Agent Skills for LLM Coding Agents` connect `Community 0` to `Community 2`, `Community 3`?",
+      "why": "High betweenness centrality (0.076) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `Six-step workflow: capture through query` connect `Community 3` to `Community 0`, `Community 2`?",
+      "why": "High betweenness centrality (0.066) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `Research question: which GitHub repos best fit a use case and how they compare`, `Paradox of choice across overlapping GitHub tools`, `Raw sources immutable; wiki Claude-maintained` to the rest of the system?",
+      "why": "48 weakly-connected nodes found - possible documentation gaps or missing edges."
+    }
+  ]
+}

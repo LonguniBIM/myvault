@@ -1,0 +1,95 @@
+---
+description: Git commit conventions. Apply when making git commits or discussing commit message format.
+globs: 
+alwaysApply: false
+---
+
+# Git Commit Conventions
+
+## Conventional Commit Format
+```
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+## Commit Types
+- **feat**: New feature for the user
+- **fix**: Bug fix for the user
+- **docs**: Documentation changes
+- **style**: Code formatting, missing semicolons, etc.
+- **refactor**: Code change that neither fixes a bug nor adds a feature
+- **perf**: Performance improvements
+- **test**: Adding missing tests or correcting existing tests
+- **chore**: Changes to build process or auxiliary tools
+- **ci**: Changes to CI configuration files and scripts
+
+## Scope Examples
+
+> Adapt scopes to the active project. Below are generic examples.
+
+- **core**: Core framework / library changes
+- **ui**: User interface changes
+- **api**: API or service layer changes
+- **db**: Database or data model changes
+- **config**: Configuration or build system changes
+- **docs**: Documentation changes
+
+## Examples
+```
+feat(core): add new transaction extension methods
+fix(api): resolve connection timeout on batch operations
+docs(architecture): update design patterns documentation
+refactor(core): simplify dependency injection configuration
+perf(db): optimize query performance for large datasets
+test(core): add unit tests for batch processing
+chore(build): update package dependencies to latest versions
+```
+
+## Breaking Changes
+Use `!` after type/scope or `BREAKING CHANGE:` footer:
+```
+feat(api)!: change collection API signature
+
+BREAKING CHANGE: GetItems method now requires context parameter
+```
+
+## Multi-line Commits
+```
+feat(core): implement batch processing with progress reporting
+
+- Add spatial indexing for efficient queries
+- Implement batch operations for large datasets
+- Include progress reporting for long-running operations
+
+Closes #123
+```
+
+## Guidelines
+- Use descriptive scopes that match project modules or major components
+- Reference issue numbers when applicable
+- Include performance impact notes for significant changes
+- Mention breaking changes clearly in commit messages
+- Use present tense ("add feature" not "added feature")
+- Keep first line under 72 characters
+- Separate subject from body with blank line
+- Use body to explain what and why, not how
+
+## Commit Message Rules
+1. **Type is required**: Every commit must have a type
+2. **Scope is optional**: Use when change affects specific component
+3. **Description is required**: Brief summary of the change
+4. **Body is optional**: Detailed explanation when needed
+5. **Footer is optional**: Reference issues, breaking changes, etc.
+
+## Best Practices
+- Write commit messages as if completing the sentence: "If applied, this commit will..."
+- Use imperative mood in the subject line
+- Capitalize the subject line
+- Do not end the subject line with a period
+- Use the body to explain what and why vs. how
+- Separate subject from body with a blank line
+- Wrap the body at 72 characters
+- Use the footer to reference issues and breaking changes

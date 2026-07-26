@@ -1,0 +1,75 @@
+---
+description: "Reference: NeuralMemory patterns — what to remember, how to tag. Loaded on demand, not alwaysApply."
+globs:
+alwaysApply: false
+---
+# NeuralMemory Patterns (Reference)
+
+> **The mandatory workflow (Phase 0→1→2→3) is in `mcp-mandatory-startup.mdc`.**
+> This file is a reference for WHAT to remember and HOW to tag it.
+
+## nmem_recall Parameters
+
+| Scenario | depth | token_budget | notes |
+|----------|-------|--------------|-------|
+| Normal query | 1 | 500 | Default for Phase 0 |
+| Deep investigation | 2 | 1000 | Use when debugging or tracing history |
+| Session start (first prompt) | — | — | Use `nmem_recap` level=2 instead |
+
+## nmem_remember Templates
+
+**Bug fix:**
+```
+content: "ERROR: <what broke>. SOLUTION: <what fixed it>. FILE: <path>"
+type: "error"
+tags: ["<project>", "<module>", "<error-type>"]
+priority: 7
+```
+
+**Architecture decision:**
+```
+content: "DECISION: <choice>. REASON: <why>. ALTERNATIVE: <rejected>"
+type: "decision"
+tags: ["<project>", "<module>", "<topic>"]
+priority: 7
+```
+
+**Insight:**
+```
+content: "INSIGHT: <discovery>. CONTEXT: <when it matters>"
+type: "insight"
+tags: ["<project>", "<area>"]
+priority: 6
+```
+
+**User preference:**
+```
+content: "INSTRUCTION: <what user wants>. SCOPE: <where it applies>"
+type: "instruction"
+tags: ["<project>", "preference"]
+priority: 8
+```
+
+## What to Remember (by type)
+
+| Type | When | Priority |
+|------|------|----------|
+| `error` | Bug fixed, exception resolved, build failure solved | 7 |
+| `decision` | Tech choice, pattern selection, architecture change | 7 |
+| `insight` | Non-obvious pattern discovered, performance finding | 6 |
+| `instruction` | User preference, coding convention, project rule | 8 |
+| `workflow` | Multi-step process, deploy procedure, setup steps | 6 |
+| `todo` | Deferred task, follow-up needed (auto-expires 30 days) | 5 |
+
+## Rules
+
+- Never store secrets, API keys, or credentials
+- Keep under 200 words — concise and searchable
+- Always include relevant tags (lowercase, hyphenated)
+- Prefer explicit `type` over auto-detection for critical memories
+- Also update `memory-bank/decisionLog.md` for architectural decisions
+
+## Session Lifecycle
+
+- **Session start**: `nmem_recap(level=2)` to load project context
+- **Session end**: `nmem_remember` session summary; `nmem_health` to check brain status

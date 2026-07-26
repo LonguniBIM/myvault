@@ -1,0 +1,87 @@
+---
+description: "Auto-ingest pending items from .llm-wiki/ingest-queue/. Triggered when user says 'ingest pending' or when new raw sources are detected."
+globs:
+alwaysApply: false
+---
+<!-- Apply Mode: Apply Intelligently — AI should auto-detect when user mentions ingest, pending, queue, raw sources -->
+
+# /ingest-pending — Process Queued Raw Sources
+
+When the user types `/ingest-pending` or mentions "ingest pending", process all pending items in the ingest queue.
+
+---
+
+## How It Works
+
+The file watcher (`python scripts/watch_ingest.py`) monitors `raw/sources/` and queues new files at `.llm-wiki/ingest-queue/*.json`. This rule processes those queued items.
+
+---
+
+## Pipeline (per queued item)
+
+For each `.json` file in `.llm-wiki/ingest-queue/` with `"status": "pending"`:
+
+1. **Read** the raw source file specified in the queue item
+2. **Follow CLAUDE.md Auto-Ingest Pipeline** (lines 111-125):
+   - Extract metadata: repo name, author, description, language, stars, license, use case
+   - Create entity page in `wiki/entities/` (use **obsidian-markdown** skill for formatting)
+   - Map to existing repos via `wiki/index.md` and tag matching
+   - If similar repos exist → create/update `wiki/comparisons/` page
+   - Update cross-references with `[[wikilinks]]`
+   - Update `wiki/index.md` and `wiki/log.md`
+   - Update `wiki/overview.md` metrics
+3. **Consult graphify** (if `graphify-out/GRAPH_REPORT.md` exists):
+   - Check god nodes for related concepts
+   - Check communities for grouping context
+   - Inform `related:` frontmatter with graph neighbors
+4. **Mark queue item as done**: Update status to `"done"` + add `processed_at` timestamp
+5. **Run `/graphify-to-wiki`** if ≥3 new items were ingested (batch sync)
+
+---
+
+## Usage Patterns
+
+| User says | Action |
+|-----------|--------|
+| `/ingest-pending` | Process all pending queue items |
+| `/ingest-pending --dry-run` | Preview what would be ingested |
+| `/ingest-pending --file <name>` | Ingest specific queued file only |
+| `ingest pending` | Same as `/ingest-pending` |
+
+---
+
+## Starting the Watcher
+
+```powershell
+python scripts/watch_ingest.py              # continuous watch (poll every 5s)
+python scripts/watch_ingest.py --once       # single check
+python scripts/watch_ingest.py --status     # show queue status
+```
+
+---
+
+## Queue Item Format
+
+`.llm-wiki/ingest-queue/<timestamp>-<slug>.json`:
+```json
+{
+  "file": "raw/sources/github---repo-name-20260506.md",
+  "filename": "github---repo-name-20260506.md",
+  "detected_at": "2026-05-06T21:00:00",
+  "status": "pending | processing | done | error",
+  "title": "Github Repo Name..."
+}
+```
+
+---
+
+## After Ingest
+
+The complete pipeline for a new clip:
+```
+1. Wiki Clipper saves → raw/sources/<file>.md
+2. watch_ingest.py detects → .llm-wiki/ingest-queue/<item>.json
+3. User says "ingest pending" → Agent runs this pipeline
+4. /graphify . --update → refresh graph with new wiki content
+5. /graphify-to-wiki → sync any new graph insights back
+```

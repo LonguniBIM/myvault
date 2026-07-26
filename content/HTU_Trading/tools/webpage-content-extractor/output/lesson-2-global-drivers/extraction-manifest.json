@@ -1,0 +1,221 @@
+{
+  "audio": [
+    {
+      "duration_label": "00:54",
+      "duration_seconds": 53.893515,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 2 - Global Drivers - BIM ISO 19650 12 Project Delivery Un (6).mp3",
+      "placeholder_index": 1,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:55",
+      "duration_seconds": 54.566893,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 2 - Global Drivers - BIM ISO 19650 12 Project Delivery Un (7).mp3",
+      "placeholder_index": 2,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "01:01",
+      "duration_seconds": 61.091701,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 2 - Global Drivers - BIM ISO 19650 12 Project Delivery Un (8).mp3",
+      "placeholder_index": 3,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:28",
+      "duration_seconds": 28.026485,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 2 - Global Drivers - BIM ISO 19650 12 Project Delivery Un (4).mp3",
+      "placeholder_index": 4,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:29",
+      "duration_seconds": 28.769524,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 2 - Global Drivers - BIM ISO 19650 12 Project Delivery Un (9).mp3",
+      "placeholder_index": 5,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:22",
+      "duration_seconds": 21.966077,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 6,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:54",
+      "duration_seconds": 54.102494,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 2 - Global Drivers - BIM ISO 19650 12 Project Delivery Un (10).mp3",
+      "placeholder_index": 7,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:17",
+      "duration_seconds": 17.205986,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 8,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:53",
+      "duration_seconds": 53.034376,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 9,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "01:24",
+      "duration_seconds": 83.661497,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 2 - Global Drivers - BIM ISO 19650 12 Project Delivery Un (5).mp3",
+      "placeholder_index": 10,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    }
+  ],
+  "counts": {
+    "audio_matched": 7,
+    "audio_referenced": 10,
+    "audio_transcribed": 7,
+    "block_types": {
+      "audio": 10,
+      "button": 1,
+      "heading": 11,
+      "image": 9,
+      "quote": 7,
+      "rich_text": 6,
+      "unknown": 1
+    },
+    "blocks": 45,
+    "images_found": 9,
+    "images_missing": 0,
+    "warnings": 3
+  },
+  "images": [
+    {
+      "exists": true,
+      "height": 1080,
+      "mime": "image/gif",
+      "output_name": "q5786-myFIPae1y__E3j3oGV-PH_EAt6V.gif",
+      "sha256": "a5443b4f59db83f30f4f1adfdf0cf0d4d5313bf4dfe409f3e7e256f06a9577c3",
+      "src_ref": "./Lesson 2 - Global Drivers - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/q5786-myFIPae1y__E3j3oGV-PH_EAt6V.gif",
+      "width": 1920
+    },
+    {
+      "exists": true,
+      "height": 987,
+      "mime": "image/jpeg",
+      "output_name": "rHwnq2maDlyVHx1f_m0DAEcTIsywfnNl2.jpg",
+      "sha256": "804b1575cfa02a6ffa7b477d46b64305bb29c0faf8556a44028b62bd660133fc",
+      "src_ref": "./Lesson 2 - Global Drivers - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/rHwnq2maDlyVHx1f_m0DAEcTIsywfnNl2.jpg",
+      "width": 1504
+    },
+    {
+      "exists": true,
+      "height": 1002,
+      "mime": "image/jpeg",
+      "output_name": "N4x-jmz8-rRADSXh_qef2ZSb5V5WIsVjy.jpg",
+      "sha256": "f54a4a6045becff5a3a85c9c679e7f9a71f3f633153e88a49d5518ec3f614324",
+      "src_ref": "./Lesson 2 - Global Drivers - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/N4x-jmz8-rRADSXh_qef2ZSb5V5WIsVjy.jpg",
+      "width": 1512
+    },
+    {
+      "exists": true,
+      "height": 198,
+      "mime": "image/png",
+      "output_name": "mOZuiyCur-J2z3qO_OlZTQze1ZZtg118M.png",
+      "sha256": "7cb836711f7fa055ec543f5ad57b741d9f325c4f8bbe7df9901cabcff5b78804",
+      "src_ref": "./Lesson 2 - Global Drivers - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/mOZuiyCur-J2z3qO_OlZTQze1ZZtg118M.png",
+      "width": 582
+    },
+    {
+      "exists": true,
+      "height": 1153,
+      "mime": "image/jpeg",
+      "output_name": "D1RfChNMqld76PNR_owFPFB9clP9xD35N.jpg",
+      "sha256": "a25b640b6c1bb0a3e6cd6fbf1fc2e1e1dafc0c488b21754e11c620507004ca41",
+      "src_ref": "./Lesson 2 - Global Drivers - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/D1RfChNMqld76PNR_owFPFB9clP9xD35N.jpg",
+      "width": 992
+    },
+    {
+      "exists": true,
+      "height": 808,
+      "mime": "image/jpeg",
+      "output_name": "W5-4niQlmNlOgYKq_-fOrfLpH8aC-06Ht.jpg",
+      "sha256": "9b630b720d81d7943e12c99cd499a40f3e43dcfaceb2fb6248034cb80b375940",
+      "src_ref": "./Lesson 2 - Global Drivers - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/W5-4niQlmNlOgYKq_-fOrfLpH8aC-06Ht.jpg",
+      "width": 1510
+    },
+    {
+      "exists": true,
+      "height": 1011,
+      "mime": "image/jpeg",
+      "output_name": "v-1pBsG7wEid0b3w_4cse0yXQhWCOzoda.jpg",
+      "sha256": "9fe57fb917ffb97f04af9b9ad839d397275ce64bed4481d11cccfd28e16291fe",
+      "src_ref": "./Lesson 2 - Global Drivers - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/v-1pBsG7wEid0b3w_4cse0yXQhWCOzoda.jpg",
+      "width": 1501
+    },
+    {
+      "exists": true,
+      "height": 1080,
+      "mime": "image/gif",
+      "output_name": "7wCa5E9vOsK2OpOp_XA0BguudAnK75QbG.gif",
+      "sha256": "9f534e5f3238faec07df68a3055ed8bd07a65f2326fea5de3f5669d01d7ec040",
+      "src_ref": "./Lesson 2 - Global Drivers - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/7wCa5E9vOsK2OpOp_XA0BguudAnK75QbG.gif",
+      "width": 1920
+    },
+    {
+      "exists": true,
+      "height": 1080,
+      "mime": "image/gif",
+      "output_name": "sXz1yL1ClMx7EWqC_HkmJcuptq-jngpD_.gif",
+      "sha256": "81526162cad8ce194a04665e2ee96ada3fe35c26ca33d17d62db5fd631f524fd",
+      "src_ref": "./Lesson 2 - Global Drivers - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/sXz1yL1ClMx7EWqC_HkmJcuptq-jngpD_.gif",
+      "width": 1920
+    }
+  ],
+  "schema_version": 1,
+  "source": {
+    "adapter": "rise",
+    "course": null,
+    "lesson_count": "Lesson 2 of 6",
+    "source_html": "Lesson 2 - Global Drivers - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change.html",
+    "source_url": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/index.html#/lessons/-Fw0qK9rGnwIcl6If4OGBPZqEAyZQqqb",
+    "title": "Lesson 2 - Global Drivers"
+  },
+  "warnings": [
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #6 (00:22s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #8 (00:17s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #9 (00:53s)"
+    }
+  ]
+}

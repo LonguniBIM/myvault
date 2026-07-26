@@ -1,0 +1,143 @@
+---
+description: "Auto-check and initialize GitNexus x Neural-Memory Bridge (Hybrid Brain) for any project. Trigger: user says 'setup hybrid brain', 'init bridge', 'check bridge setup', or opens a new project without the required files."
+alwaysApply: false
+---
+
+# Hybrid Brain Auto-Setup
+
+When the user asks to set up or check the Hybrid Brain workflow, run through the
+checklist below. For each missing component, create it automatically.
+Report a status table at the end.
+
+## Pre-flight
+
+1. Verify this is a **git repository** (`git status`). If not, stop and warn the user.
+2. Identify the **project name** from the git remote or folder name.
+3. Identify the **primary language/framework** by scanning file extensions.
+
+## Checklist (run in order)
+
+### 1. memory-bank/ directory
+
+Check for these 7 core files. Create any that are missing with a skeleton
+populated from the project name and detected tech stack.
+
+| File | Purpose |
+|------|---------|
+| `projectbrief.md` | Foundation: goals, scope, requirements |
+| `productContext.md` | Why project exists, UX goals |
+| `techContext.md` | Stack, dependencies, constraints |
+| `systemPatterns.md` | Architecture patterns |
+| `activeContext.md` | Current state and next steps |
+| `progress.md` | What works, what's left |
+| `decisionLog.md` | Chronological decision record |
+
+**Template for skeleton files:**
+```
+# <Section>: <ProjectName>
+
+## <First Heading>
+<!-- TODO: Fill in project-specific details -->
+```
+
+### 2. Cursor rules
+
+Check `.cursor/rules/.global/` for these two always-apply rules.
+If missing, create them from the templates in SETUP_GUIDE.md.
+
+| File | Description |
+|------|-------------|
+| `neural-memory-workflow.mdc` | Recall/remember lifecycle on every prompt |
+| `gitnexus-neural-bridge.mdc` | Cross-reference GitNexus + Neural-Memory before/after edits |
+
+When creating `gitnexus-neural-bridge.mdc`, replace `<project>` placeholders
+with the actual project name detected in pre-flight.
+
+### 3. Bridge script
+
+Check `.cursor/skills/.global/gitnexus/gitnexus_bridge.py` exists.
+If missing, copy it from the reference project or notify the user to copy it manually.
+
+The script location is: `.cursor/skills/.global/gitnexus/gitnexus_bridge.py`
+It requires only Python stdlib (no pip install).
+
+### 4. GitNexus index
+
+Check for `.gitnexus/meta.json`. If missing:
+
+```bash
+npx gitnexus analyze
+```
+
+If the index exists, check staleness by comparing `meta.json.lastCommit` with `git rev-parse HEAD`.
+If stale, suggest re-indexing:
+
+```bash
+npx gitnexus analyze --force
+```
+
+### 5. Bridge outputs
+
+Check `memory-bank/codebaseGraph.md` and `memory-bank/codebase_graph_summary.json`.
+If missing or older than the GitNexus index:
+
+```bash
+python .cursor/skills/.global/gitnexus/gitnexus_bridge.py --repo <RepoName>
+```
+
+The bridge script **automatically manages the GitNexus server lifecycle**:
+- Checks if `gitnexus serve` is already running on the target port
+- Starts it as a background process if not running
+- Waits for the server to be ready (up to 30s timeout)
+- Runs the bridge data extraction
+- Stops the server after completion (only if this script started it)
+
+No manual `npx gitnexus serve` is needed.
+
+### 6. Neural-Memory seeding
+
+Check if Neural-Memory has been seeded for this project:
+
+```
+nmem_recall("hub nodes <ProjectName> codebase graph")
+```
+
+If no relevant memories found, seed with:
+
+1. **fact** -- Graph statistics and top hub nodes (from codebaseGraph.md)
+2. **insight** -- The highest-connectivity symbol and its role
+3. **instruction** -- "Before modifying any symbol with 15+ connections, run gitnexus impact AND nmem_recall"
+4. **workflow** -- "Run gitnexus_bridge.py after major refactors to refresh graph data"
+
+Tag all memories with the project name in lowercase.
+
+## Status Report
+
+After completing all checks, present a summary table:
+
+```
+Hybrid Brain Setup Status: <ProjectName>
+=========================================
+| Component                    | Status |
+|------------------------------|--------|
+| Git repository               | OK / MISSING |
+| memory-bank/ (7 core files)  | OK / CREATED <N> files |
+| neural-memory-workflow.mdc   | OK / CREATED |
+| gitnexus-neural-bridge.mdc   | OK / CREATED |
+| gitnexus_bridge.py           | OK / MISSING (copy manually) |
+| GitNexus index (.gitnexus/)  | OK / CREATED / STALE |
+| codebaseGraph.md             | OK / GENERATED |
+| Neural-Memory seeded         | OK / SEEDED <N> memories |
+=========================================
+```
+
+## Notes
+
+- This rule is NOT always-apply. Invoke it explicitly with:
+  "setup hybrid brain" or "check bridge setup"
+- The bridge script uses a hybrid HTTP + CLI strategy to avoid LadybugDB lock conflicts
+- The bridge script auto-starts/stops `gitnexus serve` — no manual server management needed
+- Use `--no-auto-serve` flag if you want to manage the server yourself
+- Use `--port <N>` to run the server on a non-default port (default: 4747)
+- Re-run this checklist after major project changes or when onboarding a new repo
+- Full setup guide: `.cursor/skills/.global/gitnexus/SETUP_GUIDE.md`

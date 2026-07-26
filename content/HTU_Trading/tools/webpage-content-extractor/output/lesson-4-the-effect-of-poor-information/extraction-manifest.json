@@ -1,0 +1,166 @@
+{
+  "audio": [
+    {
+      "duration_label": "00:26",
+      "duration_seconds": 25.936689,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 4 - The Effect of Poor Information - BIM ISO 19650 12 Pro.mp3",
+      "placeholder_index": 1,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:27",
+      "duration_seconds": 27.190567,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 4 - The Effect of Poor Information - BIM ISO 19650 12 Pro (1).mp3",
+      "placeholder_index": 2,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:10",
+      "duration_seconds": 10.30966,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 3,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:52",
+      "duration_seconds": 52.105578,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 4 - The Effect of Poor Information - BIM ISO 19650 12 Pro (2).mp3",
+      "placeholder_index": 4,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:36",
+      "duration_seconds": 36.03737,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 4 - The Effect of Poor Information - BIM ISO 19650 12 Pro (3).mp3",
+      "placeholder_index": 5,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "01:20",
+      "duration_seconds": 80.132063,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 4 - The Effect of Poor Information - BIM ISO 19650 12 Pro (4).mp3",
+      "placeholder_index": 6,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    }
+  ],
+  "counts": {
+    "audio_matched": 5,
+    "audio_referenced": 6,
+    "audio_transcribed": 5,
+    "block_types": {
+      "audio": 6,
+      "button": 1,
+      "heading": 5,
+      "image": 8,
+      "quote": 1,
+      "rich_text": 11,
+      "unknown": 1
+    },
+    "blocks": 33,
+    "images_found": 8,
+    "images_missing": 0,
+    "warnings": 1
+  },
+  "images": [
+    {
+      "exists": true,
+      "height": 938,
+      "mime": "image/jpeg",
+      "output_name": "0Zdcx3vbYv3Y8WVr_CHoOzo5dvLKTFKHS.jpg",
+      "sha256": "34caa0ebd43db7abb1a5121d527793bb939c4c7b95784a48072fa483a12f131a",
+      "src_ref": "./Lesson 4 - The Effect of Poor Information - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/0Zdcx3vbYv3Y8WVr_CHoOzo5dvLKTFKHS.jpg",
+      "width": 1665
+    },
+    {
+      "exists": true,
+      "height": 311,
+      "mime": "image/jpeg",
+      "output_name": "w1kcAZxmwq5vNH6j_eRR15t3penPR4M5C.jpg",
+      "sha256": "925df1ee9c65e95e42ca318ff68d08e7d19af4afd57e71697ed3510398f82e37",
+      "src_ref": "./Lesson 4 - The Effect of Poor Information - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/w1kcAZxmwq5vNH6j_eRR15t3penPR4M5C.jpg",
+      "width": 537
+    },
+    {
+      "exists": true,
+      "height": 543,
+      "mime": "image/jpeg",
+      "output_name": "L6nXWM6HxM14fI--_EL1a3IVOT6nBxVsn.jpg",
+      "sha256": "428e76512514e20a8735075f3dd54a1487306ccb8bc976c30a43453a523af90e",
+      "src_ref": "./Lesson 4 - The Effect of Poor Information - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/L6nXWM6HxM14fI--_EL1a3IVOT6nBxVsn.jpg",
+      "width": 950
+    },
+    {
+      "exists": true,
+      "height": 929,
+      "mime": "image/jpeg",
+      "output_name": "YCx9Cr1pvegrwshg_0AVYqOCISQtLMFeZ.jpg",
+      "sha256": "43d727f30cde3eabce6114add9b2c7381d65f0aebd4dd8129543b2ad22826ca1",
+      "src_ref": "./Lesson 4 - The Effect of Poor Information - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/YCx9Cr1pvegrwshg_0AVYqOCISQtLMFeZ.jpg",
+      "width": 594
+    },
+    {
+      "exists": true,
+      "height": 1080,
+      "mime": "image/gif",
+      "output_name": "R2Sn9DXcfyR5R1Sm_uXpDhyaiH6BHaa4S.gif",
+      "sha256": "10512be0794ca8758a152997dbad83faa1d7e457bd9ce1d413b57c5dc2161d76",
+      "src_ref": "./Lesson 4 - The Effect of Poor Information - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/R2Sn9DXcfyR5R1Sm_uXpDhyaiH6BHaa4S.gif",
+      "width": 1920
+    },
+    {
+      "exists": true,
+      "height": 610,
+      "mime": "image/jpeg",
+      "output_name": "a-OdbnLU9Zvawkm5_tLdrwZf82ThcBDil.jpg",
+      "sha256": "c4207022e4e9786699988dcb3071c516a982fc3de70e0e5edc4093f97f0e1802",
+      "src_ref": "./Lesson 4 - The Effect of Poor Information - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/a-OdbnLU9Zvawkm5_tLdrwZf82ThcBDil.jpg",
+      "width": 825
+    },
+    {
+      "exists": true,
+      "height": 567,
+      "mime": "image/jpeg",
+      "output_name": "Hwm3XRMoVksIDagX_tvsyjeOeYh7VH1st.jpg",
+      "sha256": "875fcead17a087883b548ec2e7f466d5dbd7f383a565941b941897356f787657",
+      "src_ref": "./Lesson 4 - The Effect of Poor Information - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/Hwm3XRMoVksIDagX_tvsyjeOeYh7VH1st.jpg",
+      "width": 765
+    },
+    {
+      "exists": true,
+      "height": 306,
+      "mime": "image/png",
+      "output_name": "kJRwJQD8bqhSwXNr_Hpe2Ta9iVLotibIR.png",
+      "sha256": "526e772d314691e53f8d5d442325795da6a76eb8b68279f6360a7cd898c8212e",
+      "src_ref": "./Lesson 4 - The Effect of Poor Information - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/kJRwJQD8bqhSwXNr_Hpe2Ta9iVLotibIR.png",
+      "width": 1520
+    }
+  ],
+  "schema_version": 1,
+  "source": {
+    "adapter": "rise",
+    "course": null,
+    "lesson_count": "Lesson 4 of 6",
+    "source_html": "Lesson 4 - The Effect of Poor Information - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change.html",
+    "source_url": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/index.html#/lessons/HXjpBd_2U4jpCHaREoqauu2DHxSqynNY",
+    "title": "Lesson 4 - The Effect of Poor Information"
+  },
+  "warnings": [
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #3 (00:10s)"
+    }
+  ]
+}
