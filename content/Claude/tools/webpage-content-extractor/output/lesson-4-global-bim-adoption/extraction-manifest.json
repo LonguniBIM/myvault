@@ -1,0 +1,112 @@
+{
+  "audio": [
+    {
+      "duration_label": "00:34",
+      "duration_seconds": 34.226213,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 4 - Global BIM Adoption - BIM ISO 19650 12 Project Delive (1).mp3",
+      "placeholder_index": 1,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:36",
+      "duration_seconds": 35.89805,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 4 - Global BIM Adoption - BIM ISO 19650 12 Project Delive.mp3",
+      "placeholder_index": 2,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    }
+  ],
+  "counts": {
+    "audio_matched": 2,
+    "audio_referenced": 2,
+    "audio_transcribed": 2,
+    "block_types": {
+      "audio": 2,
+      "heading": 5,
+      "image": 7,
+      "rich_text": 6
+    },
+    "blocks": 20,
+    "images_found": 7,
+    "images_missing": 0,
+    "warnings": 0
+  },
+  "images": [
+    {
+      "exists": true,
+      "height": 780,
+      "mime": "image/jpeg",
+      "output_name": "7HkBKytsetIsJ_Nt_TZULz-4AH1BcKgGx.jpg",
+      "sha256": "427f589f0dcf93a31dd212c48e3a97d5ecb35d2b024c375219311fc7df7db3e1",
+      "src_ref": "./Lesson 4 - Global BIM Adoption - BIM ISO 19650 1&2 Project Delivery_ Unit 2 - BIM Explained_files/7HkBKytsetIsJ_Nt_TZULz-4AH1BcKgGx.jpg",
+      "width": 1680
+    },
+    {
+      "exists": true,
+      "height": 741,
+      "mime": "image/jpeg",
+      "output_name": "C_2DoA6LWJodl9Q1_Dyefp-uGTA2fmoi4.jpg",
+      "sha256": "afd5139ca772915afc262f6a1e9bbd198364fc1d7345f3f355bd16d90e3904cb",
+      "src_ref": "./Lesson 4 - Global BIM Adoption - BIM ISO 19650 1&2 Project Delivery_ Unit 2 - BIM Explained_files/C_2DoA6LWJodl9Q1_Dyefp-uGTA2fmoi4.jpg",
+      "width": 1665
+    },
+    {
+      "exists": true,
+      "height": 952,
+      "mime": "image/jpeg",
+      "output_name": "2PtqFXgb6fdaaBoW_F2JXDu8hEtKAC-td.jpg",
+      "sha256": "27273b40702bd993fe4d7279579bc5c2c7809cac31eb240f813beaa5f9554c8d",
+      "src_ref": "./Lesson 4 - Global BIM Adoption - BIM ISO 19650 1&2 Project Delivery_ Unit 2 - BIM Explained_files/2PtqFXgb6fdaaBoW_F2JXDu8hEtKAC-td.jpg",
+      "width": 1680
+    },
+    {
+      "exists": true,
+      "height": 490,
+      "mime": "image/jpeg",
+      "output_name": "bHk4Lq16Pp1TgjIE_diXuofUC_Bc3TViK.jpg",
+      "sha256": "778f8aff8e3e0c1a304b2d609208f96781627d34a6ff1f741d15824414098a28",
+      "src_ref": "./Lesson 4 - Global BIM Adoption - BIM ISO 19650 1&2 Project Delivery_ Unit 2 - BIM Explained_files/bHk4Lq16Pp1TgjIE_diXuofUC_Bc3TViK.jpg",
+      "width": 1680
+    },
+    {
+      "exists": true,
+      "height": 1061,
+      "mime": "image/jpeg",
+      "output_name": "LUoKGzH-WMXmb3fm_lOXjnGWszO19lJ9F.jpg",
+      "sha256": "e5d3e8bed679e3bb73ffdc88ecbf636e0b28e612b6c5a3ec4f564e925a30da4e",
+      "src_ref": "./Lesson 4 - Global BIM Adoption - BIM ISO 19650 1&2 Project Delivery_ Unit 2 - BIM Explained_files/LUoKGzH-WMXmb3fm_lOXjnGWszO19lJ9F.jpg",
+      "width": 724
+    },
+    {
+      "exists": true,
+      "height": 826,
+      "mime": "image/jpeg",
+      "output_name": "atESCiylIC5GUoH8_PYdjiKztCV85IoV6.jpg",
+      "sha256": "19d66ae5bab7fd0ae627ae3326a2810a13b812e80ca07eff8a004173d150dd11",
+      "src_ref": "./Lesson 4 - Global BIM Adoption - BIM ISO 19650 1&2 Project Delivery_ Unit 2 - BIM Explained_files/atESCiylIC5GUoH8_PYdjiKztCV85IoV6.jpg",
+      "width": 1680
+    },
+    {
+      "exists": true,
+      "height": 942,
+      "mime": "image/png",
+      "output_name": "Y_vXFcYCLiOosWx4_V5zgIvziGVLWPWKZ.png",
+      "sha256": "ff350bf58e3dcdc65cdb2a5c436a9159ab0141595e88f25f7024ba2cb7bf2879",
+      "src_ref": "./Lesson 4 - Global BIM Adoption - BIM ISO 19650 1&2 Project Delivery_ Unit 2 - BIM Explained_files/Y_vXFcYCLiOosWx4_V5zgIvziGVLWPWKZ.png",
+      "width": 1680
+    }
+  ],
+  "schema_version": 1,
+  "source": {
+    "adapter": "rise",
+    "course": null,
+    "lesson_count": "Lesson 4 of 4",
+    "source_html": "Lesson 4 - Global BIM Adoption - BIM ISO 19650 1&2 Project Delivery_ Unit 2 - BIM Explained.html",
+    "source_url": "https://elearning.bre.ac/pluginfile.php/191400/mod_resource/content/8/content/index.html#/lessons/BQ-77KsDCSV-et9gCu8fWyAopJwGK18W",
+    "title": "Lesson 4 - Global BIM Adoption"
+  },
+  "warnings": []
+}

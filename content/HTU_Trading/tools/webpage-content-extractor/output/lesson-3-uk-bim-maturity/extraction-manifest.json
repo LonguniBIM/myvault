@@ -1,0 +1,131 @@
+{
+  "audio": [
+    {
+      "duration_label": "00:41",
+      "duration_seconds": 40.565261,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 3 - UK BIM Maturity - BIM ISO 19650 12 Project Delivery U.mp3",
+      "placeholder_index": 1,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:25",
+      "duration_seconds": 25.309751,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 3 - UK BIM Maturity - BIM ISO 19650 12 Project Delivery U (1).mp3",
+      "placeholder_index": 2,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:48",
+      "duration_seconds": 47.902766,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 3 - UK BIM Maturity - BIM ISO 19650 12 Project Delivery U (2).mp3",
+      "placeholder_index": 3,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "01:15",
+      "duration_seconds": 75.162993,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 3 - UK BIM Maturity - BIM ISO 19650 12 Project Delivery U (3).mp3",
+      "placeholder_index": 4,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:40",
+      "duration_seconds": 40.031202,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 3 - UK BIM Maturity - BIM ISO 19650 12 Project Delivery U (4).mp3",
+      "placeholder_index": 5,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    }
+  ],
+  "counts": {
+    "audio_matched": 5,
+    "audio_referenced": 5,
+    "audio_transcribed": 5,
+    "block_types": {
+      "audio": 5,
+      "button": 1,
+      "heading": 7,
+      "image": 6,
+      "rich_text": 2
+    },
+    "blocks": 21,
+    "images_found": 6,
+    "images_missing": 0,
+    "warnings": 0
+  },
+  "images": [
+    {
+      "exists": true,
+      "height": 854,
+      "mime": "image/png",
+      "output_name": "gdGLASzUZNpMLIi3_XylCoby7RNXi5Qgv.png",
+      "sha256": "05b5e7db094a13f85be577f748ee680e24eb10a1a38c28648e5635f792c07a35",
+      "src_ref": "./Lesson 3 - UK BIM Maturity - BIM ISO 19650 1&2 Project Delivery_ Unit 2 - BIM Explained_files/gdGLASzUZNpMLIi3_XylCoby7RNXi5Qgv.png",
+      "width": 1198
+    },
+    {
+      "exists": true,
+      "height": 851,
+      "mime": "image/png",
+      "output_name": "OdbUO7JwbbhiQjOa_HFeyac1Kx3dyItIw.png",
+      "sha256": "308f95f18cc731ba9f2120bb73f5ce9a9c54b773c6540d9f6c7ac21517c515e2",
+      "src_ref": "./Lesson 3 - UK BIM Maturity - BIM ISO 19650 1&2 Project Delivery_ Unit 2 - BIM Explained_files/OdbUO7JwbbhiQjOa_HFeyac1Kx3dyItIw.png",
+      "width": 1157
+    },
+    {
+      "exists": true,
+      "height": 745,
+      "mime": "image/png",
+      "output_name": "4WuLBTf2dS4rEaYC_YL6lPn5dB3I2LSLY.png",
+      "sha256": "e889ad6d7bc1141693150223a86948b2d17c18f03a471d4139cd338786ca3dba",
+      "src_ref": "./Lesson 3 - UK BIM Maturity - BIM ISO 19650 1&2 Project Delivery_ Unit 2 - BIM Explained_files/4WuLBTf2dS4rEaYC_YL6lPn5dB3I2LSLY.png",
+      "width": 889
+    },
+    {
+      "exists": true,
+      "height": 745,
+      "mime": "image/png",
+      "output_name": "4WuLBTf2dS4rEaYC_YL6lPn5dB3I2LSLY.png",
+      "sha256": "e889ad6d7bc1141693150223a86948b2d17c18f03a471d4139cd338786ca3dba",
+      "src_ref": "./Lesson 3 - UK BIM Maturity - BIM ISO 19650 1&2 Project Delivery_ Unit 2 - BIM Explained_files/4WuLBTf2dS4rEaYC_YL6lPn5dB3I2LSLY.png",
+      "width": 889
+    },
+    {
+      "exists": true,
+      "height": 745,
+      "mime": "image/png",
+      "output_name": "4WuLBTf2dS4rEaYC_YL6lPn5dB3I2LSLY.png",
+      "sha256": "e889ad6d7bc1141693150223a86948b2d17c18f03a471d4139cd338786ca3dba",
+      "src_ref": "./Lesson 3 - UK BIM Maturity - BIM ISO 19650 1&2 Project Delivery_ Unit 2 - BIM Explained_files/4WuLBTf2dS4rEaYC_YL6lPn5dB3I2LSLY.png",
+      "width": 889
+    },
+    {
+      "exists": true,
+      "height": 745,
+      "mime": "image/png",
+      "output_name": "HvjfS3UbV35G7tcT_ljbOXLdmpOugNZn3.png",
+      "sha256": "e889ad6d7bc1141693150223a86948b2d17c18f03a471d4139cd338786ca3dba",
+      "src_ref": "./Lesson 3 - UK BIM Maturity - BIM ISO 19650 1&2 Project Delivery_ Unit 2 - BIM Explained_files/HvjfS3UbV35G7tcT_ljbOXLdmpOugNZn3.png",
+      "width": 889
+    }
+  ],
+  "schema_version": 1,
+  "source": {
+    "adapter": "rise",
+    "course": null,
+    "lesson_count": "Lesson 3 of 4",
+    "source_html": "Lesson 3 - UK BIM Maturity - BIM ISO 19650 1&2 Project Delivery_ Unit 2 - BIM Explained.html",
+    "source_url": "https://elearning.bre.ac/pluginfile.php/191400/mod_resource/content/8/content/index.html#/lessons/6TkK87VXEEVUzaPjQ0HhraIPu6BpxZAy",
+    "title": "Lesson 3 - UK BIM Maturity"
+  },
+  "warnings": []
+}

@@ -2,33 +2,53 @@
   "processed": {
     "raw\\sources\\Unit 1 - Lesson 3": {
       "signature": "810bd80e059ffdbea0346d133d045a9a94c6cee141a1268c7a339c856ff1d7ca",
-      "slug": "lesson-3-a-history-of-bim",
-      "ingested_at": "2026-07-25T06:34:58.707984"
+      "slug": "unit-1-lesson-3-a-history-of-bim",
+      "ingested_at": "2026-08-02T22:54:16.030640"
     },
     "raw\\sources\\Unit 1 - Lesson 4": {
       "signature": "6307c455c25a406578657845f1ac1735c0ee5b250a63cabf572abccdd3be1f9b",
-      "slug": "lesson-4-the-effect-of-poor-information",
-      "ingested_at": "2026-07-25T06:35:31.439633"
+      "slug": "unit-1-lesson-4-the-effect-of-poor-information",
+      "ingested_at": "2026-08-02T22:54:47.810395"
     },
     "raw\\sources\\Unit 1 - Lesson 5": {
       "signature": "f15863e6c013fcd001470d29ef7d434a96e81334a9577b15ee83a42ed958fdac",
-      "slug": "lesson-5-making-change-happen",
-      "ingested_at": "2026-07-25T06:36:14.517766"
+      "slug": "unit-1-lesson-5-making-change-happen",
+      "ingested_at": "2026-08-02T22:55:30.083370"
     },
     "raw\\sources\\Unit 1 - Lesson 6": {
       "signature": "eaec2238a850d1903900f977950d83c2d9f0f1e4efea76f1145309656a34df87",
-      "slug": "construction-4-0",
-      "ingested_at": "2026-07-25T06:36:55.985387"
+      "slug": "unit-1-construction-4-0",
+      "ingested_at": "2026-08-02T22:56:10.292195"
     },
     "raw\\sources\\Unit 1 - Lesson 1": {
       "signature": "58465a1555f54df172e947c568e3cfb16f1d37fe2a6d482d30fc6498957e9fd2",
-      "slug": "lesson-1-bim-defined",
-      "ingested_at": "2026-07-25T06:38:36.073142"
+      "slug": "unit-1-lesson-1-bim-defined",
+      "ingested_at": "2026-08-02T22:52:10.872829"
     },
     "raw\\sources\\Unit 1 - Lesson 2": {
       "signature": "1073601e44c0608355352b369c281a497a51feb2639673b71bfa3f79230d8032",
-      "slug": "lesson-2-global-drivers",
-      "ingested_at": "2026-07-25T07:09:55.802040"
+      "slug": "unit-1-lesson-2-global-drivers",
+      "ingested_at": "2026-08-02T22:52:53.969549"
+    },
+    "raw\\sources\\Unit 2 - Lesson 1": {
+      "signature": "91fa816baa97266bcc5981739139fbb6c61eba87bcce69848d651f56079723a0",
+      "slug": "unit-2-lesson-1-bim-terminology-acronyms",
+      "ingested_at": "2026-08-02T22:56:23.479224"
+    },
+    "raw\\sources\\Unit 2 - Lesson 2": {
+      "signature": "2cb31cd193b42a20177c617b34cd9f3cd7cb2e9310bf14b0596d702a3ffce051",
+      "slug": "unit-2-lesson-2-bim-dimensions",
+      "ingested_at": "2026-08-02T22:56:56.256162"
+    },
+    "raw\\sources\\Unit 2 - Lesson 3": {
+      "signature": "e95828e92d4ee3983977ec8f7f9c5224c5a695fd0c7840b66148da53eea1b3a0",
+      "slug": "unit-2-lesson-3-uk-bim-maturity",
+      "ingested_at": "2026-08-02T22:57:25.990585"
+    },
+    "raw\\sources\\Unit 2 - Lesson 4": {
+      "signature": "4f279483c39d00b47ada412f41f9b9675e4811c80ac74582379f75499972aa6c",
+      "slug": "unit-2-lesson-4-global-bim-adoption",
+      "ingested_at": "2026-08-02T22:57:36.375367"
     }
   }
 }

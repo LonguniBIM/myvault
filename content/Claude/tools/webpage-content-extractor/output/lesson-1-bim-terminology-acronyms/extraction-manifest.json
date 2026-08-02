@@ -1,0 +1,136 @@
+{
+  "audio": [
+    {
+      "duration_label": "00:08",
+      "duration_seconds": 8.103764,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 1,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:51",
+      "duration_seconds": 50.828481,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 1 - BIM Terminology Acronyms - BIM ISO 19650 12 Project D.mp3",
+      "placeholder_index": 2,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:25",
+      "duration_seconds": 24.543492,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 3,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:57",
+      "duration_seconds": 56.633469,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 1 - BIM Terminology Acronyms - BIM ISO 19650 12 Project D (1).mp3",
+      "placeholder_index": 4,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    }
+  ],
+  "counts": {
+    "audio_matched": 2,
+    "audio_referenced": 4,
+    "audio_transcribed": 2,
+    "block_types": {
+      "audio": 4,
+      "button": 1,
+      "divider": 1,
+      "flashcards": 3,
+      "heading": 9,
+      "image": 6,
+      "quote": 1,
+      "rich_text": 5
+    },
+    "blocks": 30,
+    "images_found": 6,
+    "images_missing": 0,
+    "warnings": 2
+  },
+  "images": [
+    {
+      "exists": true,
+      "height": 862,
+      "mime": "image/png",
+      "output_name": "tmHqIi6YNKvm4vW0_IwudGgoVT9R47TDC.png",
+      "sha256": "2763889cab623147e1f76c5b6634606c1bb941ad9b19db6e4183a3aa5b0a9173",
+      "src_ref": "./Lesson 1 - BIM Terminology & Acronyms - BIM ISO 19650 1&2 Project Delivery_ Unit 2 - BIM Explained_files/tmHqIi6YNKvm4vW0_IwudGgoVT9R47TDC.png",
+      "width": 1352
+    },
+    {
+      "exists": true,
+      "height": 647,
+      "mime": "image/jpeg",
+      "output_name": "JTHgDl5tEHfyHhK3_-dISDTA3J5MTM8l_.jpg",
+      "sha256": "086a892b6eec9e5a0e054128729d307cbbb69c1bc0086ccd10952e059fe80093",
+      "src_ref": "./Lesson 1 - BIM Terminology & Acronyms - BIM ISO 19650 1&2 Project Delivery_ Unit 2 - BIM Explained_files/JTHgDl5tEHfyHhK3_-dISDTA3J5MTM8l_.jpg",
+      "width": 1680
+    },
+    {
+      "exists": true,
+      "height": 1071,
+      "mime": "image/jpeg",
+      "output_name": "BRLQ2IoXaRANbK3h_HwseILBphKk_R0Ch.jpg",
+      "sha256": "514a2a176818c721f3492f367b4edab274148eaf13ae20b363bee6908787f872",
+      "src_ref": "./Lesson 1 - BIM Terminology & Acronyms - BIM ISO 19650 1&2 Project Delivery_ Unit 2 - BIM Explained_files/BRLQ2IoXaRANbK3h_HwseILBphKk_R0Ch.jpg",
+      "width": 678
+    },
+    {
+      "exists": true,
+      "height": 765,
+      "mime": "image/png",
+      "output_name": "pkZ2XaxKNZD2yyY9_ztUzncLpNPARY3SF.png",
+      "sha256": "463e71f991bfe739e14d85ac544d3985a1f38f792d011b6ff944ac67fbb1d38e",
+      "src_ref": "./Lesson 1 - BIM Terminology & Acronyms - BIM ISO 19650 1&2 Project Delivery_ Unit 2 - BIM Explained_files/pkZ2XaxKNZD2yyY9_ztUzncLpNPARY3SF.png",
+      "width": 1680
+    },
+    {
+      "exists": true,
+      "height": 690,
+      "mime": "image/jpeg",
+      "output_name": "JRdceet66lsFKDfA_9myoGfN4ZLWlUdxP.jpg",
+      "sha256": "94a15ce698c71f28791584296da78e75e3729398578ec7c136e76e3b180330ee",
+      "src_ref": "./Lesson 1 - BIM Terminology & Acronyms - BIM ISO 19650 1&2 Project Delivery_ Unit 2 - BIM Explained_files/JRdceet66lsFKDfA_9myoGfN4ZLWlUdxP.jpg",
+      "width": 1680
+    },
+    {
+      "exists": true,
+      "height": 727,
+      "mime": "image/png",
+      "output_name": "dlGMgA8nJ_MWIIY2_FNi-ifDhieJJ96jw.png",
+      "sha256": "df87d961d531fa4262cba2fa0a91ddd775a7bef99baba5345ed181af3d39b223",
+      "src_ref": "./Lesson 1 - BIM Terminology & Acronyms - BIM ISO 19650 1&2 Project Delivery_ Unit 2 - BIM Explained_files/dlGMgA8nJ_MWIIY2_FNi-ifDhieJJ96jw.png",
+      "width": 1514
+    }
+  ],
+  "schema_version": 1,
+  "source": {
+    "adapter": "rise",
+    "course": null,
+    "lesson_count": "Lesson 1 of 4",
+    "source_html": "Lesson 1 - BIM Terminology & Acronyms - BIM ISO 19650 1&2 Project Delivery_ Unit 2 - BIM Explained.html",
+    "source_url": "https://elearning.bre.ac/pluginfile.php/191400/mod_resource/content/8/content/index.html#/lessons/1wLkEuhIfZc5CmGiGVVqNwV_KGq5_r6_",
+    "title": "Lesson 1 - BIM Terminology & Acronyms"
+  },
+  "warnings": [
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #1 (00:08s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #3 (00:25s)"
+    }
+  ]
+}

@@ -1,53 +1,53 @@
 {
   "audio": [
     {
-      "duration_label": "00:00",
-      "duration_seconds": 0.0,
-      "matched_by": null,
-      "matched_file": null,
+      "duration_label": "02:31",
+      "duration_seconds": 150.604626,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 3 - A History of BIM - BIM ISO 19650 12 Project Delivery (9).mp3",
       "placeholder_index": 1,
-      "transcribed": false,
-      "transcript_source": null
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
     },
     {
-      "duration_label": "00:00",
-      "duration_seconds": 0.0,
-      "matched_by": null,
-      "matched_file": null,
+      "duration_label": "00:55",
+      "duration_seconds": 54.636553,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 3 - A History of BIM - BIM ISO 19650 12 Project Delivery (8).mp3",
       "placeholder_index": 2,
-      "transcribed": false,
-      "transcript_source": null
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
     },
     {
-      "duration_label": "00:00",
-      "duration_seconds": 0.0,
-      "matched_by": null,
-      "matched_file": null,
+      "duration_label": "00:32",
+      "duration_seconds": 31.532698,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 3 - A History of BIM - BIM ISO 19650 12 Project Delivery.mp3",
       "placeholder_index": 3,
-      "transcribed": false,
-      "transcript_source": null
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
     },
     {
-      "duration_label": "00:00",
-      "duration_seconds": 0.0,
-      "matched_by": null,
-      "matched_file": null,
+      "duration_label": "01:17",
+      "duration_seconds": 76.90449,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 3 - A History of BIM - BIM ISO 19650 12 Project Delivery (1).mp3",
       "placeholder_index": 4,
-      "transcribed": false,
-      "transcript_source": null
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
     },
     {
-      "duration_label": "00:00",
-      "duration_seconds": 0.0,
-      "matched_by": null,
-      "matched_file": null,
+      "duration_label": "00:44",
+      "duration_seconds": 44.164354,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 3 - A History of BIM - BIM ISO 19650 12 Project Delivery (2).mp3",
       "placeholder_index": 5,
-      "transcribed": false,
-      "transcript_source": null
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
     },
     {
-      "duration_label": "00:00",
-      "duration_seconds": 0.0,
+      "duration_label": "00:19",
+      "duration_seconds": 19.295782,
       "matched_by": null,
       "matched_file": null,
       "placeholder_index": 6,
@@ -55,44 +55,44 @@
       "transcript_source": null
     },
     {
-      "duration_label": "00:00",
-      "duration_seconds": 0.0,
-      "matched_by": null,
-      "matched_file": null,
+      "duration_label": "00:41",
+      "duration_seconds": 41.1922,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 3 - A History of BIM - BIM ISO 19650 12 Project Delivery (3).mp3",
       "placeholder_index": 7,
-      "transcribed": false,
-      "transcript_source": null
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
     },
     {
-      "duration_label": "00:00",
-      "duration_seconds": 0.0,
-      "matched_by": null,
-      "matched_file": null,
+      "duration_label": "01:00",
+      "duration_seconds": 59.605624,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 3 - A History of BIM - BIM ISO 19650 12 Project Delivery (4).mp3",
       "placeholder_index": 8,
-      "transcribed": false,
-      "transcript_source": null
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
     },
     {
-      "duration_label": "00:00",
-      "duration_seconds": 0.0,
-      "matched_by": null,
-      "matched_file": null,
+      "duration_label": "01:17",
+      "duration_seconds": 76.90449,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 3 - A History of BIM - BIM ISO 19650 12 Project Delivery (5).mp3",
       "placeholder_index": 9,
-      "transcribed": false,
-      "transcript_source": null
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
     },
     {
-      "duration_label": "00:00",
-      "duration_seconds": 0.0,
-      "matched_by": null,
-      "matched_file": null,
+      "duration_label": "00:33",
+      "duration_seconds": 33.436735,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 3 - A History of BIM - BIM ISO 19650 12 Project Delivery (6).mp3",
       "placeholder_index": 10,
-      "transcribed": false,
-      "transcript_source": null
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
     },
     {
-      "duration_label": "00:00",
-      "duration_seconds": 0.0,
+      "duration_label": "00:23",
+      "duration_seconds": 22.709116,
       "matched_by": null,
       "matched_file": null,
       "placeholder_index": 11,
@@ -100,19 +100,19 @@
       "transcript_source": null
     },
     {
-      "duration_label": "00:00",
-      "duration_seconds": 0.0,
-      "matched_by": null,
-      "matched_file": null,
+      "duration_label": "01:01",
+      "duration_seconds": 60.696961,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 3 - A History of BIM - BIM ISO 19650 12 Project Delivery (7).mp3",
       "placeholder_index": 12,
-      "transcribed": false,
-      "transcript_source": null
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
     }
   ],
   "counts": {
-    "audio_matched": 0,
+    "audio_matched": 10,
     "audio_referenced": 12,
-    "audio_transcribed": 0,
+    "audio_transcribed": 10,
     "block_types": {
       "audio": 12,
       "button": 1,
@@ -122,244 +122,244 @@
       "rich_text": 24
     },
     "blocks": 85,
-    "images_found": 0,
-    "images_missing": 26,
-    "warnings": 12
+    "images_found": 26,
+    "images_missing": 0,
+    "warnings": 2
   },
   "images": [
     {
-      "exists": false,
-      "height": null,
-      "mime": null,
-      "output_name": null,
-      "sha256": null,
-      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/4glAH-iEXaZFykav_OKXPqWG1gRlhifcK.gif",
-      "width": null
+      "exists": true,
+      "height": 1080,
+      "mime": "image/gif",
+      "output_name": "4glAH-iEXaZFykav_OKXPqWG1gRlhifcK.gif",
+      "sha256": "068444eeb5e699b3715147662fcae50fb16986fe969721a4e6b2f2d9dca5cb40",
+      "src_ref": "./Lesson 3 - A History of BIM - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/4glAH-iEXaZFykav_OKXPqWG1gRlhifcK.gif",
+      "width": 1920
     },
     {
-      "exists": false,
-      "height": null,
-      "mime": null,
-      "output_name": null,
-      "sha256": null,
-      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/X-PhGQG7Vnv9ilV5_v4vSD2LZiQtHjx8v.jpg",
-      "width": null
+      "exists": true,
+      "height": 727,
+      "mime": "image/jpeg",
+      "output_name": "X-PhGQG7Vnv9ilV5_v4vSD2LZiQtHjx8v.jpg",
+      "sha256": "b26e8e98544b254de46724d39afdd313fd256aa0ab56867ec0de0524b2fefdae",
+      "src_ref": "./Lesson 3 - A History of BIM - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/X-PhGQG7Vnv9ilV5_v4vSD2LZiQtHjx8v.jpg",
+      "width": 1634
     },
     {
-      "exists": false,
-      "height": null,
-      "mime": null,
-      "output_name": null,
-      "sha256": null,
-      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/JCp7i1Uypuf4luwI_nUE0OMFwaaoBNr35.jpg",
-      "width": null
+      "exists": true,
+      "height": 790,
+      "mime": "image/jpeg",
+      "output_name": "JCp7i1Uypuf4luwI_nUE0OMFwaaoBNr35.jpg",
+      "sha256": "e454192a14086438f6208cb99b7ed5511365bb3fd104e4090e1dac1dd77dfcff",
+      "src_ref": "./Lesson 3 - A History of BIM - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/JCp7i1Uypuf4luwI_nUE0OMFwaaoBNr35.jpg",
+      "width": 1680
     },
     {
-      "exists": false,
-      "height": null,
-      "mime": null,
-      "output_name": null,
-      "sha256": null,
-      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/B3FlVCyHKTC7Xfym_9M4YBhUn8Jm4swjN.jpg",
-      "width": null
+      "exists": true,
+      "height": 845,
+      "mime": "image/jpeg",
+      "output_name": "B3FlVCyHKTC7Xfym_9M4YBhUn8Jm4swjN.jpg",
+      "sha256": "3c05cb54891003b79edc254a930e65984844c09f31926988228de5e2ac132650",
+      "src_ref": "./Lesson 3 - A History of BIM - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/B3FlVCyHKTC7Xfym_9M4YBhUn8Jm4swjN.jpg",
+      "width": 1680
     },
     {
-      "exists": false,
-      "height": null,
-      "mime": null,
-      "output_name": null,
-      "sha256": null,
-      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/RaG-VIN2yHgIeToU_wJQ4ELNbGHsabkeO.png",
-      "width": null
+      "exists": true,
+      "height": 796,
+      "mime": "image/png",
+      "output_name": "RaG-VIN2yHgIeToU_wJQ4ELNbGHsabkeO.png",
+      "sha256": "b4c4d79a8d626ba183055572f10eac801e191144d3d083a68c8195014c4b341a",
+      "src_ref": "./Lesson 3 - A History of BIM - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/RaG-VIN2yHgIeToU_wJQ4ELNbGHsabkeO.png",
+      "width": 1227
     },
     {
-      "exists": false,
-      "height": null,
-      "mime": null,
-      "output_name": null,
-      "sha256": null,
-      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/QBLuSq3--8Fm-QXU_HSxmQjUjgureQ828.jpg",
-      "width": null
+      "exists": true,
+      "height": 866,
+      "mime": "image/jpeg",
+      "output_name": "QBLuSq3--8Fm-QXU_HSxmQjUjgureQ828.jpg",
+      "sha256": "fd5dae4b71b0d6bd4cc9dea14a1163bd28922272e498dabc8f6b34c3c8a9f1d6",
+      "src_ref": "./Lesson 3 - A History of BIM - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/QBLuSq3--8Fm-QXU_HSxmQjUjgureQ828.jpg",
+      "width": 633
     },
     {
-      "exists": false,
-      "height": null,
-      "mime": null,
-      "output_name": null,
-      "sha256": null,
-      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/Uy9-mVjiaZAdV6vM_NCTEo2cBeMUs1_Hi.jpg",
-      "width": null
+      "exists": true,
+      "height": 1162,
+      "mime": "image/jpeg",
+      "output_name": "Uy9-mVjiaZAdV6vM_NCTEo2cBeMUs1_Hi.jpg",
+      "sha256": "0810f972e8e6450574c56fc1d44d917058f656a5bde13b28b4699890388d05d7",
+      "src_ref": "./Lesson 3 - A History of BIM - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/Uy9-mVjiaZAdV6vM_NCTEo2cBeMUs1_Hi.jpg",
+      "width": 911
     },
     {
-      "exists": false,
-      "height": null,
-      "mime": null,
-      "output_name": null,
-      "sha256": null,
-      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/gSQ1Naccnk3_qYWf_i0WjS89hwzcebKZI.jpg",
-      "width": null
+      "exists": true,
+      "height": 944,
+      "mime": "image/jpeg",
+      "output_name": "gSQ1Naccnk3_qYWf_i0WjS89hwzcebKZI.jpg",
+      "sha256": "c8a78639d8fbe87cb9d91cd149859da5869d8fe1615bee86b7aa06cb0974f478",
+      "src_ref": "./Lesson 3 - A History of BIM - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/gSQ1Naccnk3_qYWf_i0WjS89hwzcebKZI.jpg",
+      "width": 1680
     },
     {
-      "exists": false,
-      "height": null,
-      "mime": null,
-      "output_name": null,
-      "sha256": null,
-      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/BLoieorFi9W8UKBC_YfWeIKMsLJf63YYc.png",
-      "width": null
+      "exists": true,
+      "height": 1183,
+      "mime": "image/png",
+      "output_name": "BLoieorFi9W8UKBC_YfWeIKMsLJf63YYc.png",
+      "sha256": "78baa77ede1c342b8f15b4e00cb1282fd1269754efcc9eb3fa5c76d0134d8260",
+      "src_ref": "./Lesson 3 - A History of BIM - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/BLoieorFi9W8UKBC_YfWeIKMsLJf63YYc.png",
+      "width": 1680
     },
     {
-      "exists": false,
-      "height": null,
-      "mime": null,
-      "output_name": null,
-      "sha256": null,
-      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/P3Kp_sbAqPdJMZih_jN-amUsFXveKrI1Z.jpg",
-      "width": null
+      "exists": true,
+      "height": 1261,
+      "mime": "image/jpeg",
+      "output_name": "P3Kp_sbAqPdJMZih_jN-amUsFXveKrI1Z.jpg",
+      "sha256": "32c66db2d2b7f362ed490e4d09bcc1f15d816a070ba2f20fefb51dc8163f6869",
+      "src_ref": "./Lesson 3 - A History of BIM - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/P3Kp_sbAqPdJMZih_jN-amUsFXveKrI1Z.jpg",
+      "width": 1680
     },
     {
-      "exists": false,
-      "height": null,
-      "mime": null,
-      "output_name": null,
-      "sha256": null,
-      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/jeqc0spzUpKTbMB0_AFcDOMvZ55ulS817.jpg",
-      "width": null
+      "exists": true,
+      "height": 820,
+      "mime": "image/jpeg",
+      "output_name": "jeqc0spzUpKTbMB0_AFcDOMvZ55ulS817.jpg",
+      "sha256": "7c8db47c020f0454fd4e1a4c127880c475362a9d5c2521f2c6281c29cc5680c2",
+      "src_ref": "./Lesson 3 - A History of BIM - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/jeqc0spzUpKTbMB0_AFcDOMvZ55ulS817.jpg",
+      "width": 576
     },
     {
-      "exists": false,
-      "height": null,
-      "mime": null,
-      "output_name": null,
-      "sha256": null,
-      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/cvK8faluXb7CvcNt_warKSBGDtxCay1S8.jpg",
-      "width": null
+      "exists": true,
+      "height": 817,
+      "mime": "image/jpeg",
+      "output_name": "cvK8faluXb7CvcNt_warKSBGDtxCay1S8.jpg",
+      "sha256": "45be17f310a13161037f3e3b4891c5c1e8b69076e09117aac23188c1448e163f",
+      "src_ref": "./Lesson 3 - A History of BIM - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/cvK8faluXb7CvcNt_warKSBGDtxCay1S8.jpg",
+      "width": 572
     },
     {
-      "exists": false,
-      "height": null,
-      "mime": null,
-      "output_name": null,
-      "sha256": null,
-      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/r8EnK-u5Z5UDDnBV_onwSYjeD_K2ABlEE.jpg",
-      "width": null
+      "exists": true,
+      "height": 663,
+      "mime": "image/jpeg",
+      "output_name": "r8EnK-u5Z5UDDnBV_onwSYjeD_K2ABlEE.jpg",
+      "sha256": "24c362bfba2a75d089464b508237966a390966cc58e5d30f96beb6c368bd683d",
+      "src_ref": "./Lesson 3 - A History of BIM - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/r8EnK-u5Z5UDDnBV_onwSYjeD_K2ABlEE.jpg",
+      "width": 1307
     },
     {
-      "exists": false,
-      "height": null,
-      "mime": null,
-      "output_name": null,
-      "sha256": null,
-      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/w64oNA0RZt24N9AO_HD3_uHtx3csEMaic.jpg",
-      "width": null
+      "exists": true,
+      "height": 771,
+      "mime": "image/jpeg",
+      "output_name": "w64oNA0RZt24N9AO_HD3_uHtx3csEMaic.jpg",
+      "sha256": "5dfb8282d0c9fc7c8e6d3ab706b94a00482449e73199f52ac57509cdeebc7317",
+      "src_ref": "./Lesson 3 - A History of BIM - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/w64oNA0RZt24N9AO_HD3_uHtx3csEMaic.jpg",
+      "width": 560
     },
     {
-      "exists": false,
-      "height": null,
-      "mime": null,
-      "output_name": null,
-      "sha256": null,
-      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/jH0Q51jV94hqwipx_k6zk-qM_6to9h5V1.png",
-      "width": null
+      "exists": true,
+      "height": 762,
+      "mime": "image/png",
+      "output_name": "jH0Q51jV94hqwipx_k6zk-qM_6to9h5V1.png",
+      "sha256": "c5f1c3cddb3733baffc078c5251c95c7b4c3dfc1ebc39c52aba9aa8df4b6ba68",
+      "src_ref": "./Lesson 3 - A History of BIM - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/jH0Q51jV94hqwipx_k6zk-qM_6to9h5V1.png",
+      "width": 844
     },
     {
-      "exists": false,
-      "height": null,
-      "mime": null,
-      "output_name": null,
-      "sha256": null,
-      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/F1v4I1lhLLbX9Kun_RNDAAF46r2Aeu-Qv.png",
-      "width": null
+      "exists": true,
+      "height": 855,
+      "mime": "image/png",
+      "output_name": "F1v4I1lhLLbX9Kun_RNDAAF46r2Aeu-Qv.png",
+      "sha256": "e118f3a6b3caba82773ee02e490f337ba5435f7b0a70b27f46c6c8320e5d2ced",
+      "src_ref": "./Lesson 3 - A History of BIM - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/F1v4I1lhLLbX9Kun_RNDAAF46r2Aeu-Qv.png",
+      "width": 1535
     },
     {
-      "exists": false,
-      "height": null,
-      "mime": null,
-      "output_name": null,
-      "sha256": null,
-      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/3jCX7_0SqKZa3MM__4IL09spMHXJ8XuGN.png",
-      "width": null
+      "exists": true,
+      "height": 607,
+      "mime": "image/png",
+      "output_name": "3jCX7_0SqKZa3MM__4IL09spMHXJ8XuGN.png",
+      "sha256": "1554c472008e03d49f0a013d860a5ed4c8c3ef047bc82e44d25eec90f44c2f29",
+      "src_ref": "./Lesson 3 - A History of BIM - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/3jCX7_0SqKZa3MM__4IL09spMHXJ8XuGN.png",
+      "width": 435
     },
     {
-      "exists": false,
-      "height": null,
-      "mime": null,
-      "output_name": null,
-      "sha256": null,
-      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/T6TJevYIToPqv9C0_HTEaXlAM8JKGJs25.jpg",
-      "width": null
+      "exists": true,
+      "height": 865,
+      "mime": "image/jpeg",
+      "output_name": "T6TJevYIToPqv9C0_HTEaXlAM8JKGJs25.jpg",
+      "sha256": "4318fd2f252729ab7104d114e372e53d80f728cd9fb5928c9355cd3c77e5da08",
+      "src_ref": "./Lesson 3 - A History of BIM - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/T6TJevYIToPqv9C0_HTEaXlAM8JKGJs25.jpg",
+      "width": 731
     },
     {
-      "exists": false,
-      "height": null,
-      "mime": null,
-      "output_name": null,
-      "sha256": null,
-      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/Qd0ogBMnhw3ZtkqC_7iTgVkZleOkF4Y7B.jpg",
-      "width": null
+      "exists": true,
+      "height": 569,
+      "mime": "image/jpeg",
+      "output_name": "Qd0ogBMnhw3ZtkqC_7iTgVkZleOkF4Y7B.jpg",
+      "sha256": "a725a3c15a8621645f6459d86fc1b2eb17b2a594cb3e8bee2db59f04daa76a91",
+      "src_ref": "./Lesson 3 - A History of BIM - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/Qd0ogBMnhw3ZtkqC_7iTgVkZleOkF4Y7B.jpg",
+      "width": 1083
     },
     {
-      "exists": false,
-      "height": null,
-      "mime": null,
-      "output_name": null,
-      "sha256": null,
-      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/WZX87CyRbKzjsgno_HjmKJFBJUCwe91XC.jpg",
-      "width": null
+      "exists": true,
+      "height": 539,
+      "mime": "image/jpeg",
+      "output_name": "WZX87CyRbKzjsgno_HjmKJFBJUCwe91XC.jpg",
+      "sha256": "85f88f1f224521a31bc12f27cb1311b695cc082180c89c1c7c2d1bc70e6e8831",
+      "src_ref": "./Lesson 3 - A History of BIM - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/WZX87CyRbKzjsgno_HjmKJFBJUCwe91XC.jpg",
+      "width": 924
     },
     {
-      "exists": false,
-      "height": null,
-      "mime": null,
-      "output_name": null,
-      "sha256": null,
-      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/XSb_dhehr5v8E3ww_nkBJOSSZt54NjsAY.png",
-      "width": null
+      "exists": true,
+      "height": 809,
+      "mime": "image/png",
+      "output_name": "XSb_dhehr5v8E3ww_nkBJOSSZt54NjsAY.png",
+      "sha256": "954300d8b8c0bb9cf574980720472f2480400d856de5fcc6599b514b52dfad28",
+      "src_ref": "./Lesson 3 - A History of BIM - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/XSb_dhehr5v8E3ww_nkBJOSSZt54NjsAY.png",
+      "width": 656
     },
     {
-      "exists": false,
-      "height": null,
-      "mime": null,
-      "output_name": null,
-      "sha256": null,
-      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/WZX87CyRbKzjsgno_HjmKJFBJUCwe91XC.jpg",
-      "width": null
+      "exists": true,
+      "height": 539,
+      "mime": "image/jpeg",
+      "output_name": "WZX87CyRbKzjsgno_HjmKJFBJUCwe91XC.jpg",
+      "sha256": "85f88f1f224521a31bc12f27cb1311b695cc082180c89c1c7c2d1bc70e6e8831",
+      "src_ref": "./Lesson 3 - A History of BIM - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/WZX87CyRbKzjsgno_HjmKJFBJUCwe91XC.jpg",
+      "width": 924
     },
     {
-      "exists": false,
-      "height": null,
-      "mime": null,
-      "output_name": null,
-      "sha256": null,
-      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/lpG4f3is2RBJ2PY3_q_UC7bAtOh3aYgxu.jpg",
-      "width": null
+      "exists": true,
+      "height": 866,
+      "mime": "image/jpeg",
+      "output_name": "lpG4f3is2RBJ2PY3_q_UC7bAtOh3aYgxu.jpg",
+      "sha256": "610ea4b4dbe21b7e2ba135d4caed90db92421d30b6586f166a14bf87392cb8f7",
+      "src_ref": "./Lesson 3 - A History of BIM - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/lpG4f3is2RBJ2PY3_q_UC7bAtOh3aYgxu.jpg",
+      "width": 1553
     },
     {
-      "exists": false,
-      "height": null,
-      "mime": null,
-      "output_name": null,
-      "sha256": null,
-      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/ot6RaKkcDqRDC679_Dg14roEYm_iLZBMk.jpg",
-      "width": null
+      "exists": true,
+      "height": 708,
+      "mime": "image/jpeg",
+      "output_name": "ot6RaKkcDqRDC679_Dg14roEYm_iLZBMk.jpg",
+      "sha256": "5cb254ac658938e5108012c1dd95b2fc517aa8676e7b2a098fd6e3098a463503",
+      "src_ref": "./Lesson 3 - A History of BIM - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/ot6RaKkcDqRDC679_Dg14roEYm_iLZBMk.jpg",
+      "width": 1378
     },
     {
-      "exists": false,
-      "height": null,
-      "mime": null,
-      "output_name": null,
-      "sha256": null,
-      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/teFL8yEVLCXTdGn5_oTkkdizCL3A_qjZt.jpg",
-      "width": null
+      "exists": true,
+      "height": 646,
+      "mime": "image/jpeg",
+      "output_name": "teFL8yEVLCXTdGn5_oTkkdizCL3A_qjZt.jpg",
+      "sha256": "19584588e6cebc2c6bc873067d979bcb4af2192213c8a19c0c8fa88af16ca165",
+      "src_ref": "./Lesson 3 - A History of BIM - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/teFL8yEVLCXTdGn5_oTkkdizCL3A_qjZt.jpg",
+      "width": 936
     },
     {
-      "exists": false,
-      "height": null,
-      "mime": null,
-      "output_name": null,
-      "sha256": null,
-      "src_ref": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/assets/bFNe4Uv5fEMXDDoQ_HRSJ2ugLCUlDZ4eI.jpg",
-      "width": null
+      "exists": true,
+      "height": 917,
+      "mime": "image/jpeg",
+      "output_name": "bFNe4Uv5fEMXDDoQ_HRSJ2ugLCUlDZ4eI.jpg",
+      "sha256": "1369adc4c065badf5b3bcef7f0b0227f0b59c58ae9cfb0f3564b061b8dce4b00",
+      "src_ref": "./Lesson 3 - A History of BIM - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change_files/bFNe4Uv5fEMXDDoQ_HRSJ2ugLCUlDZ4eI.jpg",
+      "width": 1642
     }
   ],
   "schema_version": 1,
@@ -367,7 +367,7 @@
     "adapter": "rise",
     "course": null,
     "lesson_count": "Lesson 3 of 6",
-    "source_html": "Lesson 2 - Global Drivers - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change.html",
+    "source_html": "Lesson 3 - A History of BIM - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change.html",
     "source_url": "https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/index.html#/lessons/WeZOlpTMWSmKWsvMRtuI1H0G9fsFfysc",
     "title": "Lesson 3 - A History of BIM"
   },
@@ -375,62 +375,12 @@
     {
       "block_index": null,
       "code": "audio_missing",
-      "message": "no local audio within 1.0s of placeholder #1 (00:00s)"
+      "message": "no local audio within 1.0s of placeholder #6 (00:19s)"
     },
     {
       "block_index": null,
       "code": "audio_missing",
-      "message": "no local audio within 1.0s of placeholder #2 (00:00s)"
-    },
-    {
-      "block_index": null,
-      "code": "audio_missing",
-      "message": "no local audio within 1.0s of placeholder #3 (00:00s)"
-    },
-    {
-      "block_index": null,
-      "code": "audio_missing",
-      "message": "no local audio within 1.0s of placeholder #4 (00:00s)"
-    },
-    {
-      "block_index": null,
-      "code": "audio_missing",
-      "message": "no local audio within 1.0s of placeholder #5 (00:00s)"
-    },
-    {
-      "block_index": null,
-      "code": "audio_missing",
-      "message": "no local audio within 1.0s of placeholder #6 (00:00s)"
-    },
-    {
-      "block_index": null,
-      "code": "audio_missing",
-      "message": "no local audio within 1.0s of placeholder #7 (00:00s)"
-    },
-    {
-      "block_index": null,
-      "code": "audio_missing",
-      "message": "no local audio within 1.0s of placeholder #8 (00:00s)"
-    },
-    {
-      "block_index": null,
-      "code": "audio_missing",
-      "message": "no local audio within 1.0s of placeholder #9 (00:00s)"
-    },
-    {
-      "block_index": null,
-      "code": "audio_missing",
-      "message": "no local audio within 1.0s of placeholder #10 (00:00s)"
-    },
-    {
-      "block_index": null,
-      "code": "audio_missing",
-      "message": "no local audio within 1.0s of placeholder #11 (00:00s)"
-    },
-    {
-      "block_index": null,
-      "code": "audio_missing",
-      "message": "no local audio within 1.0s of placeholder #12 (00:00s)"
+      "message": "no local audio within 1.0s of placeholder #11 (00:23s)"
     }
   ]
 }

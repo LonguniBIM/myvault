@@ -53,6 +53,25 @@ tools\webpage-content-extractor\.venv\Scripts\python.exe scripts\ingest_lesson.p
 # Hoặc 1 folder cụ thể / wrapper PowerShell
 .\tools\webpage-content-extractor\scripts\ingest_to_wiki.ps1 -Source "raw\sources\<lesson>"
 ```
+phải chạy từ D:\wiki\BIM_ISO
+Cách sử dụng:
+
+Ingest tất cả bài mới/đổi:
+.\ingest_lesson.ps1 -Mode all
+
+Chế độ watch (tự động ingest khi có bài mới):
+.\ingest_lesson.ps1 -Mode watch
+
+Ingest một folder cụ thể:
+.\ingest_lesson.ps1 -Mode folder -Folder "raw\sources\lesson-name"
+
+Tính năng:
+
+✅ Tự động tìm Python executable từ venv
+✅ Xử lý lỗi nếu đường dẫn không tồn tại
+✅ Hiển thị thông báo màu sắc dễ đọc
+✅ Báo cáo thành công/lỗi cuối cùng
+
 
 Kết quả mỗi bài: `wiki/sources/<slug>.md` (transcript đã điền vào đúng placeholder audio, ảnh nhúng), kèm `.docx` + `assets/` + `extraction-report.md`, và tự cập nhật `wiki/index.md` + `wiki/log.md` qua chính các helper cũ.
 

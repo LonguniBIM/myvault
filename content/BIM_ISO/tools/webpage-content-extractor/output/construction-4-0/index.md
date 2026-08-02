@@ -4,8 +4,8 @@ type: source
 tags:
   - information-management
 source_url: https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/index.html#/lessons/d2ec2JJ16Ynk-%2DOoQhRMjj162SG81LXH
-created: 2026-07-25
-updated: 2026-07-25
+created: 2026-08-02
+updated: 2026-08-02
 ---
 
 # Construction 4.0

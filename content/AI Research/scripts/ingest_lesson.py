@@ -106,6 +106,16 @@ def ingest_folder(folder: Path, *, transcribe: bool, whisper_model: str, languag
     slug = lesson_dir.name
     title = result.document.source.title
 
+    # Preserve Unit info from folder name if not already in title
+    folder_name = folder.name
+    if folder_name.startswith("Unit ") and "Unit " not in title:
+        # Extract unit prefix (e.g., "Unit 2 - " from "Unit 2 - Lesson 4 - ...")
+        unit_prefix = folder_name.split(" - ")[0] + " - "
+        title = unit_prefix + title
+        # Update slug to include unit for uniqueness
+        unit_part = unit_prefix.lower().replace(" - ", "-").replace(" ", "-")
+        slug = unit_part + slug
+
     # Publish as wiki/sources/<slug>.md with assets under wiki/sources/<slug>/assets/
     page_path = WIKI_SOURCES_DIR / f"{slug}.md"
     asset_root = WIKI_SOURCES_DIR / slug
