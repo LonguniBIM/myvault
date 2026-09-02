@@ -1,0 +1,97 @@
+{
+  "audio": [
+    {
+      "duration_label": "00:12",
+      "duration_seconds": 11.865397,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 1,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "01:13",
+      "duration_seconds": 73.375057,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 3 - Tender Response Evaluation Criteria - BIM ISO 19650 1.mp3",
+      "placeholder_index": 2,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:15",
+      "duration_seconds": 15.023311,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 3,
+      "transcribed": false,
+      "transcript_source": null
+    }
+  ],
+  "counts": {
+    "audio_matched": 1,
+    "audio_referenced": 3,
+    "audio_transcribed": 1,
+    "block_types": {
+      "audio": 3,
+      "heading": 5,
+      "image": 3,
+      "rich_text": 6,
+      "unknown": 1
+    },
+    "blocks": 18,
+    "images_found": 3,
+    "images_missing": 0,
+    "warnings": 2
+  },
+  "images": [
+    {
+      "exists": true,
+      "height": 478,
+      "mime": "image/jpeg",
+      "output_name": "2F5ud-ahKoN07-q8_0bQtBFkdhxKevVEB.jpg",
+      "sha256": "630b2328a75265301fcdeb7aa975a885426fdbda53344b2c383ae01b1fe6699d",
+      "src_ref": "./Lesson 3 - Tender Response & Evaluation Criteria - BIM ISO 19650 1&2 Project Delivery_ Unit 5 - Invitation to Tender_files/2F5ud-ahKoN07-q8_0bQtBFkdhxKevVEB.jpg",
+      "width": 1276
+    },
+    {
+      "exists": true,
+      "height": 643,
+      "mime": "image/png",
+      "output_name": "JKgqWAT_Zo3bN-pp_Og8Lvlkl2hnOp1eO.png",
+      "sha256": "e31558a2ee3ac06e8f54bc520f240880a06d221542f0f2e3b51c35a68d11cd32",
+      "src_ref": "./Lesson 3 - Tender Response & Evaluation Criteria - BIM ISO 19650 1&2 Project Delivery_ Unit 5 - Invitation to Tender_files/JKgqWAT_Zo3bN-pp_Og8Lvlkl2hnOp1eO.png",
+      "width": 1370
+    },
+    {
+      "exists": true,
+      "height": 942,
+      "mime": "image/png",
+      "output_name": "YIZMEc8KqGbZ9120_V5zgIvziGVLWPWKZ.png",
+      "sha256": "ff350bf58e3dcdc65cdb2a5c436a9159ab0141595e88f25f7024ba2cb7bf2879",
+      "src_ref": "./Lesson 3 - Tender Response & Evaluation Criteria - BIM ISO 19650 1&2 Project Delivery_ Unit 5 - Invitation to Tender_files/YIZMEc8KqGbZ9120_V5zgIvziGVLWPWKZ.png",
+      "width": 1680
+    }
+  ],
+  "schema_version": 1,
+  "source": {
+    "adapter": "rise",
+    "course": null,
+    "lesson_count": "Lesson 3 of 3",
+    "source_html": "Lesson 3 - Tender Response & Evaluation Criteria - BIM ISO 19650 1&2 Project Delivery_ Unit 5 - Invitation to Tender.html",
+    "source_url": "https://elearning.bre.ac/pluginfile.php/191405/mod_resource/content/11/content/index.html#/lessons/0nY4LaAPpk6SfvbkiQZWcYWEombBwOIk",
+    "title": "Unit 5 - Lesson 3 - Tender Response & Evaluation Criteria"
+  },
+  "warnings": [
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #1 (00:12s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #3 (00:15s)"
+    }
+  ]
+}

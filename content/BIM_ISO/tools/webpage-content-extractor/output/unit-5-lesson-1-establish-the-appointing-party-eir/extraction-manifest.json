@@ -1,0 +1,202 @@
+{
+  "audio": [
+    {
+      "duration_label": "01:06",
+      "duration_seconds": 65.526712,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 1 - Establish the Appointing Party EIR - BIM ISO 19650 12 (2).mp3",
+      "placeholder_index": 1,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:44",
+      "duration_seconds": 43.839274,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 1 - Establish the Appointing Party EIR - BIM ISO 19650 12.mp3",
+      "placeholder_index": 2,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:50",
+      "duration_seconds": 49.667483,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 1 - Establish the Appointing Party EIR - BIM ISO 19650 12 (3).mp3",
+      "placeholder_index": 3,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:20",
+      "duration_seconds": 19.574422,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 4,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:40",
+      "duration_seconds": 39.543583,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 1 - Establish the Appointing Party EIR - BIM ISO 19650 12 (4).mp3",
+      "placeholder_index": 5,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "02:26",
+      "duration_seconds": 146.378594,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 1 - Establish the Appointing Party EIR - BIM ISO 19650 12 (1).mp3",
+      "placeholder_index": 6,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    }
+  ],
+  "counts": {
+    "audio_matched": 5,
+    "audio_referenced": 6,
+    "audio_transcribed": 5,
+    "block_types": {
+      "audio": 6,
+      "button": 1,
+      "divider": 2,
+      "heading": 9,
+      "image": 12,
+      "quote": 1,
+      "rich_text": 14
+    },
+    "blocks": 45,
+    "images_found": 12,
+    "images_missing": 0,
+    "warnings": 1
+  },
+  "images": [
+    {
+      "exists": true,
+      "height": 495,
+      "mime": "image/jpeg",
+      "output_name": "9Wj108Ufx4TliGGl_BAGJ5-paikObOY8H.jpg",
+      "sha256": "1719275c4463b57cb04ce5acc7530a520fa0ae1f9b2f99064c9b4f707bb56414",
+      "src_ref": "./Lesson 1 - Establish the Appointing Party EIR - BIM ISO 19650 1&2 Project Delivery_ Unit 5 - Invitation to Tender_files/9Wj108Ufx4TliGGl_BAGJ5-paikObOY8H.jpg",
+      "width": 1080
+    },
+    {
+      "exists": true,
+      "height": 634,
+      "mime": "image/jpeg",
+      "output_name": "Ne5gn0vLiNPktlGG_PvM5BdoOz-zIuZtO.jpg",
+      "sha256": "4b3d8b6774a91f0ca6540dd455d9998eddcc30644f858dc0b9898b521239f221",
+      "src_ref": "./Lesson 1 - Establish the Appointing Party EIR - BIM ISO 19650 1&2 Project Delivery_ Unit 5 - Invitation to Tender_files/Ne5gn0vLiNPktlGG_PvM5BdoOz-zIuZtO.jpg",
+      "width": 1508
+    },
+    {
+      "exists": true,
+      "height": 643,
+      "mime": "image/jpeg",
+      "output_name": "2tTHQXxq-240fNgS_pPiaaRxEBVNw0Xxj.jpg",
+      "sha256": "86d7d3f331006b1721aa05ce7ee7a09a93aae2bf61f32d24fe742b1baa991730",
+      "src_ref": "./Lesson 1 - Establish the Appointing Party EIR - BIM ISO 19650 1&2 Project Delivery_ Unit 5 - Invitation to Tender_files/2tTHQXxq-240fNgS_pPiaaRxEBVNw0Xxj.jpg",
+      "width": 1413
+    },
+    {
+      "exists": true,
+      "height": 315,
+      "mime": "image/png",
+      "output_name": "8D5Gdn0PJ3wqezPl_B_WcSxzjSE6AHhpL.png",
+      "sha256": "b77e75a50fd70056f970c09753126c085f6f2c809cee2fcec93d539321fea209",
+      "src_ref": "./Lesson 1 - Establish the Appointing Party EIR - BIM ISO 19650 1&2 Project Delivery_ Unit 5 - Invitation to Tender_files/8D5Gdn0PJ3wqezPl_B_WcSxzjSE6AHhpL.png",
+      "width": 533
+    },
+    {
+      "exists": true,
+      "height": 299,
+      "mime": "image/png",
+      "output_name": "aNhOTi-AgxB9taK8_GWwPKpRz_8AxQ6WK.png",
+      "sha256": "2ecd7f0cd4552743990e3ee39f735145045b809cb22e6c279cbd1c2dbcf4db09",
+      "src_ref": "./Lesson 1 - Establish the Appointing Party EIR - BIM ISO 19650 1&2 Project Delivery_ Unit 5 - Invitation to Tender_files/aNhOTi-AgxB9taK8_GWwPKpRz_8AxQ6WK.png",
+      "width": 374
+    },
+    {
+      "exists": true,
+      "height": 474,
+      "mime": "image/png",
+      "output_name": "81tkZys1fMcZcLbc_9Stx0N8oLdrvjQAm.png",
+      "sha256": "628a3ca877cf514f7f48d932f6bd5ca5776260d7d1903f41b4e289fed4c677ff",
+      "src_ref": "./Lesson 1 - Establish the Appointing Party EIR - BIM ISO 19650 1&2 Project Delivery_ Unit 5 - Invitation to Tender_files/81tkZys1fMcZcLbc_9Stx0N8oLdrvjQAm.png",
+      "width": 250
+    },
+    {
+      "exists": true,
+      "height": 638,
+      "mime": "image/jpeg",
+      "output_name": "cmEsy3i6UrnmtgHP_Wn3CxWF8dVPw4Kjj.jpg",
+      "sha256": "eb57931f7c9d16533292bfaa0eaa8ce8db2f985616ec9215bce4828eddaf99d4",
+      "src_ref": "./Lesson 1 - Establish the Appointing Party EIR - BIM ISO 19650 1&2 Project Delivery_ Unit 5 - Invitation to Tender_files/cmEsy3i6UrnmtgHP_Wn3CxWF8dVPw4Kjj.jpg",
+      "width": 405
+    },
+    {
+      "exists": true,
+      "height": 524,
+      "mime": "image/png",
+      "output_name": "RuCDlXjY0JOtyhIa_bgbNDwuRWa639n4h.png",
+      "sha256": "98f029169794bf5b5383d95ad14e74b093e55c7004d60443c3215b38cc9b91ba",
+      "src_ref": "./Lesson 1 - Establish the Appointing Party EIR - BIM ISO 19650 1&2 Project Delivery_ Unit 5 - Invitation to Tender_files/RuCDlXjY0JOtyhIa_bgbNDwuRWa639n4h.png",
+      "width": 238
+    },
+    {
+      "exists": true,
+      "height": 413,
+      "mime": "image/png",
+      "output_name": "vctWxt2u08Y0biTX_sTptIWQ86VhvRfE1.png",
+      "sha256": "b477b9d6a54acca95fda689a1d9dd6c4814537334f5f3eb9c2346e0c457e145f",
+      "src_ref": "./Lesson 1 - Establish the Appointing Party EIR - BIM ISO 19650 1&2 Project Delivery_ Unit 5 - Invitation to Tender_files/vctWxt2u08Y0biTX_sTptIWQ86VhvRfE1.png",
+      "width": 497
+    },
+    {
+      "exists": true,
+      "height": 475,
+      "mime": "image/png",
+      "output_name": "1bSOHdEM7qFvOWEA_YdNViRDwfWjBMkFM.png",
+      "sha256": "873a427c55b2f827b1dddc11903dc502b41b0f087cb334d400d4c5894166868c",
+      "src_ref": "./Lesson 1 - Establish the Appointing Party EIR - BIM ISO 19650 1&2 Project Delivery_ Unit 5 - Invitation to Tender_files/1bSOHdEM7qFvOWEA_YdNViRDwfWjBMkFM.png",
+      "width": 245
+    },
+    {
+      "exists": true,
+      "height": 687,
+      "mime": "image/jpeg",
+      "output_name": "DVlN5RPWlMTn5OPK_dem_-usUIwmqekeW.jpg",
+      "sha256": "864668e61c32252a190d1dcef7813bcbe0cf5c2e4106fb578a6c5684b05914a8",
+      "src_ref": "./Lesson 1 - Establish the Appointing Party EIR - BIM ISO 19650 1&2 Project Delivery_ Unit 5 - Invitation to Tender_files/DVlN5RPWlMTn5OPK_dem_-usUIwmqekeW.jpg",
+      "width": 707
+    },
+    {
+      "exists": true,
+      "height": 274,
+      "mime": "image/png",
+      "output_name": "6Jbr7T4Y26THltEk_vmbG--HH1hij4sdt.png",
+      "sha256": "a25a889bf988a5a3aeac3491ffc0586cd653b3a9d2bdd1443841e9e2ea20657d",
+      "src_ref": "./Lesson 1 - Establish the Appointing Party EIR - BIM ISO 19650 1&2 Project Delivery_ Unit 5 - Invitation to Tender_files/6Jbr7T4Y26THltEk_vmbG--HH1hij4sdt.png",
+      "width": 316
+    }
+  ],
+  "schema_version": 1,
+  "source": {
+    "adapter": "rise",
+    "course": null,
+    "lesson_count": "Lesson 1 of 3",
+    "source_html": "Lesson 1 - Establish the Appointing Party EIR - BIM ISO 19650 1&2 Project Delivery_ Unit 5 - Invitation to Tender.html",
+    "source_url": "https://elearning.bre.ac/pluginfile.php/191405/mod_resource/content/11/content/index.html#/lessons/irEaJK52t5II9cGEea85i_3utjiF8NHO",
+    "title": "Unit 5 - Lesson 1 - Establish the Appointing Party EIR"
+  },
+  "warnings": [
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #4 (00:20s)"
+    }
+  ]
+}

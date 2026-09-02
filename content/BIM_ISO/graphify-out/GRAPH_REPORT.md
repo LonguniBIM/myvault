@@ -1,12 +1,12 @@
-# Graph Report - D:\wiki\BIM_ISO  (2026-07-25)
+# Graph Report - D:\wiki\BIM_ISO  (2026-09-03)
 
 ## Corpus Check
-- 44 files · ~335,615 words
+- 45 files · ~5,004,511 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 334 nodes · 750 edges · 22 communities detected
-- Extraction: 64% EXTRACTED · 36% INFERRED · 0% AMBIGUOUS · INFERRED: 271 edges (avg confidence: 0.67)
+- 336 nodes · 756 edges · 23 communities detected
+- Extraction: 63% EXTRACTED · 37% INFERRED · 0% AMBIGUOUS · INFERRED: 276 edges (avg confidence: 0.68)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
@@ -32,12 +32,13 @@
 - [[_COMMUNITY_Community 19|Community 19]]
 - [[_COMMUNITY_Community 20|Community 20]]
 - [[_COMMUNITY_Community 21|Community 21]]
+- [[_COMMUNITY_Community 22|Community 22]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `RiseAdapter` - 24 edges
-2. `DocumentIR` - 23 edges
-3. `DocxRenderer` - 23 edges
-4. `Config` - 22 edges
+1. `RiseAdapter` - 25 edges
+2. `DocumentIR` - 24 edges
+3. `Config` - 23 edges
+4. `DocxRenderer` - 23 edges
 5. `run_extract()` - 20 edges
 6. `MarkdownRenderer` - 18 edges
 7. `main()` - 16 edges
@@ -46,62 +47,62 @@
 10. `Adapter for Articulate Rise-style lesson pages.  Recognises ``.blocks-lesson`` w` - 14 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `parse_document()` --calls--> `load_html()`  [INFERRED]
-  D:\wiki\BIM_ISO\tools\webpage-content-extractor\src\course_extractor\pipeline.py → D:\wiki\BIM_ISO\tools\webpage-content-extractor\src\course_extractor\html_loader.py
-- `test_rich_text_inline_and_list()` --calls--> `parse_rich_text()`  [INFERRED]
-  D:\wiki\BIM_ISO\tools\webpage-content-extractor\tests\unit\test_parsers.py → D:\wiki\BIM_ISO\tools\webpage-content-extractor\src\course_extractor\parsers\rich_text.py
-- `scan_files()` --calls--> `in_lesson_scope()`  [INFERRED]
-  D:\wiki\BIM_ISO\scripts\extract_content.py → D:\wiki\BIM_ISO\scripts\lesson_utils.py
-- `extract_pdf()` --calls--> `Run`  [INFERRED]
-  D:\wiki\BIM_ISO\scripts\extract_content.py → D:\wiki\BIM_ISO\tools\webpage-content-extractor\src\course_extractor\models.py
-- `download_youtube_audio()` --calls--> `Run`  [INFERRED]
-  D:\wiki\BIM_ISO\scripts\extract_content.py → D:\wiki\BIM_ISO\tools\webpage-content-extractor\src\course_extractor\models.py
+- `Ingest a "Webpage, Complete" lesson (HTML + _files + separate audio) into the wi` --uses--> `Config`  [INFERRED]
+  D:\wiki\BIM_ISO\scripts\ingest_lesson.py → D:\wiki\BIM_ISO\tools\webpage-content-extractor\src\course_extractor\config.py
+- `Extract one lesson folder and publish it as a flat wiki source page.` --uses--> `Config`  [INFERRED]
+  D:\wiki\BIM_ISO\scripts\ingest_lesson.py → D:\wiki\BIM_ISO\tools\webpage-content-extractor\src\course_extractor\config.py
+- `Typer CLI: inspect / extract / validate.` --uses--> `Config`  [INFERRED]
+  D:\wiki\BIM_ISO\tools\webpage-content-extractor\src\course_extractor\cli.py → D:\wiki\BIM_ISO\tools\webpage-content-extractor\src\course_extractor\config.py
+- `Extract a lesson to Markdown / DOCX / manifest with audio transcripts.` --uses--> `Config`  [INFERRED]
+  D:\wiki\BIM_ISO\tools\webpage-content-extractor\src\course_extractor\cli.py → D:\wiki\BIM_ISO\tools\webpage-content-extractor\src\course_extractor\config.py
+- `Validate a previously extracted output folder.` --uses--> `Config`  [INFERRED]
+  D:\wiki\BIM_ISO\tools\webpage-content-extractor\src\course_extractor\cli.py → D:\wiki\BIM_ISO\tools\webpage-content-extractor\src\course_extractor\config.py
 
 ## Communities
 
 ### Community 0 - "Community 0"
-Cohesion: 0.11
-Nodes (36): BaseModel, detect_adapter(), Select the best adapter for a given soup., Render DocumentIR -> a self-contained DOCX (images embedded, transcripts filled, Try a direct embed; fall back to a Pillow re-encode (python-docx's         heade, Enum, Render DocumentIR -> Markdown, copying referenced assets into assets/.  Designed, AssetKind (+28 more)
+Cohesion: 0.07
+Nodes (45): discover_local_audio(), LocalAudio, match_audio_by_duration(), probe_duration(), transcribe_matched_audio(), Transcriber, ContentAdapter, ParseContext (+37 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.09
-Nodes (32): discover_local_audio(), LocalAudio, match_audio_by_duration(), probe_duration(), Duration-based matching of local audio files to audio placeholders, plus optiona, Greedy nearest-duration matching; each file is used at most once., transcribe_matched_audio(), Transcriber (+24 more)
+Cohesion: 0.11
+Nodes (37): BaseModel, detect_adapter(), Select the best adapter for a given soup., Render DocumentIR -> a self-contained DOCX (images embedded, transcripts filled, Try a direct embed; fall back to a Pillow re-encode (python-docx's         heade, Enum, extract_source_url(), Read the ``<!-- saved from url=(NNNN)... -->`` comment if present. (+29 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.08
 Nodes (45): create_wiki_page(), derive_title(), detect_file_type(), download_youtube_audio(), extract_docx(), extract_image(), extract_pdf(), extract_text() (+37 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.09
-Nodes (30): extract(), inspect(), _parse_formats(), Typer CLI: inspect / extract / validate., Print discovered lesson structure without writing any output., Extract a lesson to Markdown / DOCX / manifest with audio transcripts., Validate a previously extracted output folder., _render_docx_qa() (+22 more)
+Cohesion: 0.1
+Nodes (29): find_lesson_folders(), ingest_folder(), load_manifest(), main(), Ingest a "Webpage, Complete" lesson (HTML + _files + separate audio) into the wi, Extract one lesson folder and publish it as a flat wiki source page., _require_course_extractor(), save_manifest() (+21 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.1
 Nodes (30): create_wiki_source_page(), derive_title_from_filename(), download_youtube_audio(), file_sha256(), format_duration(), get_new_files(), load_manifest(), main() (+22 more)
 
 ### Community 5 - "Community 5"
-Cohesion: 0.1
-Nodes (24): attach_local_file(), _fill_file_info(), _looks_remote(), Resolve local image/audio references to on-disk files, safely.  Never mutates so, Resolve ``src`` (as written in HTML) to a local file under ``root_dir``., Bind a concrete on-disk file to an asset (used for duration-matched audio)., resolve_local_asset(), parse_timer_label() (+16 more)
-
-### Community 6 - "Community 6"
 Cohesion: 0.13
 Nodes (20): Exception, _iter_html(), Resolve a user input into a root directory + candidate HTML files.  Accepts a ``, Heuristic score for how likely a file is the lesson page (PLAN M1.3)., resolve_input(), ResolvedInput, score_html(), is_within() (+12 more)
 
+### Community 6 - "Community 6"
+Cohesion: 0.22
+Nodes (7): Hashing helpers for deterministic asset identity., sha256_file(), _esc(), MarkdownRenderer, _rich_md(), _runs_md(), _sha()
+
 ### Community 7 - "Community 7"
-Cohesion: 0.14
-Nodes (21): find_lesson_folders(), folder_signature(), in_lesson_scope(), is_lesson_folder(), Shared helpers for detecting "Webpage, Complete" lesson folders.  A lesson folde, True if ``path`` is a lesson's saved asset or a file inside a lesson folder., Cheap change-detection signature over a folder's files., derive_title() (+13 more)
+Cohesion: 0.15
+Nodes (13): parse_timer_label(), parse_valuemax(), Parse audio durations from Rise audio-player DOM., timer_to_seconds(), Filename / slug helpers that stay safe on Windows., Readable ASCII slug suitable for a folder / file name., Make an arbitrary asset name safe as a Windows filename., sanitize_filename() (+5 more)
 
 ### Community 8 - "Community 8"
 Cohesion: 0.25
 Nodes (2): DocxRenderer, _reencode_png()
 
 ### Community 9 - "Community 9"
-Cohesion: 0.32
-Nodes (4): _esc(), MarkdownRenderer, _rich_md(), _runs_md()
+Cohesion: 0.19
+Nodes (10): extract(), _parse_formats(), Typer CLI: inspect / extract / validate., Extract a lesson to Markdown / DOCX / manifest with audio transcripts., Validate a previously extracted output folder., _render_docx_qa(), validate(), Structural validation of extraction outputs. (+2 more)
 
 ### Community 10 - "Community 10"
-Cohesion: 0.4
-Nodes (4): extract_source_url(), load_html(), Load saved HTML into a BeautifulSoup tree without running any JavaScript., Read the ``<!-- saved from url=(NNNN)... -->`` comment if present.
+Cohesion: 0.32
+Nodes (11): attach_local_file(), _fill_file_info(), _looks_remote(), Resolve local image/audio references to on-disk files, safely.  Never mutates so, Resolve ``src`` (as written in HTML) to a local file under ``root_dir``., Bind a concrete on-disk file to an asset (used for duration-matched audio)., resolve_local_asset(), Duration-based matching of local audio files to audio placeholders, plus optiona (+3 more)
 
 ### Community 11 - "Community 11"
 Cohesion: 1.0
@@ -147,16 +148,20 @@ Nodes (0):
 Cohesion: 1.0
 Nodes (0): 
 
+### Community 22 - "Community 22"
+Cohesion: 1.0
+Nodes (0): 
+
 ## Knowledge Gaps
 - **63 isolated node(s):** `Extract content from all file types in raw/ and ingest into the wiki.  Handles`, `Convert text to kebab-case slug safe for filenames.`, `Compute SHA256 hash for change detection.`, `Load processed files manifest.`, `Persist manifest to disk.` (+58 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **Thin community `Community 11`** (1 nodes): `extract_sample.ps1`
+- **Thin community `Community 11`** (1 nodes): `ingest_lesson.ps1`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 12`** (1 nodes): `ingest_to_wiki.ps1`
+- **Thin community `Community 12`** (1 nodes): `extract_sample.ps1`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 13`** (1 nodes): `setup.ps1`
+- **Thin community `Community 13`** (1 nodes): `ingest_to_wiki.ps1`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 14`** (1 nodes): `__init__.py`
+- **Thin community `Community 14`** (1 nodes): `setup.ps1`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 15`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
@@ -172,21 +177,23 @@ Nodes (0):
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 21`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 22`** (1 nodes): `__init__.py`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `run_extract()` connect `Community 1` to `Community 2`, `Community 3`, `Community 5`, `Community 8`, `Community 9`?**
-  _High betweenness centrality (0.162) - this node is a cross-community bridge._
+- **Why does `run_extract()` connect `Community 0` to `Community 2`, `Community 3`, `Community 6`, `Community 7`, `Community 8`, `Community 9`?**
+  _High betweenness centrality (0.156) - this node is a cross-community bridge._
 - **Why does `main()` connect `Community 4` to `Community 2`?**
-  _High betweenness centrality (0.097) - this node is a cross-community bridge._
+  _High betweenness centrality (0.096) - this node is a cross-community bridge._
 - **Are the 23 inferred relationships involving `str` (e.g. with `get_new_files()` and `extract_video_audio()`) actually correct?**
   _`str` has 23 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 14 inferred relationships involving `RiseAdapter` (e.g. with `Select the best adapter for a given soup.` and `AssetKind`) actually correct?**
-  _`RiseAdapter` has 14 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 18 inferred relationships involving `DocumentIR` (e.g. with `LocalAudio` and `Transcriber`) actually correct?**
-  _`DocumentIR` has 18 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 15 inferred relationships involving `RiseAdapter` (e.g. with `Select the best adapter for a given soup.` and `AssetKind`) actually correct?**
+  _`RiseAdapter` has 15 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 19 inferred relationships involving `DocumentIR` (e.g. with `LocalAudio` and `Transcriber`) actually correct?**
+  _`DocumentIR` has 19 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 21 inferred relationships involving `Config` (e.g. with `Ingest a "Webpage, Complete" lesson (HTML + _files + separate audio) into the wi` and `Extract one lesson folder and publish it as a flat wiki source page.`) actually correct?**
+  _`Config` has 21 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 10 inferred relationships involving `DocxRenderer` (e.g. with `ExtractResult` and `End-to-end extraction pipeline (IR-first).`) actually correct?**
   _`DocxRenderer` has 10 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 20 inferred relationships involving `Config` (e.g. with `Ingest a "Webpage, Complete" lesson (HTML + _files + separate audio) into the wi` and `Extract one lesson folder and publish it as a flat wiki source page.`) actually correct?**
-  _`Config` has 20 INFERRED edges - model-reasoned connections that need verification._

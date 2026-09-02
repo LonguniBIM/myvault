@@ -1,14 +1,21 @@
 ---
-title: "Lesson 4 - Global BIM Adoption"
+title: "Unit 2 - Lesson 4 - Global BIM Adoption"
 type: source
 tags:
   - information-management
+  - compliance
+  - medium
+  - high
 source_url: https://elearning.bre.ac/pluginfile.php/191400/mod_resource/content/8/content/index.html#/lessons/BQ-77KsDCSV-et9gCu8fWyAopJwGK18W
+venue: "BRE Academy / ISO 19650"
+clause_refs:
+  - "ISO 19650-1"
+skill_potential: false
 created: 2026-08-02
-updated: 2026-08-02
+updated: 2026-09-03
 ---
 
-# Lesson 4 - Global BIM Adoption
+# Unit 2 - Lesson 4 - Global BIM Adoption
 
 *Lesson 4 of 4*
 
@@ -87,6 +94,49 @@ End of Module
 
 Close this pop-up window to go back to the course
 
+
+---
+
+## Ten-Question Analysis Framework
+
+### 1. Problem
+Why are public and private clients worldwide introducing mandatory BIM regulations, and how do international mandates differ in approach?
+
+### 2. Applicability
+- **Scope**: International procurement policies and government mandates across Europe, Americas, Asia, and Middle East.
+
+### 3. Process
+1. Top-down government mandates (e.g. UK centrally procured mandate 2016, Singapore BCA mandate, Nordic OpenBIM mandates).
+2. Industry alignment around international standards (ISO 19650 series).
+3. Private sector diffusion driven by efficiency gains, risk reduction, and supply chain readiness.
+
+### 4. Evidence
+- National BIM mandates and statutory building submission guidelines.
+- Industry market studies (NBS National BIM Reports, BICP Global BIM Study).
+
+### 5. Principles
+- **OpenBIM Priority**: Pioneering nations (Norway, Finland, Sweden) mandating IFC and open data formats to prevent proprietary lock-in.
+
+### 6. Risks & Anti-patterns
+- Imposing strict mandates without upskilling the domestic supply chain or providing clear standard templates.
+
+### 7. Operationalization
+- Global BIM Mandate Compliance Tracker for multi-national projects.
+
+### 8. Skill Test
+Can this become a Skill?
+No (informational/contextual).
+
+### 9. Skill Design
+- **Supported Role**: Corporate Strategy / Global Project Director.
+
+### 10. Validation Plan
+Cross-reference project procurement briefs against host nation statutory BIM requirements.
+
+---
+
+## Knowledge Space Links
+- **Concepts**: [[global-bim-mandates]], [[openbim-information-exchange]]
 
 ---
 *Extracted from `Lesson 4 - Global BIM Adoption - BIM ISO 19650 1&2 Project Delivery_ Unit 2 - BIM Explained.html` via webpage-content-extractor.*

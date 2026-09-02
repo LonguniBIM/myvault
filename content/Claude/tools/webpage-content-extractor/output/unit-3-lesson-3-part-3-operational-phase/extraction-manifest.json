@@ -1,0 +1,102 @@
+{
+  "audio": [
+    {
+      "duration_label": "00:22",
+      "duration_seconds": 21.640998,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 1,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:23",
+      "duration_seconds": 22.639456,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 2,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:22",
+      "duration_seconds": 22.291156,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 3,
+      "transcribed": false,
+      "transcript_source": null
+    }
+  ],
+  "counts": {
+    "audio_matched": 0,
+    "audio_referenced": 3,
+    "audio_transcribed": 0,
+    "block_types": {
+      "audio": 3,
+      "button": 1,
+      "heading": 6,
+      "image": 3,
+      "rich_text": 6
+    },
+    "blocks": 19,
+    "images_found": 3,
+    "images_missing": 0,
+    "warnings": 3
+  },
+  "images": [
+    {
+      "exists": true,
+      "height": 831,
+      "mime": "image/jpeg",
+      "output_name": "8vVEUr7OpG1oGNQR_KQFVkgGEHVjk7Ozq.jpg",
+      "sha256": "805ee9456679ded5516676eff1ab667a2edb8ac054543b167358769cc0a4777f",
+      "src_ref": "./Lesson 3 - Part 3_ Operational Phase - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/8vVEUr7OpG1oGNQR_KQFVkgGEHVjk7Ozq.jpg",
+      "width": 691
+    },
+    {
+      "exists": true,
+      "height": 635,
+      "mime": "image/jpeg",
+      "output_name": "D8wnNij7T5IDVBu4_XKiV2GltWK3A3WOx.jpg",
+      "sha256": "346b87a6ab415a862b97d334021761211a4adab2899c73a3b806faec3c98eef0",
+      "src_ref": "./Lesson 3 - Part 3_ Operational Phase - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/D8wnNij7T5IDVBu4_XKiV2GltWK3A3WOx.jpg",
+      "width": 1148
+    },
+    {
+      "exists": true,
+      "height": 635,
+      "mime": "image/jpeg",
+      "output_name": "PwWnvPtyoJSq12FS_76ZG_6z44pbuHQbm.jpg",
+      "sha256": "346b87a6ab415a862b97d334021761211a4adab2899c73a3b806faec3c98eef0",
+      "src_ref": "./Lesson 3 - Part 3_ Operational Phase - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/PwWnvPtyoJSq12FS_76ZG_6z44pbuHQbm.jpg",
+      "width": 1148
+    }
+  ],
+  "schema_version": 1,
+  "source": {
+    "adapter": "rise",
+    "course": null,
+    "lesson_count": "Lesson 3 of 5",
+    "source_html": "Lesson 3 - Part 3_ Operational Phase - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650_.html",
+    "source_url": "https://elearning.bre.ac/pluginfile.php/191403/mod_resource/content/8/content/index.html#/lessons/OTm-TBlQ9Op7hfQcU6IVE1dvppfPFoU5",
+    "title": "Unit 3 - Lesson 3 - Part 3: Operational Phase"
+  },
+  "warnings": [
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #1 (00:22s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #2 (00:23s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #3 (00:22s)"
+    }
+  ]
+}

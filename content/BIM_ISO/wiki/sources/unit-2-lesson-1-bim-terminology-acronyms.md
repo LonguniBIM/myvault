@@ -1,14 +1,21 @@
 ---
-title: "Lesson 1 - BIM Terminology & Acronyms"
+title: "Unit 2 - Lesson 1 - BIM Terminology & Acronyms"
 type: source
 tags:
   - information-management
+  - roles-responsibility
+  - high
+  - high
 source_url: https://elearning.bre.ac/pluginfile.php/191400/mod_resource/content/8/content/index.html#/lessons/1wLkEuhIfZc5CmGiGVVqNwV_KGq5_r6_
+venue: "BRE Academy / ISO 19650"
+clause_refs:
+  - "ISO 19650-1 §3"
+skill_potential: false
 created: 2026-08-02
-updated: 2026-08-02
+updated: 2026-09-03
 ---
 
-# Lesson 1 - BIM Terminology & Acronyms
+# Unit 2 - Lesson 1 - BIM Terminology & Acronyms
 
 *Lesson 1 of 4*
 
@@ -21,8 +28,8 @@ Introduce BIM by defining the term and considering how it is used.
 
 Understand how the term BIM is used in many different ways by many different people.
 
-> [!warning] Missing audio (00:08)
-> No local audio file matched this placeholder (referenced `assets/5injtvU-JUh7HFOe_transcoded-bIr_4hWk3CXMBHCI-m2s126.mp3`).
+> [!note] Audio transcript (00:08)
+> This unit introduces BIM by defining the term and considering how itis used. The term BIM is used in many different ways by many different people.
 
 ## What is Building Information Modeling (BIM)?
 
@@ -74,8 +81,8 @@ The Appointing Party encompasses both of these, Client and Employer.
 
 ![m1s132.PNG](unit-2-lesson-1-bim-terminology-acronyms/assets/BRLQ2IoXaRANbK3h_HwseILBphKk_R0Ch.jpg)
 
-> [!warning] Missing audio (00:25)
-> No local audio file matched this placeholder (referenced `assets/GvCH8PSjSqWzy6gl_transcoded-B8Axp0O75bed0xdj-m2s132.mp3`).
+> [!note] Audio transcript (00:25)
+> The appointing party must firstly appoint the lead supplier and they shall be labeled as the lead appointed party. In doing so, the appointing party has become an employer. It is important that the appointing party have clearly set out their information requirements. The lead appointed party will provide a plan for how and when to deliver the information. In response to these, we shall discuss in further detail during the course.
 
 ![m1s133.PNG](unit-2-lesson-1-bim-terminology-acronyms/assets/pkZ2XaxKNZD2yyY9_ztUzncLpNPARY3SF.png)
 
@@ -199,6 +206,52 @@ Understand how the term BIM is used in many different ways by many different peo
 
 **[CONTINUE]**
 
+
+---
+
+## Ten-Question Analysis Framework
+
+### 1. Problem
+How do project participants align on consistent contractual terminology and team structures across international projects?
+
+### 2. Applicability
+- **Scope**: Contractual arrangements and team definitions across all ISO 19650 projects.
+- **Roles**: Appointing Party, Lead Appointed Party, Appointed Party, Project Team, Delivery Team, Task Team.
+
+### 3. Process
+1. Replace legacy terms (Employer -> Appointing Party; Main Contractor / Lead Designer -> Lead Appointed Party; Subcontractor / Subconsultant -> Appointed Party).
+2. Group parties into clear functional clusters:
+   - **Project Team**: Appointing Party + all Lead Appointed Parties + Appointed Parties.
+   - **Delivery Team**: Lead Appointed Party + Appointed Parties working under them.
+   - **Task Team**: Appointed Parties executing specific information production tasks.
+
+### 4. Evidence
+- Contract organization charts and appointment documentation using ISO 19650 party titles.
+
+### 5. Principles
+- **Clarity of Relationships**: Distinct hierarchy separating client governance from supplier delivery clusters.
+
+### 6. Risks & Anti-patterns
+- Mixing outdated PAS 1192 terminology with ISO 19650 terms in legal contracts.
+
+### 7. Operationalization
+- ISO 19650 Glossary & Role Alignment Table for appointment drafting.
+
+### 8. Skill Test
+Can this become a Skill?
+**Yes** — Candidate: `terminology-alignment-auditor`.
+
+### 9. Skill Design
+- **Supported Role**: Legal / Procurement / BIM Manager.
+
+### 10. Validation Plan
+Verify that contractual appointment documents use standardized ISO 19650 party definitions.
+
+---
+
+## Knowledge Space Links
+- **Entities**: [[appointing-party]], [[lead-appointed-party]]
+- **Concepts**: [[project-team-structure]]
 
 ---
 *Extracted from `Lesson 1 - BIM Terminology & Acronyms - BIM ISO 19650 1&2 Project Delivery_ Unit 2 - BIM Explained.html` via webpage-content-extractor.*

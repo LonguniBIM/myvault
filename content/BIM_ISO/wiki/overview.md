@@ -28,30 +28,31 @@ This wiki is a **curated knowledge base for mastering BIM information management
 
 | Metric | Count |
 |--------|-------|
-| Sources ingested | 0 |
-| Entity pages | 0 |
-| Concept pages | 0 |
-| Methodology pages | 0 |
-| Skills extracted | 0 |
+| Sources ingested into Knowledge Space | 24 |
+| Total Source files | 24 |
+| Entity pages | 15 |
+| Concept pages | 16 |
+| Methodology pages | 10 |
+| Skills extracted (candidates) | 10 |
 | Findings | 0 |
 
-**Last updated:** 2026-07-23 (wiki space initialized)
+**Last updated:** 2026-09-03 (Batch Ingestion of all 24 Course Lessons Complete)
 
 ## Research Focus Areas
 
 | Topic | Status | Priority |
 |-------|--------|----------|
-| ISO 19650-1 / 19650-2 core concepts | Not started | Critical |
-| EIR / AIR / OIR / PIR requirement analysis | Not started | Critical |
-| BEP structure and review | Not started | Critical |
-| CDE states, workflow, approval gates | Not started | High |
-| MIDP / TIDP / Responsibility Matrix | Not started | High |
-| Level of Information Need (LOIN) | Not started | High |
-| Naming convention / classification / metadata | Not started | Medium |
-| Model checking / QA-QC / issue management | Not started | Medium |
-| Coordination workflow (Revit/IFC/Navisworks/Revizto/BIMcollab) | Not started | Medium |
-| Handover / archive / evidence of compliance | Not started | Medium |
-| Claude Skill extraction (see `purpose.md`) | Not started | Critical |
+| ISO 19650-1 / 19650-2 core concepts | In progress | Critical |
+| EIR / AIR / OIR / PIR requirement analysis | In progress | Critical |
+| BEP structure and review | In progress | Critical |
+| CDE states, workflow, approval gates | In progress | High |
+| MIDP / TIDP / Responsibility Matrix | In progress | High |
+| Level of Information Need (LOIN) | In progress | High |
+| Naming convention / classification / metadata | In progress | Medium |
+| Model checking / QA-QC / issue management | Planned | Medium |
+| Coordination workflow (Revit/IFC/Navisworks/Revizto/BIMcollab) | Planned | Medium |
+| Handover / archive / evidence of compliance | Planned | Medium |
+| Claude Skill extraction (see `purpose.md`) | In progress | Critical |
 
 ## Key Directories
 

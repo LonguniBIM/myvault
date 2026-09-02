@@ -1,14 +1,21 @@
 ---
-title: "Lesson 4 - The Effect of Poor Information"
+title: "Unit 1 - Lesson 4 - The Effect of Poor Information"
 type: source
 tags:
   - information-management
+  - coordination
+  - high
+  - high
 source_url: https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/index.html#/lessons/HXjpBd_2U4jpCHaREoqauu2DHxSqynNY
+venue: "BRE Academy / ISO 19650"
+clause_refs:
+  - "ISO 19650-1"
+skill_potential: false
 created: 2026-08-02
-updated: 2026-08-02
+updated: 2026-09-03
 ---
 
-# Lesson 4 - The Effect of Poor Information
+# Unit 1 - Lesson 4 - The Effect of Poor Information
 
 *Lesson 4 of 6*
 
@@ -56,8 +63,8 @@ The ISO 19650 Standards aims to remove the major causes of poor information exch
 ## Collaboration is Key
 
 
-> [!warning] Missing audio (00:10)
-> No local audio file matched this placeholder (referenced `assets/2HOAlIaSorQnrfg3_transcoded-HyLzEG8uyUX6yCMR-m1s74.mp3`).
+> [!note] Audio transcript (00:10)
+> The collaborative production of information is vital to the efficient design, build and operation of a project. These principles should be discussed during this course.
 
 ![m1s75.PNG](unit-1-lesson-4-the-effect-of-poor-information/assets/a-OdbnLU9Zvawkm5_tLdrwZf82ThcBDil.jpg)
 
@@ -110,6 +117,53 @@ Highlight some of the negative effects caused by poor information.
 
 **[CONTINUE]**
 
+
+---
+
+## Ten-Question Analysis Framework
+
+### 1. Problem
+What are the empirical economic, safety, and operational costs of uncoordinated documentation and poor information management in construction?
+
+### 2. Applicability
+- **Scope**: Construction project delivery across all trades and disciplines.
+
+### 3. Process
+1. Recognize empirical costs:
+   - Up to **30% of construction cost is rework**.
+   - **10% of materials wasted** due to offcuts and uncoordinated details.
+   - Labour utilized at only **40–60% efficiency** due to waiting for information or out-of-sequence work.
+   - Accidents account for **3–6% of project costs**.
+   - Total non-value-adding waste exceeds **50% of total project cost**.
+2. Replace unmanaged drafting with federated spatial coordination and ISO 19650 CDE workflows.
+
+### 4. Evidence
+- Industry studies (USA, UK, Scandinavia).
+- Site rework logs and Request for Information (RFI) volume statistics.
+
+### 5. Principles
+- **3D is Not Enough**: 3D authoring alone does not eliminate errors; collaborative information management and federation processes are strictly required.
+
+### 6. Risks & Anti-patterns
+- Leaving clash resolution to be discovered and resolved physically on site.
+
+### 7. Operationalization
+- Clash Resolution Matrix and RFI Tracking Metrics within BEP.
+
+### 8. Skill Test
+Can this become a Skill?
+**Yes** — Candidate: `clash-coordination-auditor`.
+
+### 9. Skill Design
+- **Supported Role**: BIM Coordinator / Site Project Manager.
+
+### 10. Validation Plan
+Track RFI counts and rework expenditure on BIM-coordinated vs traditional projects.
+
+---
+
+## Knowledge Space Links
+- **Concepts**: [[cost-of-poor-information]], [[building-information-modeling]]
 
 ---
 *Extracted from `Lesson 4 - The Effect of Poor Information - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change.html` via webpage-content-extractor.*

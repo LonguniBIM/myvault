@@ -53,7 +53,7 @@ tools\webpage-content-extractor\.venv\Scripts\python.exe scripts\ingest_lesson.p
 # Hoặc 1 folder cụ thể / wrapper PowerShell
 .\tools\webpage-content-extractor\scripts\ingest_to_wiki.ps1 -Source "raw\sources\<lesson>"
 ```
-phải chạy từ D:\wiki\BIM_ISO
+phải chạy từ cd D:\wiki\BIM_ISO
 Cách sử dụng:
 
 Ingest tất cả bài mới/đổi:
@@ -95,8 +95,19 @@ Tôi sẽ dùng cú pháp `[[wikilinks]]` để liên kết chéo tài liệu m�
 Sau khi các trang wiki mới được tạo ra ở bước 1 và 2, cần chạy công cụ graphify để cập nhật lại đồ thị tại `graphify-out/`:
 - Dùng lệnh trong terminal: `graphify update .` (hoặc `/graphify . --update`)
 
+### 4. Tự động đồng bộ và Deploy lên Vercel
+Sau khi hoàn tất cập nhật Knowledge Space và Graphify, AI tự động đẩy thay đổi lên GitHub để Vercel deploy:
+- Commit & push repo `D:\wiki` (KnowledgeSpace).
+- Commit & push repo `D:\wiki\web` (Myvault - kích hoạt Vercel build & deploy).
+
 ---
 
 **💡 Tóm lại cách thực hiện:**
-- Scripts như `watch_ingest.py` (mà bạn đang chạy) hay `ingest_lesson.py` chỉ làm nhiệm vụ parse HTML/Audio thành Markdown bỏ vào `wiki/sources/`.
-- Để chuyển hóa nó thành tri thức (Knowledge Space), bạn chỉ cần ra lệnh cho tôi: ***"Hãy tiến hành Auto-Ingest cho file [tên file] trong wiki/sources"***. Tôi sẽ tự động phân tích, bóc tách và tạo cấu trúc wiki cho bạn.
+- Scripts như `watch_ingest.py` hay `ingest_lesson.py` chỉ làm nhiệm vụ trích xuất HTML/Audio thành Markdown thô lưu vào `wiki/sources/`.
+- Để chuyển hóa thành tri thức (Knowledge Space), bạn chỉ cần ra lệnh: ***"Hãy tiến hành Auto-Ingest"*** (hoặc chỉ định một file cụ thể).
+- **Quy tắc bắt buộc cho AI (Harness Rule)**: Khi người dùng yêu cầu Auto-Ingest (kể cả khi chỉ nhắc tới "file mới"), AI **MẶC ĐỊNH PHẢI QUÉT VÀ INGEST TẤT CẢ CÁC LESSON MỚI CHƯA CÓ TRONG KNOWLEDGE SPACE** (đối chiếu danh sách file trong `wiki/sources/` với `wiki/overview.md` và `wiki/index.md`). Tuyệt đối không được bỏ sót bài nào chưa ingest.
+  - Áp dụng đủ Khung phân tích 10 câu hỏi cho từng bài.
+  - Bóc tách đầy đủ Entities, Concepts, Methodologies (Skill candidates).
+  - Cập nhật `wiki/index.md`, `wiki/log.md`, `wiki/overview.md`.
+  - Tự động chạy `graphify update .` để đồng bộ đồ thị tri thức.
+  - **Tự động đồng bộ lên Vercel**: Push đồng thời `D:\wiki` và `D:\wiki\web` để trang web tự động cập nhật.

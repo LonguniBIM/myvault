@@ -67,18 +67,19 @@ When ingesting ANY new source (ISO clause, EIR/BEP template, guidance doc, case 
 
 ## Auto-Ingest Pipeline
 
-When new content lands in `raw/sources/`:
+> [!IMPORTANT]
+> **Mandatory Batch Auto-Ingest Directive**: Whenever the user asks to perform Auto-Ingest (or refers to a new lesson file), the AI **MUST NOT** stop at just the single newest file. The AI must scan `wiki/sources/`, cross-reference with `wiki/overview.md` and `wiki/index.md`, and **AUTO-INGEST ALL LESSONS/SOURCES THAT HAVE NOT YET BEEN INGESTED INTO THE KNOWLEDGE SPACE**.
 
-1. **Read** the full raw source document (standard extract, EIR/BEP template, guidance PDF, etc.)
-2. **Apply ten-question framework** — answer all 10 questions
-3. **Create source page** in `wiki/sources/` with structured analysis and clause references
-4. **Extract entities** (documents, roles, systems, standards parts) → create/update entity pages
-5. **Extract concepts** (LOIN, CDE states, classification schemes) → create/update concept pages
-6. **Extract methodologies** (numbered steps, control points) → create methodology pages
-7. **Assess skill potential** — if method has clear steps + acceptance criteria → mark `skill_status: candidate`
-8. **Map to existing pages** — search index for related content, avoid duplicate entities
-9. **Update cross-references** with `[[wikilinks]]`
-10. **Update `wiki/index.md`** and `wiki/log.md`
+When content lands in `raw/sources/` or `wiki/sources/`:
+
+1. **Scan & Identify**: List all files in `wiki/sources/` and compare with `wiki/overview.md` / `wiki/index.md` to identify all pending/un-ingested lessons.
+2. **Apply ten-question framework**: Answer all 10 questions and add YAML frontmatter + clause references to every un-ingested source.
+3. **Extract entities**: (documents, roles, systems, standards parts) → create/update entity pages in `wiki/entities/`.
+4. **Extract concepts**: (LOIN, CDE states, classification schemes, BIM dimensions) → create/update concept pages in `wiki/concepts/`.
+5. **Extract methodologies**: (numbered steps, control points) → create methodology pages in `wiki/methodology/` (mark `skill_status: candidate`).
+6. **Map to existing pages**: Search index for related content, avoid duplicate entities, and update cross-references with `[[wikilinks]]`.
+7. **Register**: Update `wiki/index.md`, append to `wiki/log.md`, and update counts/status in `wiki/overview.md`.
+8. **Rebuild Graph**: Run `graphify update .` to synchronize the knowledge graph.
 
 ## Skill Extraction Pipeline
 

@@ -1,0 +1,88 @@
+{
+  "audio": [
+    {
+      "duration_label": "00:58",
+      "duration_seconds": 58.212426,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 1 - ISO 19650 Overview - ISO 19650 12 Project Delivery Un (1).mp3",
+      "placeholder_index": 1,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "01:41",
+      "duration_seconds": 101.076463,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 1 - ISO 19650 Overview - ISO 19650 12 Project Delivery Un.mp3",
+      "placeholder_index": 2,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:27",
+      "duration_seconds": 27.376327,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 1 - ISO 19650 Overview - ISO 19650 12 Project Delivery Un (2).mp3",
+      "placeholder_index": 3,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    }
+  ],
+  "counts": {
+    "audio_matched": 3,
+    "audio_referenced": 3,
+    "audio_transcribed": 3,
+    "block_types": {
+      "audio": 3,
+      "button": 1,
+      "divider": 1,
+      "heading": 6,
+      "image": 3,
+      "quote": 1,
+      "rich_text": 6
+    },
+    "blocks": 21,
+    "images_found": 3,
+    "images_missing": 0,
+    "warnings": 0
+  },
+  "images": [
+    {
+      "exists": true,
+      "height": 776,
+      "mime": "image/jpeg",
+      "output_name": "T5PtsxYqkvDdXK3z_4JiuuLkRqzL8-hEl.jpg",
+      "sha256": "202ecf04ec502f7106de903838814fa5b1d7b296422717b226795d7349acd90d",
+      "src_ref": "./Lesson 1 - ISO 19650 Overview - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/T5PtsxYqkvDdXK3z_4JiuuLkRqzL8-hEl.jpg",
+      "width": 549
+    },
+    {
+      "exists": true,
+      "height": 701,
+      "mime": "image/jpeg",
+      "output_name": "lHCaH4TPsuY4kc8h_lIrUSrnpEL4cu7bI.jpg",
+      "sha256": "930f41dd5ea43b1996b9c332c3bedd7b8caabae3a94965f6aff37772e200eb2f",
+      "src_ref": "./Lesson 1 - ISO 19650 Overview - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/lHCaH4TPsuY4kc8h_lIrUSrnpEL4cu7bI.jpg",
+      "width": 1094
+    },
+    {
+      "exists": true,
+      "height": 189,
+      "mime": "image/jpeg",
+      "output_name": "Jvrr946ToB9_9JHo_eyHjddK9UYnG7Arn.jpg",
+      "sha256": "93b69ed82e5f2626df7e25a5070c73d19536c5a058d67fdbeb5be363446c9335",
+      "src_ref": "./Lesson 1 - ISO 19650 Overview - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/Jvrr946ToB9_9JHo_eyHjddK9UYnG7Arn.jpg",
+      "width": 1206
+    }
+  ],
+  "schema_version": 1,
+  "source": {
+    "adapter": "rise",
+    "course": null,
+    "lesson_count": "Lesson 1 of 5",
+    "source_html": "Lesson 1 - ISO 19650 Overview - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650_.htm",
+    "source_url": "https://elearning.bre.ac/pluginfile.php/191403/mod_resource/content/8/content/index.html#/lessons/BK8JTmAIl_BHEUOLpO5cChSElUQOMMj0",
+    "title": "Unit 3 - Lesson 1 - ISO 19650 Overview"
+  },
+  "warnings": []
+}

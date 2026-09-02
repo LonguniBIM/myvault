@@ -1,14 +1,21 @@
 ---
-title: "Lesson 2 - Global Drivers"
+title: "Unit 1 - Lesson 2 - Global Drivers"
 type: source
 tags:
   - information-management
+  - operational
+  - high
+  - high
 source_url: https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/index.html#/lessons/-Fw0qK9rGnwIcl6If4OGBPZqEAyZQqqb
+venue: "BRE Academy / ISO 19650"
+clause_refs:
+  - "ISO 19650-1 §4"
+skill_potential: false
 created: 2026-08-02
-updated: 2026-08-02
+updated: 2026-09-03
 ---
 
-# Lesson 2 - Global Drivers
+# Unit 1 - Lesson 2 - Global Drivers
 
 *Lesson 2 of 6*
 
@@ -85,8 +92,8 @@ The UK is Committed to 80% Net Zero Carbon by 2050
 
 *Click the image to zoom in!*
 
-> [!warning] Missing audio (00:22)
-> No local audio file matched this placeholder (referenced `assets/pC4t_XROkR5pPc_X_transcoded-rWFJVLCDDeZ1_DKx-m1s32.mp3`).
+> [!note] Audio transcript (00:22)
+> From 2030, all new buildings globally must be built to net zero carbon standards, ensuring that no new carbon emissions are emitted from built operations. Between now and 2050, existing buildings must be renovated as an accelerated rate and to net zero carbon standards so that all buildings operate at net 0 carbon by 2050.
 
 ## Trajectory for New Buildings to Achieve Net Zero Carbon
 
@@ -115,13 +122,14 @@ The UK is Committed to 80% Net Zero Carbon by 2050
 
 > ‘**Construction Disconnected**’ report shared that poor project data and miscommunication on projects is responsible for **48%** of all rework in construction in the U.S, accounting for a total of **$31.3 billion** in rework in the U.S. alone in **2018**
 
-> [!warning] Missing audio (00:17)
-> No local audio file matched this placeholder (referenced `assets/R-RbLjMfzlb_0ZPJ_transcoded-qwl03UBVpYB_ove6-m1s36.mp3`).
+> [!note] Audio transcript (00:17)
+> In order for us to harness data to make it usable in the future, it must be accessible, consistent, clean, connective and usable. Making this information available to project decision makers will help improve design, management, planning and quality.
 
 ![gif 3.gif](unit-1-lesson-2-global-drivers/assets/7wCa5E9vOsK2OpOp_XA0BguudAnK75QbG.gif)
 
-> [!warning] Missing audio (00:53)
-> No local audio file matched this placeholder (referenced `assets/1jad0eiPeetRDuf5_transcoded-qeNYZR4Bs8VDsQW4-m1s37.mp3`).
+> [!note] Audio transcript (00:53)
+> The benefits of using BIM for design and construction are generally well understood and documented. The production of clear, correct and unambiguous information is central to BIM adoption, but so is meeting the global social, environmental and economic drivers. Previously highlighted the intention for extending building
+information modeling to BIM as information management will facilitate informed decision making. The 2011 UK mandate for BIM Level 2 recognized that for designing construction the advantages of those informed decisions. Could add a 20% reduction in capital expenditure, which was a massive driver for BIM adoption. The BIM Level 2 mandate focused primarily on improving information management in the design and construction phases. ISO 19650 focuses on information management throughout the whole life cycle of an asset or project.
 
 ![gif 4.gif](unit-1-lesson-2-global-drivers/assets/sXz1yL1ClMx7EWqC_HkmJcuptq-jngpD_.gif)
 
@@ -142,6 +150,52 @@ Help you to Understand the value of a whole life approach rather than capital-le
 
 **[CONTINUE]**
 
+
+---
+
+## Ten-Question Analysis Framework
+
+### 1. Problem
+Why must the construction industry transform from fragmented, capital-cost-driven delivery to lifecycle-oriented information management?
+
+### 2. Applicability
+- **Scope**: Macro-economic, environmental, and demographic industry drivers.
+- **Drivers**: Population growth (+2 billion by 2050), Climate challenge (50-70% embodied carbon reduction by 2030), Whole-life cost optimization (70-80% of costs occur in operation).
+
+### 3. Process
+1. Align organizational objectives (OIR) with societal and environmental pressures.
+2. Mandate digital information deliverables during design and construction that serve operational efficiency.
+3. Quantify cost savings (direct reduction) and cost avoidance (reduced downtime, fewer clashes).
+
+### 4. Evidence
+- Whole-life carbon assessments and energy model benchmarks.
+- Life-cycle costing reports and post-occupancy evaluation data.
+
+### 5. Principles
+- **Whole-Life Value over CapEx**: The real economic prize of BIM is in asset operations and business outcomes, not merely capital delivery.
+- **Cost Savings vs Cost Avoidance**: BIM delivers both direct production savings and long-term risk avoidance.
+
+### 6. Risks & Anti-patterns
+- Procuring BIM solely for design-stage clash detection without capturing operational asset data.
+
+### 7. Operationalization
+- Whole-Life Cost & Carbon EIR requirement template.
+
+### 8. Skill Test
+Can this become a Skill?
+No (strategic context).
+
+### 9. Skill Design
+- **Supported Role**: Asset Owner / Portfolio Director.
+
+### 10. Validation Plan
+Audit business case justifications against whole-life cost outcomes.
+
+---
+
+## Knowledge Space Links
+- **Entities**: [[iso-19650-1]], [[iso-19650-3]]
+- **Concepts**: [[information-model]]
 
 ---
 *Extracted from `Lesson 2 - Global Drivers - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change.html` via webpage-content-extractor.*

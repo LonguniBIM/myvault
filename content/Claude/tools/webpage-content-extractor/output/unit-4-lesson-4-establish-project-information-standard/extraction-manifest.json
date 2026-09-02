@@ -1,0 +1,215 @@
+{
+  "audio": [
+    {
+      "duration_label": "00:09",
+      "duration_seconds": 8.707483,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 1,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "02:56",
+      "duration_seconds": 176.332336,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 4 - Establish Project Information Standard - ISO 19650 12 (1).mp3",
+      "placeholder_index": 2,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:14",
+      "duration_seconds": 13.908753,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 3,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:50",
+      "duration_seconds": 50.364082,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 4 - Establish Project Information Standard - ISO 19650 12.mp3",
+      "placeholder_index": 4,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    }
+  ],
+  "counts": {
+    "audio_matched": 2,
+    "audio_referenced": 4,
+    "audio_transcribed": 2,
+    "block_types": {
+      "audio": 4,
+      "button": 1,
+      "heading": 13,
+      "image": 15,
+      "rich_text": 19,
+      "unknown": 1
+    },
+    "blocks": 53,
+    "images_found": 15,
+    "images_missing": 0,
+    "warnings": 2
+  },
+  "images": [
+    {
+      "exists": true,
+      "height": 248,
+      "mime": "image/jpeg",
+      "output_name": "U1zG1rgUcHKv78Pd_llTPzPw3bj04hpYy.jpg",
+      "sha256": "453a458c19d48e908051aa17f0912fb1e214320f293eab1e198548c1f47b9813",
+      "src_ref": "./Lesson 4 - Establish Project Information Standard - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/U1zG1rgUcHKv78Pd_llTPzPw3bj04hpYy.jpg",
+      "width": 268
+    },
+    {
+      "exists": true,
+      "height": 423,
+      "mime": "image/jpeg",
+      "output_name": "UlR4pU5Z3bnWmk7__xHxiNuoaXtJh6Rv1.jpg",
+      "sha256": "7777ef6fcf45c1907786e3679b3029488b4b52c021f8e3e69fcf41afb6aadc06",
+      "src_ref": "./Lesson 4 - Establish Project Information Standard - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/UlR4pU5Z3bnWmk7__xHxiNuoaXtJh6Rv1.jpg",
+      "width": 1141
+    },
+    {
+      "exists": true,
+      "height": 374,
+      "mime": "image/jpeg",
+      "output_name": "avPZHVwbaMgFuMjb_qqu-_R9GyCK4uy1O.jpg",
+      "sha256": "c6161ab21e9532a587216d05a6bbd70985fc6d2d77d3b65be6d277c649af2904",
+      "src_ref": "./Lesson 4 - Establish Project Information Standard - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/avPZHVwbaMgFuMjb_qqu-_R9GyCK4uy1O.jpg",
+      "width": 787
+    },
+    {
+      "exists": true,
+      "height": 386,
+      "mime": "image/png",
+      "output_name": "0RFWtugQmnHqn_-n_rhIKCfqmZMEDvkch.png",
+      "sha256": "0f886c8a4eae4019062a1a8e0220dab83ff703ff7eec749bd647854737b57f7e",
+      "src_ref": "./Lesson 4 - Establish Project Information Standard - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/0RFWtugQmnHqn_-n_rhIKCfqmZMEDvkch.png",
+      "width": 1146
+    },
+    {
+      "exists": true,
+      "height": 112,
+      "mime": "image/jpeg",
+      "output_name": "XhVQoFacEzD-I2xR_3-pGX-4zZQOfbnLb.jpg",
+      "sha256": "831c223d04a016ee2039a964d683575dc81792118b047e30e90c49830e96e5e1",
+      "src_ref": "./Lesson 4 - Establish Project Information Standard - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/XhVQoFacEzD-I2xR_3-pGX-4zZQOfbnLb.jpg",
+      "width": 772
+    },
+    {
+      "exists": true,
+      "height": 642,
+      "mime": "image/png",
+      "output_name": "rS1gbgbTEYPij9U0_Z8gOcL1lx_JKL587.png",
+      "sha256": "219106868b9629834241d929fff17feee731bfebb7d54a709c0d7aad97e4b2f6",
+      "src_ref": "./Lesson 4 - Establish Project Information Standard - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/rS1gbgbTEYPij9U0_Z8gOcL1lx_JKL587.png",
+      "width": 864
+    },
+    {
+      "exists": true,
+      "height": 647,
+      "mime": "image/jpeg",
+      "output_name": "IMyH7jLXh_-SxeLM_aBc-Myr0jt0oVIkG.jpg",
+      "sha256": "5954c70abe4c8199723ef14cb21f81a8ba966780642387345443ba008197a9dc",
+      "src_ref": "./Lesson 4 - Establish Project Information Standard - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/IMyH7jLXh_-SxeLM_aBc-Myr0jt0oVIkG.jpg",
+      "width": 466
+    },
+    {
+      "exists": true,
+      "height": 404,
+      "mime": "image/jpeg",
+      "output_name": "RczueZzJo17SvPO2_n6Xc9XxA5AJ9dvOd.jpg",
+      "sha256": "9f8482ac9a7653e9bc31a0d0e6ba7cf9b27dc72db9b0a2eaa279ec211902631c",
+      "src_ref": "./Lesson 4 - Establish Project Information Standard - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/RczueZzJo17SvPO2_n6Xc9XxA5AJ9dvOd.jpg",
+      "width": 1137
+    },
+    {
+      "exists": true,
+      "height": 155,
+      "mime": "image/jpeg",
+      "output_name": "VqRmD_LHqh1vfVvr_2uDmetuZZCrUDiYh.jpg",
+      "sha256": "3518f4ad2c5ae9beaabf6ea72ebf2d8dabf8695033036c3847da955d595c4ba9",
+      "src_ref": "./Lesson 4 - Establish Project Information Standard - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/VqRmD_LHqh1vfVvr_2uDmetuZZCrUDiYh.jpg",
+      "width": 405
+    },
+    {
+      "exists": true,
+      "height": 388,
+      "mime": "image/jpeg",
+      "output_name": "B_sl0k3G1UUXOmO1_6Ds9lArmtekr_TjS.jpg",
+      "sha256": "9982d525774a16aa88ad0cc4059e33ea12cfafc132ef0062523d8f050bef0330",
+      "src_ref": "./Lesson 4 - Establish Project Information Standard - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/B_sl0k3G1UUXOmO1_6Ds9lArmtekr_TjS.jpg",
+      "width": 476
+    },
+    {
+      "exists": true,
+      "height": 509,
+      "mime": "image/jpeg",
+      "output_name": "EZq-09RRS4f0kFV0_nCJ9MrGElJrcZDzp.jpg",
+      "sha256": "29ebbf251079930129e7c46cbdb141980156a921b7122e75b7939151545f8b8a",
+      "src_ref": "./Lesson 4 - Establish Project Information Standard - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/EZq-09RRS4f0kFV0_nCJ9MrGElJrcZDzp.jpg",
+      "width": 1289
+    },
+    {
+      "exists": true,
+      "height": 250,
+      "mime": "image/png",
+      "output_name": "XPuwcWYizKdrMnOQ__VWOGLawNa_8Bfkv.png",
+      "sha256": "d490fb7d08ec4e03195a60914b97f9a008d7a4c8e983bbdefa8776d2f3a398ee",
+      "src_ref": "./Lesson 4 - Establish Project Information Standard - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/XPuwcWYizKdrMnOQ__VWOGLawNa_8Bfkv.png",
+      "width": 748
+    },
+    {
+      "exists": true,
+      "height": 320,
+      "mime": "image/png",
+      "output_name": "4b8F62EkUBDXpA7c_VvgicznOdsXm5Fdj.png",
+      "sha256": "34e40915b7ec76a78d3aeb7a031641ee1fdc4e1cec6ab7cf486c851c85ad02f8",
+      "src_ref": "./Lesson 4 - Establish Project Information Standard - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/4b8F62EkUBDXpA7c_VvgicznOdsXm5Fdj.png",
+      "width": 700
+    },
+    {
+      "exists": true,
+      "height": 809,
+      "mime": "image/jpeg",
+      "output_name": "BgxAzhR2N_UyiE8F_mNLmydsuMbT0SQtv.jpg",
+      "sha256": "732ca3665c5d484d000e573f13868686d7adbb233291ec6335db94cc22f8db2c",
+      "src_ref": "./Lesson 4 - Establish Project Information Standard - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/BgxAzhR2N_UyiE8F_mNLmydsuMbT0SQtv.jpg",
+      "width": 708
+    },
+    {
+      "exists": true,
+      "height": 575,
+      "mime": "image/jpeg",
+      "output_name": "RIADLobuL7Dot26L_jSN1x0jC3LprG2WK.jpg",
+      "sha256": "3dacfa371216859ccbe8e243775303ba910c349c39efb49367409b4b81dc6325",
+      "src_ref": "./Lesson 4 - Establish Project Information Standard - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/RIADLobuL7Dot26L_jSN1x0jC3LprG2WK.jpg",
+      "width": 916
+    }
+  ],
+  "schema_version": 1,
+  "source": {
+    "adapter": "rise",
+    "course": null,
+    "lesson_count": "Lesson 4 of 6",
+    "source_html": "Lesson 4 - Establish Project Information Standard - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need.html",
+    "source_url": "https://elearning.bre.ac/pluginfile.php/191404/mod_resource/content/10/content/index.html#/lessons/lGl5HV7awrn5f578Ly4TMn5DQ2aGepPk",
+    "title": "Unit 4 - Lesson 4 - Establish Project Information Standard"
+  },
+  "warnings": [
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #1 (00:09s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #3 (00:14s)"
+    }
+  ]
+}

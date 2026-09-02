@@ -1,0 +1,83 @@
+{
+  "audio": [
+    {
+      "duration_label": "00:09",
+      "duration_seconds": 9.032562,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 1,
+      "transcribed": false,
+      "transcript_source": null
+    }
+  ],
+  "counts": {
+    "audio_matched": 0,
+    "audio_referenced": 1,
+    "audio_transcribed": 0,
+    "block_types": {
+      "audio": 1,
+      "button": 1,
+      "heading": 5,
+      "image": 4,
+      "rich_text": 8
+    },
+    "blocks": 19,
+    "images_found": 4,
+    "images_missing": 0,
+    "warnings": 1
+  },
+  "images": [
+    {
+      "exists": true,
+      "height": 443,
+      "mime": "image/jpeg",
+      "output_name": "XUue9JlWD-hyS5a2_nqKlaaxTHRo2fMA-.jpg",
+      "sha256": "f02227e52c2bd539550a05414e26ee2b06f8fede2853f3053d9836c2a77ae53e",
+      "src_ref": "./Lesson 2 - Establish the PIR - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/XUue9JlWD-hyS5a2_nqKlaaxTHRo2fMA-.jpg",
+      "width": 1556
+    },
+    {
+      "exists": true,
+      "height": 476,
+      "mime": "image/png",
+      "output_name": "UOIqF8CCVoRXwaDS_dNsDlSeIDJhs_Pur.png",
+      "sha256": "28fba8e294f64ad041e570720a5a6371627644d646e6e8de6224a383badff39a",
+      "src_ref": "./Lesson 2 - Establish the PIR - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/UOIqF8CCVoRXwaDS_dNsDlSeIDJhs_Pur.png",
+      "width": 782
+    },
+    {
+      "exists": true,
+      "height": 302,
+      "mime": "image/jpeg",
+      "output_name": "77wCLi3zPkfq5d-u_DQQBDvjO9DXT_C5p.jpg",
+      "sha256": "52c7db990016c92d00504014bc79a4b336227611b55b6981baeccd337d808400",
+      "src_ref": "./Lesson 2 - Establish the PIR - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/77wCLi3zPkfq5d-u_DQQBDvjO9DXT_C5p.jpg",
+      "width": 429
+    },
+    {
+      "exists": true,
+      "height": 892,
+      "mime": "image/png",
+      "output_name": "Q4udbi6X_oj-4PKb_1EXwjexXHVDlZRky.png",
+      "sha256": "445d1da377e3531af4b838e8f3891fcf9316b9bae44953da4cae83bcf0baafb1",
+      "src_ref": "./Lesson 2 - Establish the PIR - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/Q4udbi6X_oj-4PKb_1EXwjexXHVDlZRky.png",
+      "width": 796
+    }
+  ],
+  "schema_version": 1,
+  "source": {
+    "adapter": "rise",
+    "course": null,
+    "lesson_count": "Lesson 2 of 6",
+    "source_html": "Lesson 2 - Establish the PIR - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need.html",
+    "source_url": "https://elearning.bre.ac/pluginfile.php/191404/mod_resource/content/10/content/index.html#/lessons/5Ck9D23uKGW6Pqhtjk-4GoKcq-zhy9mY",
+    "title": "Unit 4 - Lesson 2 - Establish the PIR"
+  },
+  "warnings": [
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #1 (00:09s)"
+    }
+  ]
+}

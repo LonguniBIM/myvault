@@ -1,14 +1,21 @@
 ---
-title: "Lesson 2 - BIM Dimensions"
+title: "Unit 2 - Lesson 2 - BIM Dimensions"
 type: source
 tags:
   - information-management
+  - model-checking
+  - high
+  - high
 source_url: https://elearning.bre.ac/pluginfile.php/191400/mod_resource/content/8/content/index.html#/lessons/wuOf6JYLqdi5PAXCMpl__hHdNDmqfJJV
+venue: "BRE Academy / ISO 19650"
+clause_refs:
+  - "ISO 19650-1"
+skill_potential: false
 created: 2026-08-02
-updated: 2026-08-02
+updated: 2026-09-03
 ---
 
-# Lesson 2 - BIM Dimensions
+# Unit 2 - Lesson 2 - BIM Dimensions
 
 *Lesson 2 of 4*
 
@@ -106,6 +113,56 @@ Explain the ever expanding BIM dimensions and their uses
 
 **[CONTINUE]**
 
+
+---
+
+## Ten-Question Analysis Framework
+
+### 1. Problem
+How do project teams categorize and coordinate multidisciplinary BIM use cases (scheduling, cost, sustainability, operations) beyond basic 3D geometric visualization?
+
+### 2. Applicability
+- **Scope**: Project lifecycle uses from concept simulation to operation.
+- **Dimensions**: 3D (Geometry & Data), 4D (Time/Sequencing), 5D (Cost/Estimating), 6D (Sustainability/Carbon), 7D (Facility Management/AIM), 8D (Health & Safety).
+
+### 3. Process
+1. Appointing party identifies desired BIM use cases in the EIR.
+2. Delivery teams link relevant attributes and parameters to 3D model elements:
+   - 4D: construction/demolition start/end dates linked to Synchro/Navisworks schedules.
+   - 5D: cost codes, quantities (QTO), and unit rates linked to cost databases.
+   - 6D: embodied carbon coefficients (EPD) and energy analysis properties.
+   - 7D: COBie equipment schedules, warranty dates, and maintenance cycles.
+
+### 4. Evidence
+- Time-simulated 4D federated models.
+- Automated 5D bill of quantities extractions.
+- Embodied carbon simulation reports (e.g. H\B:ERT).
+- COBie asset data drops for CAFM integration.
+
+### 5. Principles
+- **Object as Data Container**: 3D geometric objects act as anchors for alphanumeric metadata throughout the asset life.
+
+### 6. Risks & Anti-patterns
+- Advertising "7D BIM" as marketing buzzwords without clear data deliverables in the EIR.
+- Overloading models with unstructured, unverified parameters.
+
+### 7. Operationalization
+- BIM Use Case Matrix mapped to LOIN requirements in the EIR.
+
+### 8. Skill Test
+Can this become a Skill?
+**Yes** — Candidate: `bim-use-case-definer`.
+
+### 9. Skill Design
+- **Supported Role**: Lead Appointed Party BIM Coordinator / Information Manager.
+
+### 10. Validation Plan
+Verify that models contain necessary parameters for required dimensions (e.g., verifying 4D task IDs or 5D UniFormat/Uniclass codes).
+
+---
+
+## Knowledge Space Links
+- **Concepts**: [[bim-dimensions]], [[information-model]]
 
 ---
 *Extracted from `Lesson 2 - BIM Dimensions - BIM ISO 19650 1&2 Project Delivery_ Unit 2 - BIM Explained.html` via webpage-content-extractor.*

@@ -1,0 +1,101 @@
+{
+  "audio": [
+    {
+      "duration_label": "00:09",
+      "duration_seconds": 8.568163,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 1,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:54",
+      "duration_seconds": 54.079274,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 5 - Establish Projects Information Production Methods Pro.mp3",
+      "placeholder_index": 2,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    }
+  ],
+  "counts": {
+    "audio_matched": 1,
+    "audio_referenced": 2,
+    "audio_transcribed": 1,
+    "block_types": {
+      "audio": 2,
+      "button": 1,
+      "heading": 6,
+      "image": 5,
+      "rich_text": 5
+    },
+    "blocks": 19,
+    "images_found": 5,
+    "images_missing": 0,
+    "warnings": 1
+  },
+  "images": [
+    {
+      "exists": true,
+      "height": 500,
+      "mime": "image/gif",
+      "output_name": "aKywQhPwlwB9syCA_9ckXpd9b1u0Q4nAe.gif",
+      "sha256": "be270425330ae8e0f0780714b35b06be02a79b5a7f61aa36a66f41637e177dae",
+      "src_ref": "./Lesson 5 - Establish Project’s Information Production Methods & Procedures_ - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/aKywQhPwlwB9syCA_9ckXpd9b1u0Q4nAe.gif",
+      "width": 1129
+    },
+    {
+      "exists": true,
+      "height": 625,
+      "mime": "image/jpeg",
+      "output_name": "BzmhWomPO6BiKmKb_HlqxrW3ZhxcZWKdv.jpg",
+      "sha256": "2688fd57ba1579e90a116519267ab04ccc117e414ac26b0b84244189e99229be",
+      "src_ref": "./Lesson 5 - Establish Project’s Information Production Methods & Procedures_ - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/BzmhWomPO6BiKmKb_HlqxrW3ZhxcZWKdv.jpg",
+      "width": 700
+    },
+    {
+      "exists": true,
+      "height": 442,
+      "mime": "image/png",
+      "output_name": "EQBgvpn7b_hlJzwF_L_krrHunRa0XOt4-.png",
+      "sha256": "a6d409c99f9ca6a0cc74e47e1aec7dad4011cb71f901bd69fa57ed0690e24c32",
+      "src_ref": "./Lesson 5 - Establish Project’s Information Production Methods & Procedures_ - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/EQBgvpn7b_hlJzwF_L_krrHunRa0XOt4-.png",
+      "width": 1249
+    },
+    {
+      "exists": true,
+      "height": 572,
+      "mime": "image/jpeg",
+      "output_name": "6YJgZkuD7H0slEvS_3PfoAHcijRFVyDMk.jpg",
+      "sha256": "fd527f7d5cf7a436e2a42e28a459a5f90d2eb11f07b2eeb098f6f1ca330ff377",
+      "src_ref": "./Lesson 5 - Establish Project’s Information Production Methods & Procedures_ - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/6YJgZkuD7H0slEvS_3PfoAHcijRFVyDMk.jpg",
+      "width": 1180
+    },
+    {
+      "exists": true,
+      "height": 767,
+      "mime": "image/jpeg",
+      "output_name": "teR4Qy1L6Cf-Bowy_vMs2Z0He2rup0oN7.jpg",
+      "sha256": "5e33136ab923188aa8ca4e54c164e4e8619a4665da0ea32120391a7334cc5171",
+      "src_ref": "./Lesson 5 - Establish Project’s Information Production Methods & Procedures_ - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/teR4Qy1L6Cf-Bowy_vMs2Z0He2rup0oN7.jpg",
+      "width": 299
+    }
+  ],
+  "schema_version": 1,
+  "source": {
+    "adapter": "rise",
+    "course": null,
+    "lesson_count": "Lesson 5 of 6",
+    "source_html": "Lesson 5 - Establish Project’s Information Production Methods & Procedures_ - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need.html",
+    "source_url": "https://elearning.bre.ac/pluginfile.php/191404/mod_resource/content/10/content/index.html#/lessons/KTo9Sw_7E7gxSA80ZMBAKmyum3p1ygRY",
+    "title": "Unit 4 - Lesson 5 - Establish Project’s Information Production Methods & Procedures"
+  },
+  "warnings": [
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #1 (00:09s)"
+    }
+  ]
+}

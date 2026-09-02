@@ -1,0 +1,225 @@
+{
+  "audio": [
+    {
+      "duration_label": "00:21",
+      "duration_seconds": 20.64254,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 1,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "01:16",
+      "duration_seconds": 75.673832,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 1 - Undertake the Information Management Function - ISO 1 (5).mp3",
+      "placeholder_index": 2,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:23",
+      "duration_seconds": 23.103855,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 3,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "01:04",
+      "duration_seconds": 63.738776,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 1 - Undertake the Information Management Function - ISO 1.mp3",
+      "placeholder_index": 4,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:48",
+      "duration_seconds": 48.460045,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 1 - Undertake the Information Management Function - ISO 1 (1).mp3",
+      "placeholder_index": 5,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "01:01",
+      "duration_seconds": 60.766621,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 1 - Undertake the Information Management Function - ISO 1 (2).mp3",
+      "placeholder_index": 6,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "01:06",
+      "duration_seconds": 66.176871,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 1 - Undertake the Information Management Function - ISO 1 (3).mp3",
+      "placeholder_index": 7,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:59",
+      "duration_seconds": 59.373424,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 1 - Undertake the Information Management Function - ISO 1 (4).mp3",
+      "placeholder_index": 8,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:57",
+      "duration_seconds": 57.237188,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 1 - Undertake the Information Management Function - ISO 1 (6).mp3",
+      "placeholder_index": 9,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    }
+  ],
+  "counts": {
+    "audio_matched": 7,
+    "audio_referenced": 9,
+    "audio_transcribed": 7,
+    "block_types": {
+      "audio": 9,
+      "button": 1,
+      "divider": 1,
+      "flashcards": 1,
+      "heading": 8,
+      "image": 11,
+      "rich_text": 11
+    },
+    "blocks": 42,
+    "images_found": 11,
+    "images_missing": 0,
+    "warnings": 2
+  },
+  "images": [
+    {
+      "exists": true,
+      "height": 601,
+      "mime": "image/jpeg",
+      "output_name": "LF1_by8MS8HIaE2h_nFkeAJ9az1dNvKZh.jpg",
+      "sha256": "1321e75569a1ae4f1e269471a867802815da671c17784314bc0d76b07b09d86f",
+      "src_ref": "./Lesson 1 - Undertake the Information Management Function - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/LF1_by8MS8HIaE2h_nFkeAJ9az1dNvKZh.jpg",
+      "width": 1465
+    },
+    {
+      "exists": true,
+      "height": 547,
+      "mime": "image/png",
+      "output_name": "Ag1Xg2LJveZ2Nooi_mvmOy8Uw6pRWaUvq.png",
+      "sha256": "a174029b611255beb76250e1f7fc987074bdd285f46d89a5e18c63dc86ac2d59",
+      "src_ref": "./Lesson 1 - Undertake the Information Management Function - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/Ag1Xg2LJveZ2Nooi_mvmOy8Uw6pRWaUvq.png",
+      "width": 1395
+    },
+    {
+      "exists": true,
+      "height": 758,
+      "mime": "image/jpeg",
+      "output_name": "Hi6FuQj2itHKtC5Q_TohLI_UMcQmnF5Fs.jpg",
+      "sha256": "bee8763af5f463e9a616d8146b9e62f466e9b9b1e91dd04601c18b6c1d31a38f",
+      "src_ref": "./Lesson 1 - Undertake the Information Management Function - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/Hi6FuQj2itHKtC5Q_TohLI_UMcQmnF5Fs.jpg",
+      "width": 1465
+    },
+    {
+      "exists": true,
+      "height": 630,
+      "mime": "image/gif",
+      "output_name": "xrmJkuu4K1M_7nuF_bGPJ2P92rsNrMDRv.gif",
+      "sha256": "1f601424c12904622b23104c92c8ed97249f2c13e2d47b1feb25adff2458ed57",
+      "src_ref": "./Lesson 1 - Undertake the Information Management Function - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/xrmJkuu4K1M_7nuF_bGPJ2P92rsNrMDRv.gif",
+      "width": 1920
+    },
+    {
+      "exists": true,
+      "height": 600,
+      "mime": "image/jpeg",
+      "output_name": "KdDtKIUtNtq3OV5z_adjR-0rDOCg18NYL.jpg",
+      "sha256": "a4a8bb94aa659d95ac19909291686b12d84595464fd34e259fe37fe121f174c4",
+      "src_ref": "./Lesson 1 - Undertake the Information Management Function - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/KdDtKIUtNtq3OV5z_adjR-0rDOCg18NYL.jpg",
+      "width": 597
+    },
+    {
+      "exists": true,
+      "height": 1157,
+      "mime": "image/png",
+      "output_name": "ROL2JQaSvx9Foz0__MlbQygfJBjvmLxbz.png",
+      "sha256": "bf67957f191595ff80c2916975665114a9262c4c31a10f99e55fc607aa30e345",
+      "src_ref": "./Lesson 1 - Undertake the Information Management Function - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/ROL2JQaSvx9Foz0__MlbQygfJBjvmLxbz.png",
+      "width": 837
+    },
+    {
+      "exists": true,
+      "height": 1134,
+      "mime": "image/jpeg",
+      "output_name": "gy__67rELgW3HuRH_9FgIScEh5wFkoIOh.jpg",
+      "sha256": "2521ad31af24c650ab28feac4ab53f8bb614821d45a087639c5f20aaec65296c",
+      "src_ref": "./Lesson 1 - Undertake the Information Management Function - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/gy__67rELgW3HuRH_9FgIScEh5wFkoIOh.jpg",
+      "width": 901
+    },
+    {
+      "exists": true,
+      "height": 849,
+      "mime": "image/png",
+      "output_name": "0tlUo5nWJL53LXne_HelfLcn23z7Zm2Wy.png",
+      "sha256": "d3488835498fd754a74fcc954369d90f9d6cf25be0a08c01265eb6eec0296303",
+      "src_ref": "./Lesson 1 - Undertake the Information Management Function - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/0tlUo5nWJL53LXne_HelfLcn23z7Zm2Wy.png",
+      "width": 1037
+    },
+    {
+      "exists": true,
+      "height": 883,
+      "mime": "image/png",
+      "output_name": "jt38_uBkkadTpGDT_VutFKm5jyX86lftG.png",
+      "sha256": "6e5789eb229ae9ddd6516ef1e01be24e37dc6eafcd737457c7dc9e4d45389f54",
+      "src_ref": "./Lesson 1 - Undertake the Information Management Function - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/jt38_uBkkadTpGDT_VutFKm5jyX86lftG.png",
+      "width": 1581
+    },
+    {
+      "exists": true,
+      "height": 887,
+      "mime": "image/jpeg",
+      "output_name": "Hyb8UbNFPDdhcVZI_QlkajU_NxYRsny4K.jpg",
+      "sha256": "ddf082593ec19b9ed063240ac89041d52865e4dd7119707a5a3e6ec93eead5b4",
+      "src_ref": "./Lesson 1 - Undertake the Information Management Function - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/Hyb8UbNFPDdhcVZI_QlkajU_NxYRsny4K.jpg",
+      "width": 626
+    },
+    {
+      "exists": true,
+      "height": 623,
+      "mime": "image/jpeg",
+      "output_name": "KoumQugEmchD-nG8_9udtiNEeppF58Qzo.jpg",
+      "sha256": "4567ef379f011ffac54e4a82615a1e4e752a441b52d510a59ca30ba6832eb293",
+      "src_ref": "./Lesson 1 - Undertake the Information Management Function - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/KoumQugEmchD-nG8_9udtiNEeppF58Qzo.jpg",
+      "width": 1539
+    }
+  ],
+  "schema_version": 1,
+  "source": {
+    "adapter": "rise",
+    "course": null,
+    "lesson_count": "Lesson 1 of 6",
+    "source_html": "Lesson 1 - Undertake the Information Management Function - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need.html",
+    "source_url": "https://elearning.bre.ac/pluginfile.php/191404/mod_resource/content/10/content/index.html#/lessons/oNL0B2vRJdhV6ZYfajcmoo6OcbK5KJeP",
+    "title": "Unit 4 - Lesson 1 - Undertake the Information Management Function"
+  },
+  "warnings": [
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #1 (00:21s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #3 (00:23s)"
+    }
+  ]
+}

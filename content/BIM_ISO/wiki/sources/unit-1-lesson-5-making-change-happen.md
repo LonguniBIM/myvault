@@ -1,14 +1,21 @@
 ---
-title: "Lesson 5 - Making Change Happen"
+title: "Unit 1 - Lesson 5 - Making Change Happen"
 type: source
 tags:
   - information-management
+  - compliance
+  - high
+  - high
 source_url: https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/index.html#/lessons/zRiszo1gtjNgU7te0TlXKmmM3_yBFPeu
+venue: "BRE Academy / ISO 19650"
+clause_refs:
+  - "ISO 19650-1"
+skill_potential: false
 created: 2026-08-02
-updated: 2026-08-02
+updated: 2026-09-03
 ---
 
-# Lesson 5 - Making Change Happen
+# Unit 1 - Lesson 5 - Making Change Happen
 
 *Lesson 5 of 6*
 
@@ -48,8 +55,8 @@ Understand what change they initiated
 
 1 2 3
 
-> [!warning] Missing audio (00:17)
-> No local audio file matched this placeholder (referenced `assets/BqHicvWCHk2H5sDn_transcoded-qzGqyp59O8dzfjiA-m1s85.mp3`).
+> [!note] Audio transcript (00:17)
+> However, Mark Farmer discovered through researching the performance of projects that these symptoms have not changed. For example, 1/4 of the low rise projects surveyed were between 1 and three months late, and just over a third of high rise buildings were between 1 and three months late.
 
 ## Solving Constructions Productivity Puzzle
 
@@ -67,15 +74,15 @@ Understand what change they initiated
 
 > Plan Grid also produced a survey in  2018 called Construction Disconnected mainly looking an the Western countries construction industries.The report broke down the time percentage spent performing activities.
 
-> [!warning] Missing audio (00:14)
-> No local audio file matched this placeholder (referenced `assets/dh6X85YAe2E31obg_transcoded-69veuiDQ2_jEfFTI-m1s87.mp3`).
+> [!note] Audio transcript (00:14)
+> Plangrid also produced a survey in 2018 called Construction Disconnected, mainly looking at the Western countries construction industries. The report broke down the time percent spent performing typical construction related activities.
 
 ![1.56.png](unit-1-lesson-5-making-change-happen/assets/uIzpTrhQaCnk7V_b_TVQuL24wK6AUEMYC.png)
 
 ![m1s88.PNG](unit-1-lesson-5-making-change-happen/assets/Qt0OpruH1B6k1BDY_LxT0tvZ9r86Nx9nr.jpg)
 
-> [!warning] Missing audio (00:16)
-> No local audio file matched this placeholder (referenced `assets/dAP4xcseiUaKSr2m_transcoded-baiwNzLzJ1o-cjn9-m1s88.mp3`).
+> [!note] Audio transcript (00:16)
+> This report concluded that in terms of personal productivity, 35 was waste and such time spent on non optimal activities will cost the US construction industry 177 1/2 billion dollars in 2018 alone.
 
 ## Construction 2025
 
@@ -129,8 +136,8 @@ Soft landings help to break down the barriers between capital delivery and asset
 
 ![m1s95.PNG](unit-1-lesson-5-making-change-happen/assets/2GMxe6GS8f1iReZV_1RwbdAsceoOztv5H.jpg)
 
-> [!warning] Missing audio (00:23)
-> No local audio file matched this placeholder (referenced `assets/XlPDO5G-yMVFHRn5_transcoded-wbNM-GiFt9KWEz0q-m1s95.mp3`).
+> [!note] Audio transcript (00:23)
+> This image shows the government soft landings activities for each stage of the project. The diagram demonstrates GSL at the inception of a project through all stages and ending with evaluating the performance of the asset during occuancy, with BIM rocesses and models providing the data to support GSL. Lessons learned are then captured and fed into future projects.
 
 BS 8536 is now also incorporated into the UK BIM Framework. Embedding Government Soft Landings (GSL) and  ‘Golden Thread’ as part of a data centric approach to capital project delivery, will help to comply with new legislation, policy drivers and wider statutory obligations.
 
@@ -148,8 +155,8 @@ Tools such as the Construction Innovation Hub (GSL) Interactive Navigator will 
 
 A strict regulation regime is immediately coming into place in the U.K, relevant for buildings 18 metres plus tall, and/or 7 storeys high.
 
-> [!warning] Missing audio (00:20)
-> No local audio file matched this placeholder (referenced `assets/4x_9nYk39TBmweOD_transcoded-M5P-CCYkePTg9GV3-m1s97.mp3`).
+> [!note] Audio transcript (00:20)
+> It also applies to care homes and hospitals meeting the same height threshold during design and construction, but not during occupation. The new, more stringent regime will place legal responsibilities upon relevant key stakeholders. It will be the duty of the people who are responsible for a building to put in place and maintain a golden thread.
 
 - Information relating to a building, to enable the relevant persons to easily understand building safety requirements
 - Information management process to ensure accurate, accessible, and consistent data in an understandable format
@@ -159,8 +166,8 @@ The Golden Thread refers to a form of structured digital record-keeping for cons
 
 ![m1s100.PNG](unit-1-lesson-5-making-change-happen/assets/u0DZjPYyWQnbk9jD_laCJYaPmKP3DCNRA.jpg)
 
-> [!warning] Missing audio (00:17)
-> No local audio file matched this placeholder (referenced `assets/1VhMRcqcBdZGNRGP_transcoded-bzgMhIekjZmR7GlU-m1s100.mp3`).
+> [!note] Audio transcript (00:17)
+> Reducing risks through better asset information. See here how asset information can flow through the project stages, with the level of information progressively increasing fire information relating to a door, for example, can be exchanged through IFC and Coby formats.
 
 ## COP 26 – Climate Change Summit
 
@@ -199,6 +206,51 @@ and;
 - Understand what change they initiated
 **[CONTINUE]**
 
+
+---
+
+## Ten-Question Analysis Framework
+
+### 1. Problem
+Why do construction organizations repeatedly resist systemic change, and how do milestone industry reviews (Farmer, Hackitt) enforce digital information management as an imperative?
+
+### 2. Applicability
+- **Scope**: Construction industry policy, procurement reform, life safety governance (Golden Thread).
+
+### 3. Process
+1. Recognize structural industry symptoms (Farmer Review: low productivity, financial fragility, adversarial pricing, demographic crisis).
+2. Mandate golden thread of information post-Grenfell (Dame Judith Hackitt: Building a Safer Future) ensuring an unbroken digital record of building design, construction, and maintenance.
+3. Align implementation with national framework guidance (UK BIM Framework).
+
+### 4. Evidence
+- Digital Golden Thread of Information.
+- Safety Case files and regulatory gateway audit logs.
+
+### 5. Principles
+- **Golden Thread**: Clear, accessible, up-to-date digital building safety records preserved across an asset's entire life.
+- **Modernise or Die**: Failure to adopt digital workflows, pre-manufacturing, and standardized information threatens business survival.
+
+### 6. Risks & Anti-patterns
+- Treating building safety information as ad-hoc paper binders that get lost post-handover.
+
+### 7. Operationalization
+- Golden Thread digital record checklist embedded into the EIR and CDE configuration.
+
+### 8. Skill Test
+Can this become a Skill?
+**Yes** — Candidate: `golden-thread-auditor`.
+
+### 9. Skill Design
+- **Supported Role**: Building Safety Lead / Appointing Party Information Manager.
+
+### 10. Validation Plan
+Audit asset safety information handover against Hackitt Golden Thread criteria.
+
+---
+
+## Knowledge Space Links
+- **Entities**: [[iso-19650-1]], [[iso-19650-2]]
+- **Concepts**: [[bim-change-management]]
 
 ---
 *Extracted from `Lesson 5 - Making Change Happen - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change.html` via webpage-content-extractor.*

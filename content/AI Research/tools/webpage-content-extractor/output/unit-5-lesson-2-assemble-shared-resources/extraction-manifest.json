@@ -1,0 +1,65 @@
+{
+  "audio": [
+    {
+      "duration_label": "00:09",
+      "duration_seconds": 8.870023,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 1,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:27",
+      "duration_seconds": 27.237007,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 2 - Assemble Shared Resources - BIM ISO 19650 12 Project.mp3",
+      "placeholder_index": 2,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    }
+  ],
+  "counts": {
+    "audio_matched": 1,
+    "audio_referenced": 2,
+    "audio_transcribed": 1,
+    "block_types": {
+      "audio": 2,
+      "button": 1,
+      "heading": 3,
+      "image": 1,
+      "rich_text": 4
+    },
+    "blocks": 11,
+    "images_found": 1,
+    "images_missing": 0,
+    "warnings": 1
+  },
+  "images": [
+    {
+      "exists": true,
+      "height": 687,
+      "mime": "image/png",
+      "output_name": "rxXtZ1EUeVyB15jo_qVs_pq0KxQ3PNN5J.png",
+      "sha256": "5ba9764dc8f25f41fd8d6ab139b53b3570a4922228b2864400199c4482d9e670",
+      "src_ref": "./Lesson 2 - Assemble Shared Resources - BIM ISO 19650 1&2 Project Delivery_ Unit 5 - Invitation to Tender_files/rxXtZ1EUeVyB15jo_qVs_pq0KxQ3PNN5J.png",
+      "width": 1554
+    }
+  ],
+  "schema_version": 1,
+  "source": {
+    "adapter": "rise",
+    "course": null,
+    "lesson_count": "Lesson 2 of 3",
+    "source_html": "Lesson 2 - Assemble Shared Resources - BIM ISO 19650 1&2 Project Delivery_ Unit 5 - Invitation to Tender.html",
+    "source_url": "https://elearning.bre.ac/pluginfile.php/191405/mod_resource/content/11/content/index.html#/lessons/gTLOCgaAWyqjInSgXk-Lmn2A7rf7msfp",
+    "title": "Unit 5 - Lesson 2 - Assemble Shared Resources"
+  },
+  "warnings": [
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #1 (00:09s)"
+    }
+  ]
+}

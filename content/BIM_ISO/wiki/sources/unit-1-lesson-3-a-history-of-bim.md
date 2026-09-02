@@ -1,14 +1,21 @@
 ---
-title: "Lesson 3 - A History of BIM"
+title: "Unit 1 - Lesson 3 - A History of BIM"
 type: source
 tags:
   - information-management
+  - compliance
+  - high
+  - high
 source_url: https://elearning.bre.ac/pluginfile.php/191399/mod_resource/content/9/content/index.html#/lessons/WeZOlpTMWSmKWsvMRtuI1H0G9fsFfysc
+venue: "BRE Academy / ISO 19650"
+clause_refs:
+  - "ISO 19650-1"
+skill_potential: false
 created: 2026-08-02
-updated: 2026-08-02
+updated: 2026-09-03
 ---
 
-# Lesson 3 - A History of BIM
+# Unit 1 - Lesson 3 - A History of BIM
 
 *Lesson 3 of 6*
 
@@ -51,7 +58,7 @@ Understand the historical changes In the construction industry that led to BIM s
 ## BS1192:2007
 
 Common Data Environment
-
+File container classification
 ![m1s44.PNG](unit-1-lesson-3-a-history-of-bim/assets/B3FlVCyHKTC7Xfym_9M4YBhUn8Jm4swjN.jpg)
 
 > [!note] Audio transcript (00:44)
@@ -60,9 +67,10 @@ Common Data Environment
 > Source: [Lesson 3 - A History of BIM - BIM ISO 19650 12 Project Delivery (2).mp3](unit-1-lesson-3-a-history-of-bim/assets/Lesson 3 - A History of BIM - BIM ISO 19650 12 Project Delivery (2).mp3)
 
 Naming Conventions
+Suitability & Revision Codes
+> [!note] Audio transcript (00:19)
+> Also naming conventions, suitability codes, revision codes in 2007 BS 1192 2007 was published. However, unfortunately, even with the publication of the British standard, these coordinated standards, methods and procedures were not widely adopted by the industry.
 
-> [!warning] Missing audio (00:19)
-> No local audio file matched this placeholder (referenced `assets/5hvUkQjf7UhuEVBU_transcoded-ZJ6fW-FfJfR5hV_S-m1s45.mp3`).
 
 ![m1s45.PNG](unit-1-lesson-3-a-history-of-bim/assets/RaG-VIN2yHgIeToU_wJQ4ELNbGHsabkeO.png)
 
@@ -162,8 +170,8 @@ Defines a information management process that enables asset owners or facility m
 
 *3D Hazard markers in Revit *
 
-> [!warning] Missing audio (00:23)
-> No local audio file matched this placeholder (referenced `assets/rG6Gp0gHZjJY-iSD_transcoded-KcRh1qBP1Eiy9klb-m1s54.mp3`).
+> [!note] Audio transcript (00:23)
+> PAS 1190 26 A key part of the document is Section 52 Risk Identification and also 4.3 Use of Entities and Annotation in Models and Documents. In response to this section, BIM models should utilize a 3D hazard marker for the clear communication of hazards or risks within a live information model.
 
 ## PAS 1192-6 & CDM Duties 
 
@@ -273,6 +281,50 @@ Understand the historical changes In the construction industry that led to BIM s
 
 **[CONTINUE]**
 
+
+---
+
+## Ten-Question Analysis Framework
+
+### 1. Problem
+What historical inefficiencies, adversarial contract relations, and uncoordinated documentation drove the construction industry to standardize information management?
+
+### 2. Applicability
+- **Timeline**: 1976 (BRE Working Drawings) through 1994 (Latham), 1998 (Egan), 2007 (BS 1192), 2011 (UK Government Construction Strategy), to 2018-2022 (ISO 19650 series).
+
+### 3. Process
+1. Industry reports expose systemic flaws (Latham: adversarial culture; Egan: lack of investment, high defect rates).
+2. Development of technical codes of practice (BS 1192:2007 CDE workflow).
+3. Government client mandates (UK 2016 Level 2 mandate) drive market tipping point.
+4. Internationalization via ISO 19650 series replacing domestic British Standards.
+
+### 4. Evidence
+- Seminal publications: Latham Report (Constructing the Team), Egan Report (Rethinking Construction), BS 1192:2007, PAS 1192-2/3/4/5.
+
+### 5. Principles
+- **Client Leadership**: Lasting improvement requires clients/appointing parties to mandate structured information from the outset.
+- **Collaborative Production**: Transition from isolated discipline drafting to federated, coordinated environments.
+
+### 6. Risks & Anti-patterns
+- Reverting to adversarial, fragmented silo working despite adopting 3D software tools.
+
+### 7. Operationalization
+- Standardized supply chain collaboration protocols and integrated project insurance models.
+
+### 8. Skill Test
+Can this become a Skill?
+No (historical & context analysis).
+
+### 9. Skill Design
+- **Supported Role**: Educational / Policy / Industry Leadership.
+
+### 10. Validation Plan
+Trace modern ISO 19650 clauses back to the original industry defects identified in Latham and Egan.
+
+---
+
+## Knowledge Space Links
+- **Entities**: [[iso-19650-1]], [[iso-19650-2]]
 
 ---
 *Extracted from `Lesson 3 - A History of BIM - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change.html` via webpage-content-extractor.*

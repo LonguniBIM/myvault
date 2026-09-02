@@ -75,18 +75,41 @@ class RiseAdapter:
 
     # ------------------------------------------------------------------ #
     def _metadata(self, soup: BeautifulSoup, ctx: ParseContext) -> SourceMetadata:
+        import re
         from ..html_loader import extract_source_url
 
         def txt(sel: str) -> str | None:
             el = soup.select_one(sel)
-            return el.get_text(" ", strip=True) if el else None
+            return el.get_text(" ", strip=True).replace("\u200b", "").strip() if el else None
 
-        title = (
+        base_title = (
             txt(".lesson-header__title h1")
             or txt(".lesson-header__title")
-            or (soup.title.get_text(strip=True) if soup.title else None)
+            or (soup.title.get_text(strip=True).replace("\u200b", "").strip() if soup.title else None)
             or "Untitled lesson"
         )
+
+        # Detect Unit / Module prefix from folder path, parent dir, or page title
+        unit_prefix = ""
+        candidates = [ctx.root_dir.name, ctx.html_path.parent.name, ctx.html_path.stem]
+        for cand in candidates:
+            m = re.match(r"^(Unit\s+\d+|Module\s+\d+)\b", cand, re.IGNORECASE)
+            if m:
+                unit_prefix = m.group(1).title() + " - "
+                break
+
+        if not unit_prefix and soup.title:
+            title_txt = soup.title.get_text().replace("\u200b", " ")
+            m = re.search(r"\b(Unit\s+\d+|Module\s+\d+)\b", title_txt, re.IGNORECASE)
+            if m:
+                unit_prefix = m.group(1).title() + " - "
+
+        title = base_title
+        if unit_prefix:
+            prefix_core = unit_prefix.strip(" -")
+            if not re.search(r"\b" + re.escape(prefix_core) + r"\b", base_title, re.IGNORECASE):
+                title = f"{unit_prefix}{base_title}"
+
         course = txt(".coursecard__title") or txt(".course-header__title")
         return SourceMetadata(
             title=title,

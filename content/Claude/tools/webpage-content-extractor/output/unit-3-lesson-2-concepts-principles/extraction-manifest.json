@@ -1,0 +1,479 @@
+{
+  "audio": [
+    {
+      "duration_label": "00:51",
+      "duration_seconds": 51.29288,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 2 - Concepts Principles - ISO 19650 12 Project Delivery U (2).mp3",
+      "placeholder_index": 1,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:15",
+      "duration_seconds": 14.930431,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 2,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "01:09",
+      "duration_seconds": 69.241905,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 2 - Concepts Principles - ISO 19650 12 Project Delivery U (5).mp3",
+      "placeholder_index": 3,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:10",
+      "duration_seconds": 10.33288,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 4,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:38",
+      "duration_seconds": 38.103946,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 2 - Concepts Principles - ISO 19650 12 Project Delivery U (1).mp3",
+      "placeholder_index": 5,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:10",
+      "duration_seconds": 9.566621,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 6,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "00:36",
+      "duration_seconds": 35.59619,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 2 - Concepts Principles - ISO 19650 12 Project Delivery U (4).mp3",
+      "placeholder_index": 7,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "01:02",
+      "duration_seconds": 62.229478,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 2 - Concepts Principles - ISO 19650 12 Project Delivery U.mp3",
+      "placeholder_index": 8,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:49",
+      "duration_seconds": 48.529705,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 2 - Concepts Principles - ISO 19650 12 Project Delivery U (6).mp3",
+      "placeholder_index": 9,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:24",
+      "duration_seconds": 23.545034,
+      "matched_by": null,
+      "matched_file": null,
+      "placeholder_index": 10,
+      "transcribed": false,
+      "transcript_source": null
+    },
+    {
+      "duration_label": "01:35",
+      "duration_seconds": 95.132154,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 2 - Concepts Principles - ISO 19650 12 Project Delivery U (3).mp3",
+      "placeholder_index": 11,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    }
+  ],
+  "counts": {
+    "audio_matched": 7,
+    "audio_referenced": 11,
+    "audio_transcribed": 7,
+    "block_types": {
+      "audio": 11,
+      "button": 1,
+      "divider": 1,
+      "heading": 38,
+      "image": 36,
+      "quote": 1,
+      "rich_text": 34,
+      "unknown": 2
+    },
+    "blocks": 124,
+    "images_found": 36,
+    "images_missing": 0,
+    "warnings": 4
+  },
+  "images": [
+    {
+      "exists": true,
+      "height": 551,
+      "mime": "image/png",
+      "output_name": "PxOFcQ6rd3BjDAtn_n_bJylrcTivN_1DJ.png",
+      "sha256": "41947a67436be5e70f7d6dcad226c49dffea86cf49fcec3dedabd4d2ec4e5e8e",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/PxOFcQ6rd3BjDAtn_n_bJylrcTivN_1DJ.png",
+      "width": 874
+    },
+    {
+      "exists": true,
+      "height": 659,
+      "mime": "image/jpeg",
+      "output_name": "hGqVVnuLJKMIRPCy_agRFSklnFRErAhWf.jpg",
+      "sha256": "417bf279d65091d60506c2131957ed2620b7e41c59c2f609d5c54e3b1792a3dc",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/hGqVVnuLJKMIRPCy_agRFSklnFRErAhWf.jpg",
+      "width": 693
+    },
+    {
+      "exists": true,
+      "height": 873,
+      "mime": "image/jpeg",
+      "output_name": "wz3Py0HTCdtl_xit_lqUVn7bEdyQTdcgW.jpg",
+      "sha256": "8580cd685980921e064b216f62708505381465d02ab53037e52c07a26fe7cc11",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/wz3Py0HTCdtl_xit_lqUVn7bEdyQTdcgW.jpg",
+      "width": 833
+    },
+    {
+      "exists": true,
+      "height": 744,
+      "mime": "image/jpeg",
+      "output_name": "JLUKIXYyxgOQHuQH_YMwXv7un9SPwJ-1O.jpg",
+      "sha256": "0b1c2f9ac9c922cf4ea88e07498fcf9c44cca676e3d5df5e9a64e9af831e142e",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/JLUKIXYyxgOQHuQH_YMwXv7un9SPwJ-1O.jpg",
+      "width": 578
+    },
+    {
+      "exists": true,
+      "height": 693,
+      "mime": "image/jpeg",
+      "output_name": "nSKqXrxpeqPtn2JR_BAo1FsEAevO1g1aq.jpg",
+      "sha256": "fe062f153c5049fde41b97b6d6a27f50936d79b80957afebf39392be241b2287",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/nSKqXrxpeqPtn2JR_BAo1FsEAevO1g1aq.jpg",
+      "width": 1680
+    },
+    {
+      "exists": true,
+      "height": 705,
+      "mime": "image/jpeg",
+      "output_name": "31udmHYc0jvHBdqm_pkxei5HoHVdZXu2K.jpg",
+      "sha256": "d9c9c530fdac8b065aa213dbf4d90435ac9a7a7f286e59633d6b69264823fdff",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/31udmHYc0jvHBdqm_pkxei5HoHVdZXu2K.jpg",
+      "width": 1680
+    },
+    {
+      "exists": true,
+      "height": 687,
+      "mime": "image/jpeg",
+      "output_name": "HHjb01Mpkw2DTzbu_vKrpg4-NlH7EB2PH.jpg",
+      "sha256": "2f540db1e035af959724ab0dfdad9b1795ab9854445f3182f8900d56d2c16271",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/HHjb01Mpkw2DTzbu_vKrpg4-NlH7EB2PH.jpg",
+      "width": 1680
+    },
+    {
+      "exists": true,
+      "height": 693,
+      "mime": "image/jpeg",
+      "output_name": "Auf9gKntiNoROtN1_X-DAMPJYLS_wwv-b.jpg",
+      "sha256": "830afa712a7e17e3482905bab531877e53a9b4901b3ea91eb8b7a1abe696930f",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/Auf9gKntiNoROtN1_X-DAMPJYLS_wwv-b.jpg",
+      "width": 1680
+    },
+    {
+      "exists": true,
+      "height": 699,
+      "mime": "image/jpeg",
+      "output_name": "T3eHtiGIuh5KAPS-_Frtoo_ynAsf_swrP.jpg",
+      "sha256": "bd7564d214a87c51a4df6909842e6976d54fa33317d09f350a3d136c4f33a61a",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/T3eHtiGIuh5KAPS-_Frtoo_ynAsf_swrP.jpg",
+      "width": 1680
+    },
+    {
+      "exists": true,
+      "height": 695,
+      "mime": "image/jpeg",
+      "output_name": "Uwrol69KcX4fUhD6_D4oCc8u84MnQkjz7.jpg",
+      "sha256": "31bc125edae76a10c751229ad617f4d3f81de0696cb33cefa1096a0c47c258eb",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/Uwrol69KcX4fUhD6_D4oCc8u84MnQkjz7.jpg",
+      "width": 1680
+    },
+    {
+      "exists": true,
+      "height": 697,
+      "mime": "image/jpeg",
+      "output_name": "P5xXXwgkdhjBBArq_Ov_lrTEQ4n6zz7az.jpg",
+      "sha256": "1aa4f298a13f4a4e1535b684cfe16a743073fd9bcca46534fdc0dd27f9474a8c",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/P5xXXwgkdhjBBArq_Ov_lrTEQ4n6zz7az.jpg",
+      "width": 1680
+    },
+    {
+      "exists": true,
+      "height": 703,
+      "mime": "image/jpeg",
+      "output_name": "1IwnYtf85JrMh6av_TKn5S9u_AQbMCo_Z.jpg",
+      "sha256": "9b593a2039dcb2daa3eb1f25f212f4ffb4ba8234d809396adb5301811e4d8b4c",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/1IwnYtf85JrMh6av_TKn5S9u_AQbMCo_Z.jpg",
+      "width": 1680
+    },
+    {
+      "exists": true,
+      "height": 698,
+      "mime": "image/jpeg",
+      "output_name": "wlh3uCLFVgFxhCC2_bcv2fh9bA9PU6G0F.jpg",
+      "sha256": "6f5ff440fd261edabfc532f701cfa3332a358973402821f12d4cc8aef4cbe93f",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/wlh3uCLFVgFxhCC2_bcv2fh9bA9PU6G0F.jpg",
+      "width": 1680
+    },
+    {
+      "exists": true,
+      "height": 791,
+      "mime": "image/jpeg",
+      "output_name": "FLSki3Sh57A1fF4l_YVPbUBwJt1IxoHcb.jpg",
+      "sha256": "49971a7c8c364d58432bbd72023df0bd7ee26623119de2da7f88d47fe1f47e8c",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/FLSki3Sh57A1fF4l_YVPbUBwJt1IxoHcb.jpg",
+      "width": 1680
+    },
+    {
+      "exists": true,
+      "height": 669,
+      "mime": "image/jpeg",
+      "output_name": "VS_VOY2GFjseoMaw_BNDA5UYEHVv8ZaHh.jpg",
+      "sha256": "bcfe6107d9cbbf473af54d685b4fc1e7911b38fb1b4e25e427d0052cb0ebea2a",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/VS_VOY2GFjseoMaw_BNDA5UYEHVv8ZaHh.jpg",
+      "width": 904
+    },
+    {
+      "exists": true,
+      "height": 581,
+      "mime": "image/jpeg",
+      "output_name": "qRG35qFqN3ym3f2l_vzNaq63y0RyR0ih0.jpg",
+      "sha256": "0e66aa8fcfdb37ff4e80ebb7e9605222b917aa25c8a9d158ad44f24dd9d70e11",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/qRG35qFqN3ym3f2l_vzNaq63y0RyR0ih0.jpg",
+      "width": 886
+    },
+    {
+      "exists": true,
+      "height": 853,
+      "mime": "image/png",
+      "output_name": "F4RSWgfngqhyKGMh_tfkpJPic096fc6Iq.png",
+      "sha256": "e857aeda9fd920868c2fbde78157d6501bb22d58fbb9405df89acd63374eca56",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/F4RSWgfngqhyKGMh_tfkpJPic096fc6Iq.png",
+      "width": 606
+    },
+    {
+      "exists": true,
+      "height": 492,
+      "mime": "image/png",
+      "output_name": "hlyK0HCagUP0GUpI_1IPXo4vwvsDbxVo1.png",
+      "sha256": "7ccb63da7a7ca790396f67857a316dd8fe0ad58812f655520dde99706d17a447",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/hlyK0HCagUP0GUpI_1IPXo4vwvsDbxVo1.png",
+      "width": 379
+    },
+    {
+      "exists": true,
+      "height": 546,
+      "mime": "image/jpeg",
+      "output_name": "z67ywEPoAR_z3bWj_G4s4eig5irWl8jNL.jpg",
+      "sha256": "6ed672d6b1c13b94b3a0c7a301612049a0b01892b69d248a2314787298ffa19d",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/z67ywEPoAR_z3bWj_G4s4eig5irWl8jNL.jpg",
+      "width": 378
+    },
+    {
+      "exists": true,
+      "height": 467,
+      "mime": "image/jpeg",
+      "output_name": "BVlEUobfrCMQfMAI_3osy7Js2ihuy0kxD.jpg",
+      "sha256": "b302c2dfe1aeb93acea65fed0f496bc453bbd96f02347349898b08bb6457a134",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/BVlEUobfrCMQfMAI_3osy7Js2ihuy0kxD.jpg",
+      "width": 330
+    },
+    {
+      "exists": true,
+      "height": 469,
+      "mime": "image/jpeg",
+      "output_name": "MXpRBQdRA41fe6cJ_1XSja3c1S0X9Crse.jpg",
+      "sha256": "f98a462c7f4f6c9c21e1cf0ee40250534a64c9d32a5f4b9e837a476e19036f4d",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/MXpRBQdRA41fe6cJ_1XSja3c1S0X9Crse.jpg",
+      "width": 356
+    },
+    {
+      "exists": true,
+      "height": 273,
+      "mime": "image/png",
+      "output_name": "VH-lATEERzhdhvTO_ykMGRofqj9xw7Lmb.png",
+      "sha256": "b24df0a53a11a09bf3f8897f22b868db9c9ac7fd2c24cfdb4fe46e1b505692fc",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/VH-lATEERzhdhvTO_ykMGRofqj9xw7Lmb.png",
+      "width": 654
+    },
+    {
+      "exists": true,
+      "height": 273,
+      "mime": "image/png",
+      "output_name": "VH-lATEERzhdhvTO_ykMGRofqj9xw7Lmb.png",
+      "sha256": "b24df0a53a11a09bf3f8897f22b868db9c9ac7fd2c24cfdb4fe46e1b505692fc",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/VH-lATEERzhdhvTO_ykMGRofqj9xw7Lmb.png",
+      "width": 654
+    },
+    {
+      "exists": true,
+      "height": 163,
+      "mime": "image/png",
+      "output_name": "LyHWa3L2LtV-ryR9_LXoyjhWnbwNT4nhF.png",
+      "sha256": "b9ab7de25882cc0d6e37ed2d0ef5efe3b61c3c11149bf15636bcbd158ef87e85",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/LyHWa3L2LtV-ryR9_LXoyjhWnbwNT4nhF.png",
+      "width": 244
+    },
+    {
+      "exists": true,
+      "height": 778,
+      "mime": "image/jpeg",
+      "output_name": "ETTqqP5ysfUmIrqT_QvFo5qeAFwn-o1Rd.jpg",
+      "sha256": "6dba307d388411c17213beb967ac813a26edcc4ca96177608d8f66bd312c61c1",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/ETTqqP5ysfUmIrqT_QvFo5qeAFwn-o1Rd.jpg",
+      "width": 727
+    },
+    {
+      "exists": true,
+      "height": 499,
+      "mime": "image/jpeg",
+      "output_name": "a2PY8qdoCiMnSD4n_4KzvXg9mmGuGxgsn.jpg",
+      "sha256": "966da10f3e3ac9bb0102e72cd1b826d16128497c8701405bd8d71c89cb1a9aff",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/a2PY8qdoCiMnSD4n_4KzvXg9mmGuGxgsn.jpg",
+      "width": 835
+    },
+    {
+      "exists": true,
+      "height": 448,
+      "mime": "image/png",
+      "output_name": "xDhuNshQEQ-_lD1-_ZLJNQ6qfdnRTcOja.png",
+      "sha256": "7860fe5356db09e362f7095093cfbeb470352a66b810f2f4897916af18bacb26",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/xDhuNshQEQ-_lD1-_ZLJNQ6qfdnRTcOja.png",
+      "width": 259
+    },
+    {
+      "exists": true,
+      "height": 573,
+      "mime": "image/jpeg",
+      "output_name": "P63UmCnRHqbmzoUf_GVhXn83_-uqGxxlZ.jpg",
+      "sha256": "1b78917270731d5d104c1bd59e7793316180d9d74c5af89f686ae4e2da64da0f",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/P63UmCnRHqbmzoUf_GVhXn83_-uqGxxlZ.jpg",
+      "width": 703
+    },
+    {
+      "exists": true,
+      "height": 674,
+      "mime": "image/jpeg",
+      "output_name": "nGuH9fnxpOWSQ8gY_5kw00f7XJrzCFOJw.jpg",
+      "sha256": "fc282738a5ee323d3b8e90f27c4735560a65247496bd557c911bba4537018e90",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/nGuH9fnxpOWSQ8gY_5kw00f7XJrzCFOJw.jpg",
+      "width": 1432
+    },
+    {
+      "exists": true,
+      "height": 824,
+      "mime": "image/jpeg",
+      "output_name": "mJpNrzknjDCMzmQf_OkEHGFv1gg6jfr4M.jpg",
+      "sha256": "5520f3c12ef96de2c6de74071cd0406b807cd2fe8e1cf05169db309defccbb1c",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/mJpNrzknjDCMzmQf_OkEHGFv1gg6jfr4M.jpg",
+      "width": 755
+    },
+    {
+      "exists": true,
+      "height": 683,
+      "mime": "image/jpeg",
+      "output_name": "yHQ4eOCGlq-RaRuj_ZMKYCXjAzpUGHRu8.jpg",
+      "sha256": "66ca2b27592a5da84f8667a9d0440fc0d949ef7ff106ed2fc75b87f0a6370710",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/yHQ4eOCGlq-RaRuj_ZMKYCXjAzpUGHRu8.jpg",
+      "width": 1280
+    },
+    {
+      "exists": true,
+      "height": 741,
+      "mime": "image/jpeg",
+      "output_name": "GcW-EJea7DcLga2Q_Lsom4UChmPT9DpVh.jpg",
+      "sha256": "e240dca3abb3ed91c0ce4cc05cf9da04da39e5e60886649fe412726e987335d4",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/GcW-EJea7DcLga2Q_Lsom4UChmPT9DpVh.jpg",
+      "width": 530
+    },
+    {
+      "exists": true,
+      "height": 530,
+      "mime": "image/jpeg",
+      "output_name": "H5pOO98RtnnzndNz_jtIUdnKvvtVTvpWY.jpg",
+      "sha256": "b41197ba208192ba1e0ea11b5c6e27a771f4c4e38099d2fbd37f2892b83aab15",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/H5pOO98RtnnzndNz_jtIUdnKvvtVTvpWY.jpg",
+      "width": 1049
+    },
+    {
+      "exists": true,
+      "height": 586,
+      "mime": "image/png",
+      "output_name": "khNyvV6zoGQVLnKi_Kyk_3803U1BTc6gC.png",
+      "sha256": "da5faa45be6880b570fb99428fa86f6ead3c7cd9031e275006f3d601f75b86f6",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/khNyvV6zoGQVLnKi_Kyk_3803U1BTc6gC.png",
+      "width": 766
+    },
+    {
+      "exists": true,
+      "height": 568,
+      "mime": "image/jpeg",
+      "output_name": "MMZvICUte5tz_GQl_8EB4ahFjVyWPebEt.jpg",
+      "sha256": "33a2449f954e23c3137381da071efdfce11c49c329d59fec90df7bcba202f655",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/MMZvICUte5tz_GQl_8EB4ahFjVyWPebEt.jpg",
+      "width": 814
+    },
+    {
+      "exists": true,
+      "height": 424,
+      "mime": "image/jpeg",
+      "output_name": "heeaVvYGteHVwPCV_kN6WAmQU9ABDkcn6.jpg",
+      "sha256": "f7b3520528157e53a902551f827c7e0b7dfd9ec8bf52d2d5ce6e0fd1893a23aa",
+      "src_ref": "./Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/heeaVvYGteHVwPCV_kN6WAmQU9ABDkcn6.jpg",
+      "width": 1472
+    }
+  ],
+  "schema_version": 1,
+  "source": {
+    "adapter": "rise",
+    "course": null,
+    "lesson_count": "Lesson 2 of 5",
+    "source_html": "Lesson 2 - Concepts & Principles - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650_.html",
+    "source_url": "https://elearning.bre.ac/pluginfile.php/191403/mod_resource/content/8/content/index.html#/lessons/60wa4EwOt2O6aTZkIyoQ-zkY70COdv0R",
+    "title": "Unit 3 - Lesson 2 - Concepts & Principles"
+  },
+  "warnings": [
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #2 (00:15s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #4 (00:10s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #6 (00:10s)"
+    },
+    {
+      "block_index": null,
+      "code": "audio_missing",
+      "message": "no local audio within 1.0s of placeholder #10 (00:24s)"
+    }
+  ]
+}

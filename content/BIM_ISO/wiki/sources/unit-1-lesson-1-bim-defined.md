@@ -1,5 +1,5 @@
 ---
-title: "Lesson 1 - BIM Defined"
+title: "Unit 1 - Lesson 1 - BIM Defined"
 type: source
 tags:
   - information-management
@@ -8,7 +8,7 @@ created: 2026-08-02
 updated: 2026-08-02
 ---
 
-# Lesson 1 - BIM Defined
+# Unit 1 - Lesson 1 - BIM Defined
 
 *Lesson 1 of 6*
 
@@ -33,8 +33,10 @@ BIM is essentially value creating collaboration through the entire life-cycle of
 
 ![gif1.gif](unit-1-lesson-1-bim-defined/assets/R_oNGswJrGYBUiC6_bqz5iqkhfgCklakx.gif)
 
-> [!warning] Missing audio (00:23)
-> No local audio file matched this placeholder (referenced `assets/Z3IrLzK3HJq3iCux_transcoded-B83gpNy-KArQFr7y-m1s2.mp3`).
+> [!note] Audio transcript (00:23)
+> This unit introduces BIM by defining the term and considering how it is used. The term BIM is used in many
+different ways by many different people. BIM is essentially value creating collaboration through the entire life cycle of an asset, underpinned by the creation, collation and exchange of shared 3D models and intelligent structured data attached to them.
+
 
 ### Flashcards
 

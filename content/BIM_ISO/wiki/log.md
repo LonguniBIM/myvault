@@ -1,3 +1,36 @@
+## 2026-09-03
+- **Batch Auto-Ingest Completed**: Successfully ingested all 22 remaining lessons across Units 1, 2, 3, 4, 5 into the Knowledge Space (bringing total ingested sources to 24/24).
+  - **Unit 5 (Invitation to Tender - ISO 19650-2 §5.2)**: Ingested Lessons 1, 2, and 3. Extracted [[exchange-information-requirements]], [[shared-resources]], [[appointing-party]], [[invitation-to-tender]], [[pre-appointment-bep]], [[smart-information-requirements]], [[tender-evaluation-criteria]], [[tender-response-requirements]], [[establish-appointing-party-eir-method]], [[assemble-shared-resources-method]], [[tender-response-evaluation-method]], [[compile-itt-package-method]].
+  - **Unit 4 (Assessment & Need - ISO 19650-2 §5.1)**: Ingested Lessons 1 through 6. Extracted [[information-management-function]], [[project-information-requirements]], [[project-information-standard]], [[project-information-production-methods-and-procedures]], [[common-data-environment-protocol]], [[information-delivery-milestones]], [[cde-solution-architecture]], [[assign-im-function-method]], [[establish-pir-method]], [[establish-delivery-milestones-method]], [[establish-information-standard-method]], [[establish-production-methods-procedures-method]], [[establish-cde-protocol-method]].
+  - **Unit 3 (ISO 19650 Standards Series)**: Ingested Lessons 1 through 5. Extracted [[iso-19650-1]], [[iso-19650-2]], [[iso-19650-3]], [[iso-19650-4]], [[iso-19650-5]], [[security-minded-approach]], [[openbim-information-exchange]].
+  - **Unit 2 (BIM Foundations, Dimensions & Maturity)**: Ingested Lessons 1 through 4. Extracted [[bim-dimensions]], [[uk-bim-maturity-stages]], [[global-bim-mandates]].
+  - **Unit 1 (Catalyst for Change & Context)**: Ingested Lessons 2 through 6. Extracted [[construction-4-0]], [[cost-of-poor-information]], [[bim-change-management]].
+  - Added Ten-Question Analysis Framework to all 22 source documents.
+  - Registered all 15 Entities, 16 Concepts, and 10 Methodologies in `wiki/index.md` and updated `wiki/overview.md`.
+
+## 2026-08-23
+- Extracted [lesson]: **Unit 3 - Lesson 4 - Part 4: Information Exchange** (from `Unit 3 - Lesson 4`)
+- Extracted [lesson]: **Unit 5 - Lesson 2 - Assemble Shared Resources** (from `Unit 5 - Lesson 2`)
+- Extracted [lesson]: **Unit 3 - Lesson 5 - Part 5: Security Minded Approach** (from `Unit 3 - Lesson 4`)
+- Extracted [lesson]: **Unit 3 - Lesson 1 - ISO 19650 Overview** (from `Unit 3 - Lesson 1`)
+
+
+## 2026-08-22
+- Extracted [lesson]: **Unit 5 - Lesson 3 - Tender Response & Evaluation Criteria** (from `Unit 5 - Lesson 3`)
+- Extracted [lesson]: **Unit 5 - Lesson 3 - Tender Response & Evaluation Criteria** (from `Unit 5 - Lesson 2`)
+- Extracted [lesson]: **Unit 5 - Lesson 1 - Establish the Appointing Party EIR** (from `Unit 5 - Lesson 1`)
+- Extracted [lesson]: **Unit 4 - Lesson 6 - Establish Shared Resources, CDE & Protocol** (from `Unit 4 - Lesson 6`)
+- Extracted [lesson]: **Unit 4 - Lesson 5 - Establish Project’s Information Production Methods & Procedures** (from `Unit 4 - Lesson 5`)
+- Extracted [lesson]: **Unit 4 - Lesson 4 - Establish Project Information Standard** (from `Unit 4 - Lesson 4`)
+- Extracted [lesson]: **Unit 4 - Lesson 3 - Establish Information Delivery Milestones** (from `Unit 4 - Lesson 3`)
+- Extracted [lesson]: **Unit 4 - Lesson 2 - Establish the PIR** (from `Unit 4 - Lesson 2`)
+- Extracted [lesson]: **Unit 4 - Lesson 1 - Undertake the Information Management Function** (from `Unit 4 - Lesson 1`)
+- Extracted [lesson]: **Unit 3 - Lesson 5 - Part 5: Security Minded Approach** (from `Unit 3 - Lesson 5`)
+- Extracted [lesson]: **Unit 3 - Lesson 5 - Part 5: Security Minded Approach** (from `Unit 3 - Lesson 4`)
+- Extracted [lesson]: **Unit 3 - Lesson 3 - Part 3: Operational Phase** (from `Unit 3 - Lesson 3`)
+- Extracted [lesson]: **Unit 3 - Lesson 2 - Concepts & Principles** (from `Unit 3 - Lesson 2`)
+- Extracted [lesson]: **Unit 3 - Lesson 2 - Concepts & Principles** (from `Unit 3 - Lesson 1`)
+
 ﻿# Research Log
 ## 2026-08-02
 - Extracted [lesson]: **Unit 2 - Lesson 4 - Global BIM Adoption** (from `Unit 2 - Lesson 4`)

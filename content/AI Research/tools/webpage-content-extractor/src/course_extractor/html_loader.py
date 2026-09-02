@@ -17,6 +17,11 @@ def load_html(path: Path) -> BeautifulSoup:
 
 def extract_source_url(path: Path) -> str | None:
     """Read the ``<!-- saved from url=(NNNN)... -->`` comment if present."""
-    head = path.read_text(encoding="utf-8", errors="replace")[:4000]
-    m = _SAVED_FROM.search(head)
-    return m.group(1) if m else None
+    if not path.exists():
+        return None
+    try:
+        head = path.read_text(encoding="utf-8", errors="replace")[:4000]
+        m = _SAVED_FROM.search(head)
+        return m.group(1) if m else None
+    except OSError:
+        return None

@@ -1,14 +1,21 @@
 ---
-title: "Lesson 3 - UK BIM Maturity"
+title: "Unit 2 - Lesson 3 - UK BIM Maturity"
 type: source
 tags:
   - information-management
+  - compliance
+  - high
+  - high
 source_url: https://elearning.bre.ac/pluginfile.php/191400/mod_resource/content/8/content/index.html#/lessons/6TkK87VXEEVUzaPjQ0HhraIPu6BpxZAy
+venue: "BRE Academy / ISO 19650"
+clause_refs:
+  - "ISO 19650-1"
+skill_potential: false
 created: 2026-08-02
-updated: 2026-08-02
+updated: 2026-09-03
 ---
 
-# Lesson 3 - UK BIM Maturity
+# Unit 2 - Lesson 3 - UK BIM Maturity
 
 *Lesson 3 of 4*
 
@@ -83,6 +90,54 @@ Explain further terminology in the form of the ‘BIM maturity levels’.
 
 **[CONTINUE]**
 
+
+---
+
+## Ten-Question Analysis Framework
+
+### 1. Problem
+How do clients and supply chain organizations assess digital information maturity and plan progressive adoption steps from paper-based delivery to full cloud integration?
+
+### 2. Applicability
+- **Scope**: Organizational and project digital maturity assessment.
+- **Frameworks**: Bew-Richards Maturity Wedge (Levels 0, 1, 2, 3), ISO 19650 Stages of Maturity (Stage 1, Stage 2, Stage 3).
+
+### 3. Process
+1. Assess current capability against minimum requirements:
+   - **Stage 1**: 2D/3D CAD & object models with basic CDE and standard file naming.
+   - **Stage 2**: Collaborative BIM according to ISO 19650 with federated models, OpenBIM (IFC/COBie), structured EIR/BEP.
+   - **Stage 3**: Integrated cloud/server-based models, digital twins, real-time lifecycle query across disciplines.
+2. Establish baseline capability and set realistic project procurement targets.
+
+### 4. Evidence
+- Organizational BIM Capability Assessment scorecards.
+- Audit evidence of CDE compliance and structured container exchanges.
+
+### 5. Principles
+- **Maturity Journey**: Digital transformation is a continuous roadmapped journey rather than an instant switch.
+- **Information over Geometry**: High 3D graphical detail does not equal Stage 2 maturity without structured data and CDE governance.
+
+### 6. Risks & Anti-patterns
+- Clients mandating "Level 3" or advanced stages without knowing the legal, security, and contractual requirements.
+- Claiming Stage 2 compliance while relying on unmanaged email file attachments.
+
+### 7. Operationalization
+- BIM Maturity Self-Assessment Rubric.
+
+### 8. Skill Test
+Can this become a Skill?
+**Yes** — Candidate: `bim-maturity-evaluator`.
+
+### 9. Skill Design
+- **Supported Role**: Lead Information Manager / Client Advisor.
+
+### 10. Validation Plan
+Evaluate supply chain partners against Stage 2 minimum criteria prior to tender shortlisting.
+
+---
+
+## Knowledge Space Links
+- **Concepts**: [[uk-bim-maturity-stages]], [[cde-solution-architecture]]
 
 ---
 *Extracted from `Lesson 3 - UK BIM Maturity - BIM ISO 19650 1&2 Project Delivery_ Unit 2 - BIM Explained.html` via webpage-content-extractor.*

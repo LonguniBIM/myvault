@@ -1,0 +1,95 @@
+{
+  "audio": [
+    {
+      "duration_label": "00:49",
+      "duration_seconds": 49.365624,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 3 - Establish Information Delivery Milestones - ISO 19650 (1).mp3",
+      "placeholder_index": 1,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    },
+    {
+      "duration_label": "00:33",
+      "duration_seconds": 33.436735,
+      "matched_by": "duration(|0.000s|)",
+      "matched_file": "Lesson 3 - Establish Information Delivery Milestones - ISO 19650.mp3",
+      "placeholder_index": 2,
+      "transcribed": true,
+      "transcript_source": "faster-whisper:small"
+    }
+  ],
+  "counts": {
+    "audio_matched": 2,
+    "audio_referenced": 2,
+    "audio_transcribed": 2,
+    "block_types": {
+      "audio": 2,
+      "button": 1,
+      "heading": 5,
+      "image": 5,
+      "rich_text": 4
+    },
+    "blocks": 17,
+    "images_found": 5,
+    "images_missing": 0,
+    "warnings": 0
+  },
+  "images": [
+    {
+      "exists": true,
+      "height": 446,
+      "mime": "image/jpeg",
+      "output_name": "k7o6nFWuxSUz2y-W_jP0I3EZ5NQ45ur4M.jpg",
+      "sha256": "9fd5946ecc5203eebc651e7d686d2e4e5297bf99958790b27828ce0438fcf14e",
+      "src_ref": "./Lesson 3 - Establish Information Delivery Milestones - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/k7o6nFWuxSUz2y-W_jP0I3EZ5NQ45ur4M.jpg",
+      "width": 573
+    },
+    {
+      "exists": true,
+      "height": 429,
+      "mime": "image/jpeg",
+      "output_name": "8BcwZbfdBsV6fWX4_yKvhaeCs7h8bF36k.jpg",
+      "sha256": "97e7d90746387427617d328bca7b559cbf3746e02d20aa511bec69f69d38bfcd",
+      "src_ref": "./Lesson 3 - Establish Information Delivery Milestones - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/8BcwZbfdBsV6fWX4_yKvhaeCs7h8bF36k.jpg",
+      "width": 791
+    },
+    {
+      "exists": true,
+      "height": 494,
+      "mime": "image/png",
+      "output_name": "Io_ARq5cxzNxpjAc_JfQhW5KUPq-vI3R_.png",
+      "sha256": "127d77e55db51dbe02b60651e0d668734a4129850b22e1d60dd737cfff583354",
+      "src_ref": "./Lesson 3 - Establish Information Delivery Milestones - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/Io_ARq5cxzNxpjAc_JfQhW5KUPq-vI3R_.png",
+      "width": 603
+    },
+    {
+      "exists": true,
+      "height": 254,
+      "mime": "image/png",
+      "output_name": "daejd1gLp7dmkh9X_EqMZI7lqz1H_8CWX.png",
+      "sha256": "8bf5e4264f4e86527167f06be2da36c1b9275efd236ebafdcdc3253a61b92d8c",
+      "src_ref": "./Lesson 3 - Establish Information Delivery Milestones - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/daejd1gLp7dmkh9X_EqMZI7lqz1H_8CWX.png",
+      "width": 943
+    },
+    {
+      "exists": true,
+      "height": 462,
+      "mime": "image/png",
+      "output_name": "KH28XmXyR4l3zAVU_IwWikr9DnqiOmZ-E.png",
+      "sha256": "d610dac388d6c86850876a32b753f1136880d444b6dc8f9a0fd91f3266360ec3",
+      "src_ref": "./Lesson 3 - Establish Information Delivery Milestones - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need_files/KH28XmXyR4l3zAVU_IwWikr9DnqiOmZ-E.png",
+      "width": 965
+    }
+  ],
+  "schema_version": 1,
+  "source": {
+    "adapter": "rise",
+    "course": null,
+    "lesson_count": "Lesson 3 of 6",
+    "source_html": "Lesson 3 - Establish Information Delivery Milestones - ISO 19650 1&2 Project Delivery_ Unit 4 - Assessment & Need.html",
+    "source_url": "https://elearning.bre.ac/pluginfile.php/191404/mod_resource/content/10/content/index.html#/lessons/G8WzUoO5EbKA04FqdkkleVB3wjk95KRr",
+    "title": "Unit 4 - Lesson 3 - Establish Information Delivery Milestones"
+  },
+  "warnings": []
+}

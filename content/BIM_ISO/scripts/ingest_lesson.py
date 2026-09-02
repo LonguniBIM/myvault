@@ -107,14 +107,17 @@ def ingest_folder(folder: Path, *, transcribe: bool, whisper_model: str, languag
     title = result.document.source.title
 
     # Preserve Unit info from folder name if not already in title
+    import re
     folder_name = folder.name
-    if folder_name.startswith("Unit ") and "Unit " not in title:
-        # Extract unit prefix (e.g., "Unit 2 - " from "Unit 2 - Lesson 4 - ...")
-        unit_prefix = folder_name.split(" - ")[0] + " - "
-        title = unit_prefix + title
-        # Update slug to include unit for uniqueness
-        unit_part = unit_prefix.lower().replace(" - ", "-").replace(" ", "-")
-        slug = unit_part + slug
+    m = re.match(r"^(Unit\s+\d+|Module\s+\d+)\b", folder_name, re.IGNORECASE)
+    if m:
+        unit_prefix = m.group(1).title() + " - "
+        prefix_core = unit_prefix.strip(" -")
+        if not re.search(r"\b" + re.escape(prefix_core) + r"\b", title, re.IGNORECASE):
+            title = unit_prefix + title
+        unit_part = prefix_core.lower().replace(" ", "-") + "-"
+        if not slug.startswith(unit_part):
+            slug = unit_part + slug
 
     # Publish as wiki/sources/<slug>.md with assets under wiki/sources/<slug>/assets/
     page_path = WIKI_SOURCES_DIR / f"{slug}.md"
@@ -132,6 +135,9 @@ def ingest_folder(folder: Path, *, transcribe: bool, whisper_model: str, languag
     # Rewrite relative asset links from "assets/" to "<slug>/assets/".
     md = (lesson_dir / "index.md").read_text(encoding="utf-8")
     md = md.replace("](assets/", f"]({slug}/assets/")
+    # Ensure frontmatter title and H1 heading match the full title
+    md = re.sub(r'^title:\s*".*?"', f'title: "{title}"', md, count=1, flags=re.MULTILINE)
+    md = re.sub(r'^#\s+.*', f'# {title}', md, count=1, flags=re.MULTILINE)
     page_path.write_text(md, encoding="utf-8")
 
     # Keep the report + docx alongside the assets for reference.

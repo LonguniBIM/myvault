@@ -1,0 +1,58 @@
+{
+  "audio": [],
+  "counts": {
+    "audio_matched": 0,
+    "audio_referenced": 0,
+    "audio_transcribed": 0,
+    "block_types": {
+      "button": 1,
+      "divider": 1,
+      "heading": 5,
+      "image": 3,
+      "rich_text": 12
+    },
+    "blocks": 22,
+    "images_found": 3,
+    "images_missing": 0,
+    "warnings": 0
+  },
+  "images": [
+    {
+      "exists": true,
+      "height": 507,
+      "mime": "image/jpeg",
+      "output_name": "jfyW30TNSnpt08Ww_WDV_fJQXBkFXAmVn.jpg",
+      "sha256": "d5de681c16275be7f9b59391f682a45693419dda8eb9b3fd720381091cc0dcc8",
+      "src_ref": "./Lesson 4 - Part 4_ Information Exchange_ - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/jfyW30TNSnpt08Ww_WDV_fJQXBkFXAmVn.jpg",
+      "width": 339
+    },
+    {
+      "exists": true,
+      "height": 629,
+      "mime": "image/jpeg",
+      "output_name": "CpShaV_ukL_OKRyj_BruX_nxBpEOnyu5X.jpg",
+      "sha256": "5e9de999cf8aa6d95f02df6ded8f5fce463fb0c21f371060c2bd2f7cef2cf17d",
+      "src_ref": "./Lesson 4 - Part 4_ Information Exchange_ - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/CpShaV_ukL_OKRyj_BruX_nxBpEOnyu5X.jpg",
+      "width": 1217
+    },
+    {
+      "exists": true,
+      "height": 574,
+      "mime": "image/jpeg",
+      "output_name": "eOGOckQ0W_Uij_EK_LmBhEM8hcJiG0a38.jpg",
+      "sha256": "cd10678e89e4f6ac88da035efa76157cff577df7c943317a3ec1a428442f4047",
+      "src_ref": "./Lesson 4 - Part 4_ Information Exchange_ - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650__files/eOGOckQ0W_Uij_EK_LmBhEM8hcJiG0a38.jpg",
+      "width": 987
+    }
+  ],
+  "schema_version": 1,
+  "source": {
+    "adapter": "rise",
+    "course": null,
+    "lesson_count": "Lesson 4 of 5",
+    "source_html": "Lesson 4 - Part 4_ Information Exchange_ - ISO 19650 1&2 Project Delivery_ Unit 3 - BIM According to ISO 19650_.html",
+    "source_url": "https://elearning.bre.ac/pluginfile.php/191403/mod_resource/content/8/content/index.html#/lessons/94hiuVT-qIcTrVFJShdE_LYturNfgGqY",
+    "title": "Unit 3 - Lesson 4 - Part 4: Information Exchange"
+  },
+  "warnings": []
+}

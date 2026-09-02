@@ -49,6 +49,76 @@
       "signature": "4f279483c39d00b47ada412f41f9b9675e4811c80ac74582379f75499972aa6c",
       "slug": "unit-2-lesson-4-global-bim-adoption",
       "ingested_at": "2026-08-02T22:57:36.375367"
+    },
+    "raw\\sources\\Unit 3 - Lesson 1": {
+      "signature": "11ede671d989eebfaacc7c079de9ce2de4747d86b429140107c002667a7cfa42",
+      "slug": "unit-3-lesson-1-iso-19650-overview",
+      "ingested_at": "2026-08-23T14:45:44.900041"
+    },
+    "raw\\sources\\Unit 3 - Lesson 2": {
+      "signature": "fe784f624ef6a9d068d15dbd0b9cec8fba53bf62d19cc01d83f2bb916cfa5996",
+      "slug": "unit-3-lesson-2-concepts-principles",
+      "ingested_at": "2026-08-22T15:53:45.798314"
+    },
+    "raw\\sources\\Unit 3 - Lesson 3": {
+      "signature": "dcf8fbea3c57a4453f2ff668d0d8368cda54c5e0a932e006d5f6975b98062cbf",
+      "slug": "unit-3-lesson-3-part-3-operational-phase",
+      "ingested_at": "2026-08-22T15:53:46.393547"
+    },
+    "raw\\sources\\Unit 3 - Lesson 4": {
+      "signature": "5e10df952d17825f32ad09f31fd7c5d4ec9a5c292987c7f68f8149fa0b7a127d",
+      "slug": "unit-3-lesson-4-part-4-information-exchange",
+      "ingested_at": "2026-08-23T15:40:14.741875"
+    },
+    "raw\\sources\\Unit 3 - Lesson 5": {
+      "signature": "aee580d480bfd8c0401018a8ad784469f22c95e5bcd55ac56b95e9e9adc55cb4",
+      "slug": "unit-3-lesson-5-part-5-security-minded-approach",
+      "ingested_at": "2026-08-22T15:54:09.765173"
+    },
+    "raw\\sources\\Unit 4 - Lesson 1": {
+      "signature": "9db188ac084d83108ff0c31cfa87ccd40d75e0ff047386cec4fe69b72a7277e3",
+      "slug": "unit-4-lesson-1-undertake-the-information-management-function",
+      "ingested_at": "2026-08-22T15:55:35.006786"
+    },
+    "raw\\sources\\Unit 4 - Lesson 2": {
+      "signature": "78ccd879df07006c2353baeb1b8a9cbd657dc4fd8182f2a6c5ec4889ccd18d8a",
+      "slug": "unit-4-lesson-2-establish-the-pir",
+      "ingested_at": "2026-08-22T15:55:35.605218"
+    },
+    "raw\\sources\\Unit 4 - Lesson 3": {
+      "signature": "5009c9798f75a2f6e62749f44c29d8d8250dd7ea041e2754c6e9156772a6a417",
+      "slug": "unit-4-lesson-3-establish-information-delivery-milestones",
+      "ingested_at": "2026-08-22T15:55:50.256925"
+    },
+    "raw\\sources\\Unit 4 - Lesson 4": {
+      "signature": "da07aa79c7f9040d6f14a37a871f9988a2928480c8920155886545600bac7dac",
+      "slug": "unit-4-lesson-4-establish-project-information-standard",
+      "ingested_at": "2026-08-22T15:56:39.276992"
+    },
+    "raw\\sources\\Unit 4 - Lesson 5": {
+      "signature": "7436f8674d859ab026a6535f888f33b6f8325c0979b11780afab4511630fb0e5",
+      "slug": "unit-4-lesson-5-establish-projects-information-production-methods-procedures",
+      "ingested_at": "2026-08-22T15:56:50.919357"
+    },
+    "raw\\sources\\Unit 4 - Lesson 6": {
+      "signature": "fc3b8c580fd57e913b78aa8d6b89cc9e7c6643defe6ee3eeea6b18cbf7775984",
+      "slug": "unit-4-lesson-6-establish-shared-resources-cde-protocol",
+      "ingested_at": "2026-08-22T15:57:23.785484"
+    },
+    "raw\\sources\\Unit 5 - Lesson 1": {
+      "signature": "cc5eeb0f76029b4ce3f0c74b78d8eca1bc4f0da99772057545cb869e8a6eb7f3",
+      "slug": "unit-5-lesson-1-establish-the-appointing-party-eir",
+      "ingested_at": "2026-08-22T15:58:19.137341"
+    },
+    "raw\\sources\\Unit 5 - Lesson 2": {
+      "signature": "9ec562632a040c36fe86ebdb01d145beaa11b25286e3234586cd9a92a819eaf6",
+      "slug": "unit-5-lesson-2-assemble-shared-resources",
+      "ingested_at": "2026-08-23T14:45:50.487408"
+    },
+    "raw\\sources\\Unit 5 - Lesson 3": {
+      "signature": "e25d914280f6ff23061da60ae3ccead076ce5afebf5e8296d1fb9e491f6a8131",
+      "slug": "unit-5-lesson-3-tender-response-evaluation-criteria",
+      "ingested_at": "2026-08-22T15:58:33.358075"
     }
   }
 }
