@@ -4,7 +4,7 @@ title: "BIM ISO 19650 Mastery — Project Overview"
 tags: [bim, iso-19650, information-management, skills]
 related: []
 created: 2026-07-23
-updated: 2026-07-23
+updated: 2026-09-05
 ---
 
 # Overview
@@ -28,45 +28,44 @@ This wiki is a **curated knowledge base for mastering BIM information management
 
 | Metric | Count |
 |--------|-------|
-| Sources ingested into Knowledge Space | 24 |
-| Total Source files | 24 |
-| Entity pages | 15 |
-| Concept pages | 16 |
-| Methodology pages | 10 |
-| Skills extracted (candidates) | 10 |
+| Sources ingested into Knowledge Space | 44 |
+| Total Source files | 44 |
+| Entity pages | 28 |
+| Concept pages | 25 |
+| Methodology pages | 29 |
+| Skills extracted (candidates) | 29 |
 | Findings | 0 |
 
-**Last updated:** 2026-09-03 (Batch Ingestion of all 24 Course Lessons Complete)
+**Last updated:** 2026-09-05 (Comprehensive Auto-Ingestion of all 44 Course Lessons Complete)
 
 ## Research Focus Areas
 
 | Topic | Status | Priority |
 |-------|--------|----------|
-| ISO 19650-1 / 19650-2 core concepts | In progress | Critical |
-| EIR / AIR / OIR / PIR requirement analysis | In progress | Critical |
-| BEP structure and review | In progress | Critical |
-| CDE states, workflow, approval gates | In progress | High |
-| MIDP / TIDP / Responsibility Matrix | In progress | High |
-| Level of Information Need (LOIN) | In progress | High |
-| Naming convention / classification / metadata | In progress | Medium |
-| Model checking / QA-QC / issue management | Planned | Medium |
-| Coordination workflow (Revit/IFC/Navisworks/Revizto/BIMcollab) | Planned | Medium |
-| Handover / archive / evidence of compliance | Planned | Medium |
+| ISO 19650-1 / 19650-2 core concepts | Complete | Critical |
+| EIR / AIR / OIR / PIR requirement analysis | Complete | Critical |
+| Tender response, Capability & Pre-BEP | Complete | Critical |
+| Appointment, Confirmed BEP & MIDP/TIDP | Complete | Critical |
+| Mobilization & IT testing procedures | Complete | High |
+| Collaborative production, QA/QC & CDE workflows | Complete | Critical |
+| Information model delivery & acceptance gates | Complete | Critical |
+| Handover, PIM archiving & AIM extraction | Complete | High |
+| Lessons learned capture & continuous improvement | Complete | Medium |
+| Professional & Business Certification (BRE) | Complete | High |
 | Claude Skill extraction (see `purpose.md`) | In progress | Critical |
 
 ## Key Directories
 
-- `wiki/sources/` — Analyzed standard clauses, guidance documents, templates, case studies
-- `wiki/methodology/` — Extracted step-by-step methods (Skill candidates)
+- `wiki/sources/` — Analyzed standard clauses, guidance documents, templates, case studies (44 lessons)
+- `wiki/methodology/` — Extracted step-by-step methods (29 Skill candidates)
 - `wiki/skills/` — Validated, deployable Claude Skills
-- `wiki/concepts/` — Core ISO 19650 concepts and frameworks
-- `wiki/entities/` — Standards parts, documents, roles, systems, organizations
+- `wiki/concepts/` — Core ISO 19650 concepts and frameworks (25 pages)
+- `wiki/entities/` — Standards parts, documents, roles, systems, organizations (28 pages)
 - `raw/sources/` — Drop zone for new source material (PDF/DOCX/XLSX/MD)
 
 ## Success Criteria (from `purpose.md`)
 
-- Systematic coverage of core ISO 19650 concepts, roles, documents, workflows
-- Every source analyzed with the same framework, traceable to original text
-- Every key requirement linked to a project action, responsible party, deliverable, and evidence
-- At least 10 working Claude Skills, each with trigger, input, workflow, guardrails, output
-- Comparison pages explaining which approach fits which project type/stage/BIM maturity
+- Systematic coverage of core ISO 19650 concepts, roles, documents, workflows across all 8 clauses of ISO 19650-2.
+- Every source analyzed with the same Ten-Question Analysis Framework, traceable to original text and audio transcripts.
+- Every key requirement linked to a project action, responsible party, deliverable, and evidence.
+- Working Claude Skill candidates defined with trigger, input, workflow, guardrails, and output format.

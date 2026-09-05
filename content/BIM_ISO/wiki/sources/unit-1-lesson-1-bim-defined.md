@@ -162,3 +162,56 @@ Define the term BIM and considering how it is used.
 
 ---
 *Extracted from `Lesson 1 - BIM Defined - BIM ISO 19650 1&2 Project Delivery_ Unit 1 - Catalyst for Change.htm` via webpage-content-extractor.*
+## Ten-Question Analysis Framework
+
+### 1. Problem
+How is Building Information Modeling (BIM) formally defined and distinguished from mere 3D CAD/software to create lifecycle value across built assets?
+
+### 2. Applicability
+- **Stage**: Lifecycle-wide (Inception, Design, Construction, Operational Management, Decommissioning).
+- **Roles**: All project and asset stakeholders ([[appointing-party]], [[lead-appointed-party]], [[appointed-party]]).
+- **Key Documents**: [[information-model]], PIM, AIM, EIR.
+
+### 3. Process
+1. Recognize BIM as an integration of People, Process, Policy, Technology, and Data.
+2. Formulate collaborative processes across lifecycle phases rather than siloed discipline authoring.
+3. Structure deliverables into three constituent data types: Geometric Data, Non-Geometric (Alphanumeric) Data, and Documentation.
+4. Establish the [[level-of-information-need]] (LOIN) framework to govern granularity and eliminate data bloat.
+
+### 4. Evidence
+- Coordinated 3D models with parametric behavior.
+- Structured alphanumeric datasets (COBie, IFC attributes, equipment schedules).
+- Verified documentation containers (specifications, drawings, warranties).
+
+### 5. Principles
+- **Lifecycle Value**: BIM exists to facilitate trustworthy decision-making from inception to decommissioning.
+- **Better Information Management**: Reframing BIM from a 3D drafting tool to an information management discipline governed by ISO 19650.
+- **Structured Data Integration**: Geometry acts as a spatial container for metadata and documentation links.
+
+### 6. Risks & Anti-patterns
+- Treating BIM as merely software or 3D visualization without standardized metadata.
+- Unstructured documentation and PDF proliferation without searchability or data linkage.
+- Over-specifying detail too early in the project lifecycle.
+
+### 7. Operationalization
+- Organization-wide BIM execution framework covering People, Process, Policy, Technology.
+- Information Model Breakdown Structure separating PIM and AIM data requirements.
+
+### 8. Skill Test
+Can this become a Skill?
+**Yes** — Candidate: `bim-definition-audit` / `lifecycle-information-classifier`. Classifies deliverables into geometric, alphanumeric, and documentation containers.
+
+### 9. Skill Design
+- **Supported Role**: Information Manager / BIM Lead.
+- **Trigger**: Project initiation and team onboarding.
+- **Output**: Categorized information model structure and requirements matrix.
+
+### 10. Validation Plan
+Evaluate pilot project deliverables against the three information model pillars (geometric, alphanumeric, documentation).
+
+---
+
+## Knowledge Space Links
+- **Entities**: [[information-model]], [[iso-19650-1]], [[iso-19650-2]]
+- **Concepts**: [[building-information-modeling]], [[level-of-information-need]]
+- **Methodologies**: [[assign-im-function-method]]
